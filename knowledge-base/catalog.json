@@ -1,0 +1,2622 @@
+[
+  {
+    "doc_id": "AIエ-ジェントを用いたアプリケ-ション構築-7b1d38e29723",
+    "title": "AIエージェントを用いたアプリケーション構築",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AIエージェントを用いたアプリケーション構築.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341669734",
+        "9798341669734"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 505,
+    "chunk_count": 551
+  },
+  {
+    "doc_id": "AIネイティブのソフトウェアデリバリ-77bd5abc1294",
+    "title": "AIネイティブのソフトウェアデリバリー",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AIネイティブのソフトウェアデリバリー.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341665545",
+        "9798341665545"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 345,
+    "chunk_count": 355
+  },
+  {
+    "doc_id": "AI支援プログラミング-4299b3ab39dc",
+    "title": "AI支援プログラミング",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AI支援プログラミング.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341627239",
+        "9798341627239"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 316,
+    "chunk_count": 321
+  },
+  {
+    "doc_id": "API-スタイルについて学ぶ-2c4dc32a27c7",
+    "title": "API スタイルについて学ぶ",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/API スタイルについて学ぶ.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341664067",
+        "9798341664067"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 829,
+    "chunk_count": 862
+  },
+  {
+    "doc_id": "AWS-Lambdaのプログラミング-08b45c40e7bc",
+    "title": "AWS Lambdaのプログラミング",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AWS Lambdaのプログラミング.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341636026",
+        "9798341636026"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 409,
+    "chunk_count": 426
+  },
+  {
+    "doc_id": "AWS-におけるセキュリティとマイクロサ-ビスア-キテクチャ-33e0aca077b2",
+    "title": "AWS におけるセキュリティとマイクロサービスアーキテクチャ",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AWS におけるセキュリティとマイクロサービスアーキテクチャ.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341650633",
+        "9798341650633"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 783,
+    "chunk_count": 783
+  },
+  {
+    "doc_id": "AWS-クックブック-ec98b7335ad7",
+    "title": "AWS クックブック",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AWS クックブック.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341635456",
+        "9798341635456"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 1142,
+    "chunk_count": 1152
+  },
+  {
+    "doc_id": "AWSでのサ-バ-レス開発-456b8db24e47",
+    "title": "AWSでのサーバーレス開発",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AWSでのサーバーレス開発.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341625433",
+        "9798341625433"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 973,
+    "chunk_count": 975
+  },
+  {
+    "doc_id": "AWS上のシステム設計-efe56aed7eed",
+    "title": "AWS上のシステム設計",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AWS上のシステム設計.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341634060",
+        "9798341634060"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 591,
+    "chunk_count": 606
+  },
+  {
+    "doc_id": "Building-Multi-Tenant-SaaS-Architectures-a6d15a6ae48c",
+    "title": "Building Multi-Tenant SaaS Architectures",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Building Multi-Tenant SaaS Architectures.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098140632",
+        "9781098140649"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 572,
+    "chunk_count": 745
+  },
+  {
+    "doc_id": "Cloud-FinOps-2nd-Edition-a22893a3ead9",
+    "title": "Cloud FinOps, 2nd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Cloud FinOps, 2nd Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781492098348",
+        "9781492098355"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 340,
+    "chunk_count": 407
+  },
+  {
+    "doc_id": "Cloud-Native-Go-2nd-Edition-ec7c6d7fa63e",
+    "title": "Cloud Native Go, 2nd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Cloud Native Go, 2nd Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098156411",
+        "9781098156428"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 68,
+    "chunk_count": 68
+  },
+  {
+    "doc_id": "Cloud-Native-Go-0720eb68b506",
+    "title": "Cloud Native Go",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Cloud Native Go.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341654860",
+        "9798341654860"
+      ],
+      "language": [
+        "ko"
+      ]
+    },
+    "section_count": 686,
+    "chunk_count": 707
+  },
+  {
+    "doc_id": "Communicating-with-Data-e676ab8e13b1",
+    "title": "Communicating with Data",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Communicating with Data.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098101848",
+        "9781098101855"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 568,
+    "chunk_count": 643
+  },
+  {
+    "doc_id": "Computer-Networks-Fifth-Edition-e33c19788b2a",
+    "title": "Computer Networks, Fifth Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Computer Networks, Fifth Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9780133485936",
+        "9780133485936"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 553,
+    "chunk_count": 1405
+  },
+  {
+    "doc_id": "Core-Java-Vol-I-Fundamentals-14th-Edition-0fd13a1771a3",
+    "title": "Core Java, Vol. I: Fundamentals, 14th Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Core Java, Vol. I Fundamentals, 14th Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9780135558553",
+        "9780135558553"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 479,
+    "chunk_count": 863
+  },
+  {
+    "doc_id": "Data-Mesh-8892d3add0a9",
+    "title": "Data Mesh",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Data Mesh.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341624535",
+        "9798341624535"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 322,
+    "chunk_count": 327
+  },
+  {
+    "doc_id": "Designing-Data-Intensive-Applications-2nd-Edition-e7aa8687ff67",
+    "title": "Designing Data-Intensive Applications, 2nd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Designing Data-Intensive Applications, 2nd Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098119058",
+        "9781098119065"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 739,
+    "chunk_count": 1050
+  },
+  {
+    "doc_id": "Efficient-Go-0ad584e93d7e",
+    "title": "Efficient Go",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Efficient Go.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341614666",
+        "9798341614666"
+      ],
+      "language": [
+        "fr"
+      ]
+    },
+    "section_count": 596,
+    "chunk_count": 899
+  },
+  {
+    "doc_id": "Financial-Data-Engineering-268547dd573f",
+    "title": "Financial Data Engineering",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Financial Data Engineering.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098159986",
+        "9781098159993"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 656,
+    "chunk_count": 839
+  },
+  {
+    "doc_id": "Fundamentals-of-Data-Visualization-42b5d531959e",
+    "title": "Fundamentals of Data Visualization",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Fundamentals of Data Visualization.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781492031079",
+        "9781492031086"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 258,
+    "chunk_count": 272
+  },
+  {
+    "doc_id": "Fundamentals-of-DevOps-and-Software-Delivery-dae231c74a49",
+    "title": "Fundamentals of DevOps and Software Delivery",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Fundamentals of DevOps and Software Delivery.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098174583",
+        "9781098174590"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 873,
+    "chunk_count": 1041
+  },
+  {
+    "doc_id": "Gitハンズオンラ-ニング-手を動かして学ぶバ-ジョン管理システムの基本-5642d220ca44",
+    "title": "Gitハンズオンラーニング ―手を動かして学ぶバージョン管理システムの基本",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Gitハンズオンラーニング ―手を動かして学ぶバージョン管理システムの基本.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401048",
+        "9784814401048"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 248,
+    "chunk_count": 279
+  },
+  {
+    "doc_id": "Googleのソフトウェアエンジニアリング-持続可能なプログラミングを支える技術-文化-プロセス-349f5759ea2a",
+    "title": "Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873119656",
+        "9784873119656"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 306,
+    "chunk_count": 338
+  },
+  {
+    "doc_id": "GPU-Programming-with-C-and-CUDA-ec13114d77d7",
+    "title": "GPU Programming with C++ and CUDA",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/GPU Programming with C++ and CUDA.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781805124542",
+        "9781805124542"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 222,
+    "chunk_count": 322
+  },
+  {
+    "doc_id": "GraphQL-Best-Practices-021a4f1938d8",
+    "title": "GraphQL Best Practices",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/GraphQL Best Practices.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781835467145",
+        "9781835467145"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 408,
+    "chunk_count": 487
+  },
+  {
+    "doc_id": "How-Linux-Works-3rd-Edition-8cf6e36b5469",
+    "title": "How Linux Works, 3rd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/How Linux Works, 3rd Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098128913",
+        "9781718500402"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 820,
+    "chunk_count": 875
+  },
+  {
+    "doc_id": "Infrastructure-as-Code-クラウドにおけるサ-バ管理の原則とプラクティス-0da27fd50ef5",
+    "title": "Infrastructure as Code ―クラウドにおけるサーバ管理の原則とプラクティス",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Infrastructure as Code ―クラウドにおけるサーバ管理の原則とプラクティス.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873117966",
+        "9784873117966"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 42,
+    "chunk_count": 80
+  },
+  {
+    "doc_id": "Infrastructure-as-Code-3rd-Edition-4b6e2cf6344e",
+    "title": "Infrastructure as Code, 3rd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Infrastructure as Code, 3rd Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098150341",
+        "9781098150358"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 545,
+    "chunk_count": 583
+  },
+  {
+    "doc_id": "JavaScriptデザインパタ-ンを学ぶ-第2版-5a31ddf4b2fd",
+    "title": "JavaScriptデザインパターンを学ぶ 第2版",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/JavaScriptデザインパターンを学ぶ 第2版.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341625952",
+        "9798341625952"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 406,
+    "chunk_count": 426
+  },
+  {
+    "doc_id": "Javaへの関数的アプロ-チ-f5ffb9eb45d3",
+    "title": "Javaへの関数的アプローチ",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Javaへの関数的アプローチ.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341625730",
+        "9798341625730"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 610,
+    "chunk_count": 614
+  },
+  {
+    "doc_id": "Kubernetesで実践するクラウドネイティブDevOps-1925cab5e9f1",
+    "title": "Kubernetesで実践するクラウドネイティブDevOps",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Kubernetesで実践するクラウドネイティブDevOps.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873119014",
+        "9784873119014"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 429,
+    "chunk_count": 435
+  },
+  {
+    "doc_id": "Learn-Go-with-Pocket-Sized-Projects-41327a372d9b",
+    "title": "Learn Go with Pocket-Sized Projects",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Learn Go with Pocket-Sized Projects.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781633438804",
+        "9781633438804"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 691,
+    "chunk_count": 758
+  },
+  {
+    "doc_id": "Learning-Domain-Driven-Design-477f5f903067",
+    "title": "Learning Domain-Driven Design",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Learning Domain-Driven Design.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098100124",
+        "9781098100131"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 353,
+    "chunk_count": 386
+  },
+  {
+    "doc_id": "Learning-Modern-Linux-2d19cb92f416",
+    "title": "Learning Modern Linux",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Learning Modern Linux.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098108939",
+        "9781098108946"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 377,
+    "chunk_count": 422
+  },
+  {
+    "doc_id": "Linux-Bible-11th-Edition-c9ddd8ed3c6f",
+    "title": "Linux Bible, 11th Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Linux Bible, 11th Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781394317462",
+        "9781394317462"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 371,
+    "chunk_count": 452
+  },
+  {
+    "doc_id": "Mastering-API-Architecture-cd227688b936",
+    "title": "Mastering API Architecture",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Mastering API Architecture.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781492090625",
+        "9781492090632"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 479,
+    "chunk_count": 521
+  },
+  {
+    "doc_id": "Mastering-Go-for-DevOps-ba29ba400857",
+    "title": "Mastering Go for DevOps",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Mastering Go for DevOps.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781837027330",
+        "9781837027330"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 491,
+    "chunk_count": 523
+  },
+  {
+    "doc_id": "MLOps実装ガイド-本番運用を見据えた開発戦略-32052a68de77",
+    "title": "MLOps実装ガイド ―本番運用を見据えた開発戦略",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/MLOps実装ガイド ―本番運用を見据えた開発戦略.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401208",
+        "9784814401208"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 652,
+    "chunk_count": 674
+  },
+  {
+    "doc_id": "Modern-REST-API-Development-in-Go-f05034792b18",
+    "title": "Modern REST API Development in Go",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Modern REST API Development in Go.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781836205371",
+        "9781836205371"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 307,
+    "chunk_count": 384
+  },
+  {
+    "doc_id": "Prompt-Engineering-for-LLMs-e7e396c2dc59",
+    "title": "Prompt Engineering for LLMs",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Prompt Engineering for LLMs.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098156145",
+        "9781098156152"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 274,
+    "chunk_count": 327
+  },
+  {
+    "doc_id": "Pythonによるア-キテクチャパタ-ン-fae7d0ccf4c4",
+    "title": "Pythonによるアーキテクチャパターン",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Pythonによるアーキテクチャパターン.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341624863",
+        "9798341624863"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 426,
+    "chunk_count": 432
+  },
+  {
+    "doc_id": "Pythonによるテスト駆動開発-3rd-Edition-80bf38f4ff93",
+    "title": "Pythonによるテスト駆動開発, 3rd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Pythonによるテスト駆動開発, 3rd Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-0642572274771",
+        "0642572274771"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 502,
+    "chunk_count": 512
+  },
+  {
+    "doc_id": "Real-World-HTTP-第3版-歴史とコ-ドに学ぶインタ-ネットとウェブ技術-6698f8795613",
+    "title": "Real World HTTP 第3版 ―歴史とコードに学ぶインターネットとウェブ技術",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Real World HTTP 第3版 ―歴史とコードに学ぶインターネットとウェブ技術.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400669",
+        "9784814400669"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 552,
+    "chunk_count": 607
+  },
+  {
+    "doc_id": "RESTful-Web-API-パタ-ンと実践クックブック-f732fbe69afc",
+    "title": "RESTful Web API パターンと実践クックブック",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/RESTful Web API パターンと実践クックブック.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341635937",
+        "9798341635937"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 936,
+    "chunk_count": 950
+  },
+  {
+    "doc_id": "Snowflake-Data-Engineering-ceb2fac0ab2d",
+    "title": "Snowflake Data Engineering",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Snowflake Data Engineering.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781633436855",
+        "9781633436855"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 384,
+    "chunk_count": 433
+  },
+  {
+    "doc_id": "SQLではじめるデ-タ分析-クエリで行う前処理-時系列解析-コホ-ト分析-テキスト分析-異常検知-73d8ec182cbe",
+    "title": "SQLではじめるデータ分析 ―クエリで行う前処理、時系列解析、コホート分析、テキスト分析、異常検知",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/SQLではじめるデータ分析 ―クエリで行う前処理、時系列解析、コホート分析、テキスト分析、異常検知.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400201",
+        "9784814400201"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 220,
+    "chunk_count": 304
+  },
+  {
+    "doc_id": "SQLアンチパタ-ン-第2版-デ-タベ-スプログラミングで陥りがちな失敗とその対策-1c2b53ccb5d9",
+    "title": "SQLアンチパターン 第2版 ―データベースプログラミングで陥りがちな失敗とその対策",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/SQLアンチパターン 第2版 ―データベースプログラミングで陥りがちな失敗とその対策.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400744",
+        "9784814400744"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 206,
+    "chunk_count": 211
+  },
+  {
+    "doc_id": "SRE-サイトリライアビリティエンジニアリング-Googleの信頼性を支えるエンジニアリングチ-ム-9dd02216a29f",
+    "title": "SRE サイトリライアビリティエンジニアリング ―Googleの信頼性を支えるエンジニアリングチーム",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/SRE サイトリライアビリティエンジニアリング ―Googleの信頼性を支えるエンジニアリングチーム.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873117911",
+        "9784873117911"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 208,
+    "chunk_count": 217
+  },
+  {
+    "doc_id": "SREの探求-様-な企業におけるサイトリライアビリティエンジニアリングの導入と実践-fe35ba5f28a4",
+    "title": "SREの探求 ―様々な企業におけるサイトリライアビリティエンジニアリングの導入と実践",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/SREの探求 ―様々な企業におけるサイトリライアビリティエンジニアリングの導入と実践.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873119618",
+        "9784873119618"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 249,
+    "chunk_count": 298
+  },
+  {
+    "doc_id": "Tableau-Strategies-49ae5b81d266",
+    "title": "Tableau Strategies",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Tableau Strategies.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781492080077",
+        "9781492080084"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 852,
+    "chunk_count": 890
+  },
+  {
+    "doc_id": "Terraform-in-Depth-18bc9b165e2e",
+    "title": "Terraform in Depth",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Terraform in Depth.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781633438002",
+        "9781633438002"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 60,
+    "chunk_count": 60
+  },
+  {
+    "doc_id": "Think-Python-第3版-コンピュ-タ科学者の思考で問題を解決する-ee8d9184a0fe",
+    "title": "Think Python 第3版 ―コンピュータ科学者の思考で問題を解決する",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Think Python 第3版 ―コンピュータ科学者の思考で問題を解決する.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401161",
+        "9784814401161"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 307,
+    "chunk_count": 309
+  },
+  {
+    "doc_id": "UX-for-Business-デジタル変革時代のビジネスデザイン手法-a2be456c627e",
+    "title": "UX for Business ―デジタル変革時代のビジネスデザイン手法",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/UX for Business ―デジタル変革時代のビジネスデザイン手法.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401475",
+        "9784814401475"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 42,
+    "chunk_count": 48
+  },
+  {
+    "doc_id": "UXデザインの法則-第2版-最高のプロダクトとサ-ビスを支える心理学-8dd86cde7412",
+    "title": "UXデザインの法則 第2版 ―最高のプロダクトとサービスを支える心理学",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/UXデザインの法則 第2版 ―最高のプロダクトとサービスを支える心理学.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401000",
+        "9784814401000"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 42,
+    "chunk_count": 47
+  },
+  {
+    "doc_id": "Web-API-クックブック-c6a7cd82e8fa",
+    "title": "Web API クックブック",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Web API クックブック.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341632431",
+        "9798341632431"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 966,
+    "chunk_count": 966
+  },
+  {
+    "doc_id": "Webブラウザエンジニアリング-Chrome開発者たちから学ぶ-作って理解するブラウザとWebの仕組み-7787f73cc321",
+    "title": "Webブラウザエンジニアリング ―Chrome開発者たちから学ぶ、作って理解するブラウザとWebの仕組み",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Webブラウザエンジニアリング ―Chrome開発者たちから学ぶ、作って理解するブラウザとWebの仕組み.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401574",
+        "9784814401574"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 580,
+    "chunk_count": 599
+  },
+  {
+    "doc_id": "Windowsセキュリティインタ-ナル-PowerShellで理解するWindowsの認証-認可-監査の仕組み-e5f5f788c9cf",
+    "title": "Windowsセキュリティインターナル ―PowerShellで理解するWindowsの認証、認可、監査の仕組み",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Windowsセキュリティインターナル ―PowerShellで理解するWindowsの認証、認可、監査の仕組み.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401062",
+        "9784814401062"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 267,
+    "chunk_count": 356
+  },
+  {
+    "doc_id": "イベント駆動型マイクロサ-ビスの構築-2nd-Edition-29af47e1fd64",
+    "title": "イベント駆動型マイクロサービスの構築, 2nd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/イベント駆動型マイクロサービスの構築, 2nd Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341669468",
+        "9798341669468"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 602,
+    "chunk_count": 606
+  },
+  {
+    "doc_id": "インタフェ-スの設計-第3版-5a22e4ac8096",
+    "title": "インタフェースの設計 第3版",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/インタフェースの設計 第3版.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341627314",
+        "9798341627314"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 1252,
+    "chunk_count": 1253
+  },
+  {
+    "doc_id": "インテリジェントな自律型エ-ジェント-195aad9140e1",
+    "title": "インテリジェントな自律型エージェント",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/インテリジェントな自律型エージェント.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341647046",
+        "9798341647046"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 66,
+    "chunk_count": 67
+  },
+  {
+    "doc_id": "ウェブAPIの設計-b3a65fec7370",
+    "title": "ウェブAPIの設計",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ウェブAPIの設計.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341635722",
+        "9798341635722"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 400,
+    "chunk_count": 404
+  },
+  {
+    "doc_id": "エッジのAI-44d9e333e5b7",
+    "title": "エッジのAI",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/エッジのAI.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341626584",
+        "9798341626584"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 786,
+    "chunk_count": 796
+  },
+  {
+    "doc_id": "エンタ-プライズビッグデ-タレイク-460e0ebd8f02",
+    "title": "エンタープライズビッグデータレイク",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/エンタープライズビッグデータレイク.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341650305",
+        "9798341650305"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 323,
+    "chunk_count": 333
+  },
+  {
+    "doc_id": "オブザ-バビリティ-エンジニアリング-20bf2f1f431f",
+    "title": "オブザーバビリティ・エンジニアリング",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/オブザーバビリティ・エンジニアリング.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400126",
+        "9784814400126"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 150,
+    "chunk_count": 172
+  },
+  {
+    "doc_id": "クラウドアプリケ-ションア-キテクチャパタ-ン-392f9a4d849b",
+    "title": "クラウドアプリケーションアーキテクチャパターン",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/クラウドアプリケーションアーキテクチャパターン.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341641112",
+        "9798341641112"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 689,
+    "chunk_count": 762
+  },
+  {
+    "doc_id": "クラウドデ-タレイク-無限の可能性があるデ-タを無駄なく活かすア-キテクチャ設計ガイド-382e60bd6fbe",
+    "title": "クラウドデータレイク ―無限の可能性があるデータを無駄なく活かすアーキテクチャ設計ガイド",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/クラウドデータレイク ―無限の可能性があるデータを無駄なく活かすアーキテクチャ設計ガイド.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400676",
+        "9784814400676"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 238,
+    "chunk_count": 258
+  },
+  {
+    "doc_id": "クラウドネイティブGo-7fd2d4d7d1b2",
+    "title": "クラウドネイティブGo",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/クラウドネイティブGo.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341635906",
+        "9798341635906"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 686,
+    "chunk_count": 701
+  },
+  {
+    "doc_id": "クラウドネイティブアプリケ-ションのデザインパタ-ン-5cfd9b43a367",
+    "title": "クラウドネイティブアプリケーションのデザインパターン",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/クラウドネイティブアプリケーションのデザインパターン.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341626409",
+        "9798341626409"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 751,
+    "chunk_count": 752
+  },
+  {
+    "doc_id": "グラフデ-タの実践ガイド-6373cc1f2d08",
+    "title": "グラフデータの実践ガイド",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/グラフデータの実践ガイド.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341650961",
+        "9798341650961"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 773,
+    "chunk_count": 777
+  },
+  {
+    "doc_id": "コ-ドが動かないので帰れません-新人プログラマ-のためのエラ-が怖くなくなる本-22f7df47bc24",
+    "title": "コードが動かないので帰れません！ 新人プログラマーのためのエラーが怖くなくなる本",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/コードが動かないので帰れません！ 新人プログラマーのためのエラーが怖くなくなる本.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784798180892",
+        "9784798180892"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 42,
+    "chunk_count": 45
+  },
+  {
+    "doc_id": "サイトリライアビリティワ-クブック-SREの実践方法-41fbca3d77e8",
+    "title": "サイトリライアビリティワークブック ―SREの実践方法",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/サイトリライアビリティワークブック ―SREの実践方法.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873119137",
+        "9784873119137"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 410,
+    "chunk_count": 433
+  },
+  {
+    "doc_id": "システム思考の世界へ-複雑化する時代で考え続けるソフトウェア技術者のために-5835d0014f58",
+    "title": "システム思考の世界へ ―複雑化する時代で考え続けるソフトウェア技術者のために",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/システム思考の世界へ ―複雑化する時代で考え続けるソフトウェア技術者のために.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401567",
+        "9784814401567"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 258,
+    "chunk_count": 284
+  },
+  {
+    "doc_id": "システム思考を学ぶ-46a5d99b5ee0",
+    "title": "システム思考を学ぶ",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/システム思考を学ぶ.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341632882",
+        "9798341632882"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 331,
+    "chunk_count": 345
+  },
+  {
+    "doc_id": "システム運用アンチパタ-ン-エンジニアがDevOpsで解決する組織-自動化-コミュニケ-ション-d9481735e379",
+    "title": "システム運用アンチパターン ―エンジニアがDevOpsで解決する組織・自動化・コミュニケーション",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/システム運用アンチパターン ―エンジニアがDevOpsで解決する組織・自動化・コミュニケーション.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873119847",
+        "9784873119847"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 387,
+    "chunk_count": 421
+  },
+  {
+    "doc_id": "スクラム実践者が知るべき97のこと-b52fa848f20f",
+    "title": "スクラム実践者が知るべき97のこと",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/スクラム実践者が知るべき97のこと.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873119397",
+        "9784873119397"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 74,
+    "chunk_count": 74
+  },
+  {
+    "doc_id": "スタッフエンジニアの道-優れた技術専門職になるためのガイド-ebb4b643fd11",
+    "title": "スタッフエンジニアの道 ―優れた技術専門職になるためのガイド",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/スタッフエンジニアの道 ―優れた技術専門職になるためのガイド.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400867",
+        "9784814400867"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 469,
+    "chunk_count": 486
+  },
+  {
+    "doc_id": "セキュリティカオスエンジニアリング-49fdd53a86b0",
+    "title": "セキュリティカオスエンジニアリング",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/セキュリティカオスエンジニアリング.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341651173",
+        "9798341651173"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 462,
+    "chunk_count": 517
+  },
+  {
+    "doc_id": "ソフトウェアア-キテクチャの促進-a844329e0b2f",
+    "title": "ソフトウェアアーキテクチャの促進",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ソフトウェアアーキテクチャの促進.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341633797",
+        "9798341633797"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 429,
+    "chunk_count": 455
+  },
+  {
+    "doc_id": "ソフトウェアエンジニアガイドブック-世界基準エンジニアの成功戦略ロ-ドマップ-d16f99d2e8df",
+    "title": "ソフトウェアエンジニアガイドブック ―世界基準エンジニアの成功戦略ロードマップ",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ソフトウェアエンジニアガイドブック ―世界基準エンジニアの成功戦略ロードマップ.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401215",
+        "9784814401215"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 42,
+    "chunk_count": 43
+  },
+  {
+    "doc_id": "ソフトウェアサプライチェ-ンセキュリティ-cf0bfe28ccff",
+    "title": "ソフトウェアサプライチェーンセキュリティ",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ソフトウェアサプライチェーンセキュリティ.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341632318",
+        "9798341632318"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 345,
+    "chunk_count": 363
+  },
+  {
+    "doc_id": "テ-シ-タルアイテ-ンティティのすへ-て-安全かつユ-サ-中心のアイテ-ンティティシステムを実現するための知識-b6da0ead3417",
+    "title": "デジタルアイデンティティのすべて ―安全かつユーザー中心のアイデンティティシステムを実現するための知識",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/デジタルアイデンティティのすべて ―安全かつユーザー中心のアイデンティティシステムを実現するための知識.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400980",
+        "9784814400980"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 248,
+    "chunk_count": 281
+  },
+  {
+    "doc_id": "テスト駆動開発を学ぶ-2ca1cafca60c",
+    "title": "テスト駆動開発を学ぶ",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/テスト駆動開発を学ぶ.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341650992",
+        "9798341650992"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 283,
+    "chunk_count": 288
+  },
+  {
+    "doc_id": "ディフェンシブ-セキュリティ-ハンドブック第2版-92cf35a85597",
+    "title": "ディフェンシブ・セキュリティ・ハンドブック第2版",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ディフェンシブ・セキュリティ・ハンドブック第2版.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341632707",
+        "9798341632707"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 329,
+    "chunk_count": 339
+  },
+  {
+    "doc_id": "デザインスプリント-プロダクトを成功に導く短期集中実践ガイド-e03f5be69917",
+    "title": "デザインスプリント ―プロダクトを成功に導く短期集中実践ガイド",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/デザインスプリント ―プロダクトを成功に導く短期集中実践ガイド.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873117805",
+        "9784873117805"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 42,
+    "chunk_count": 46
+  },
+  {
+    "doc_id": "デ-タのセマンティック-モデリング-ff3d8cd0be38",
+    "title": "データのセマンティック・モデリング",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/データのセマンティック・モデリング.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341636637",
+        "9798341636637"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 299,
+    "chunk_count": 315
+  },
+  {
+    "doc_id": "デ-タエンジニアリングの基礎-デ-タプロジェクトで失敗しないために-e1ab6bec5ecb",
+    "title": "データエンジニアリングの基礎 ―データプロジェクトで失敗しないために",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/データエンジニアリングの基礎 ―データプロジェクトで失敗しないために.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400652",
+        "9784814400652"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 662,
+    "chunk_count": 687
+  },
+  {
+    "doc_id": "デ-タエンジニアリングの設計パタ-ン-33a78a6a6b08",
+    "title": "データエンジニアリングの設計パターン",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/データエンジニアリングの設計パターン.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341640931",
+        "9798341640931"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 1081,
+    "chunk_count": 1081
+  },
+  {
+    "doc_id": "デ-タベ-スリライアビリティエンジニアリング-回復力のあるデ-タベ-スシステムの設計と運用-df069c6cc9eb",
+    "title": "データベースリライアビリティエンジニアリング ―回復力のあるデータベースシステムの設計と運用",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/データベースリライアビリティエンジニアリング ―回復力のあるデータベースシステムの設計と運用.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873119403",
+        "9784873119403"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 477,
+    "chunk_count": 484
+  },
+  {
+    "doc_id": "デ-タ保護完全ガイド-あらゆるデ-タの保全と回復を可能にする-42d6df39443a",
+    "title": "データ保護完全ガイド ―あらゆるデータの保全と回復を可能にする",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/データ保護完全ガイド ―あらゆるデータの保全と回復を可能にする.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400553",
+        "9784814400553"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 47,
+    "chunk_count": 194
+  },
+  {
+    "doc_id": "デ-タ品質モニタリングの自動化-f01fcaa46955",
+    "title": "データ品質モニタリングの自動化",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/データ品質モニタリングの自動化.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341632165",
+        "9798341632165"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 388,
+    "chunk_count": 392
+  },
+  {
+    "doc_id": "デ-タ指向アプリケ-ションデザイン-信頼性-拡張性-保守性の高い分散システム設計の原理-51604bda1b4e",
+    "title": "データ指向アプリケーションデザイン ―信頼性、拡張性、保守性の高い分散システム設計の原理",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/データ指向アプリケーションデザイン ―信頼性、拡張性、保守性の高い分散システム設計の原理.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873118703",
+        "9784873118703"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 212,
+    "chunk_count": 230
+  },
+  {
+    "doc_id": "ドメイン駆動型トランスフォ-マ-変換-Japanese-Edition-1e945aaac7d2",
+    "title": "ドメイン駆動型トランスフォーマー変換 (Japanese Edition)",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ドメイン駆動型トランスフォーマー変換 (Japanese Edition).epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-0642572288693",
+        "0642572288693"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 547,
+    "chunk_count": 552
+  },
+  {
+    "doc_id": "ドメイン駆動設計をはじめよう-ソフトウェアの実装と事業戦略を結びつける実践技法-139d8ad263b0",
+    "title": "ドメイン駆動設計をはじめよう ―ソフトウェアの実装と事業戦略を結びつける実践技法",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ドメイン駆動設計をはじめよう ―ソフトウェアの実装と事業戦略を結びつける実践技法.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400737",
+        "9784814400737"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 48,
+    "chunk_count": 100
+  },
+  {
+    "doc_id": "ビジネス-デ-タ-コ-ドの統一-3fa4b6f8fe0c",
+    "title": "ビジネス、データ、コードの統一",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ビジネス、データ、コードの統一.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341632400",
+        "9798341632400"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 592,
+    "chunk_count": 595
+  },
+  {
+    "doc_id": "ファストAPI-db0c53563599",
+    "title": "ファストAPI",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ファストAPI.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341624658",
+        "9798341624658"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 474,
+    "chunk_count": 474
+  },
+  {
+    "doc_id": "マスタリングAPIア-キテクチャ-モノリシックからマイクロサ-ビスへとア-キテクチャを進化させるための実践的手法-981ce2a8903e",
+    "title": "マスタリングAPIアーキテクチャ ―モノリシックからマイクロサービスへとアーキテクチャを進化させるための実践的手法",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/マスタリングAPIアーキテクチャ ―モノリシックからマイクロサービスへとアーキテクチャを進化させるための実践的手法.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400898",
+        "9784814400898"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 48,
+    "chunk_count": 157
+  },
+  {
+    "doc_id": "マルチテナントSaaSア-キテクチャの構築-原則-ベストプラクティス-AWSア-キテクチャパタ-ン-a0b3c27c502b",
+    "title": "マルチテナントSaaSアーキテクチャの構築 ―原則、ベストプラクティス、AWSアーキテクチャパターン",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/マルチテナントSaaSアーキテクチャの構築 ―原則、ベストプラクティス、AWSアーキテクチャパターン.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401017",
+        "9784814401017"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 326,
+    "chunk_count": 364
+  },
+  {
+    "doc_id": "メダリオンア-キテクチャの構築-36fd99027452",
+    "title": "メダリオンアーキテクチャの構築",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/メダリオンアーキテクチャの構築.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341638457",
+        "9798341638457"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 519,
+    "chunk_count": 548
+  },
+  {
+    "doc_id": "リアルタイム分析システムの構築-b7543581b084",
+    "title": "リアルタイム分析システムの構築",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/リアルタイム分析システムの構築.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341626881",
+        "9798341626881"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 368,
+    "chunk_count": 381
+  },
+  {
+    "doc_id": "レガシ-コ-ドからの脱却-ソフトウェアの寿命を延ばし価値を高める9つのプラクティス-dbc1fcda2896",
+    "title": "レガシーコードからの脱却 ―ソフトウェアの寿命を延ばし価値を高める9つのプラクティス",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/レガシーコードからの脱却 ―ソフトウェアの寿命を延ばし価値を高める9つのプラクティス.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873118864",
+        "9784873118864"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 178,
+    "chunk_count": 187
+  },
+  {
+    "doc_id": "侵入技術入門-bashで学ぶ攻撃者の技法-ce86416a650a",
+    "title": "侵入技術入門 ―bashで学ぶ攻撃者の技法",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/侵入技術入門 ―bashで学ぶ攻撃者の技法.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401512",
+        "9784814401512"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 585,
+    "chunk_count": 608
+  },
+  {
+    "doc_id": "先駆者に学ぶAIプロダクトマネジメント-アイディエ-ションから設計-構築-市場投入-運用まで-727abccf570f",
+    "title": "先駆者に学ぶAIプロダクトマネジメント ―アイディエーションから設計、構築、市場投入、運用まで",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/先駆者に学ぶAIプロダクトマネジメント ―アイディエーションから設計、構築、市場投入、運用まで.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401345",
+        "9784814401345"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 281,
+    "chunk_count": 297
+  },
+  {
+    "doc_id": "分散システムの設計-第2版-0fb9d62dbb48",
+    "title": "分散システムの設計 第2版",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/分散システムの設計 第2版.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341633827",
+        "9798341633827"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 272,
+    "chunk_count": 276
+  },
+  {
+    "doc_id": "初めてのGraphQL-Webサ-ビスを作って学ぶ新世代API-e1d67ad4a7c9",
+    "title": "初めてのGraphQL ―Webサービスを作って学ぶ新世代API",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/初めてのGraphQL ―Webサービスを作って学ぶ新世代API.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873118932",
+        "9784873118932"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 204,
+    "chunk_count": 229
+  },
+  {
+    "doc_id": "初めてのLangChain-LangChainとLangGraphによるAILLMアプリケ-ションの構築-b82131f77ceb",
+    "title": "初めてのLangChain ―LangChainとLangGraphによるAI/LLMアプリケーションの構築",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/初めてのLangChain ―LangChainとLangGraphによるAILLMアプリケーションの構築.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401307",
+        "9784814401307"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 420,
+    "chunk_count": 454
+  },
+  {
+    "doc_id": "効率的なGo-デ-タ指向によるGoアプリケ-ションの性能最適化-4958bdd41a71",
+    "title": "効率的なGo ―データ指向によるGoアプリケーションの性能最適化",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/効率的なGo ―データ指向によるGoアプリケーションの性能最適化.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400539",
+        "9784814400539"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 269,
+    "chunk_count": 421
+  },
+  {
+    "doc_id": "実用-Git-第3版-6c3921980fcb",
+    "title": "実用 Git 第3版",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/実用 Git 第3版.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400614",
+        "9784814400614"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 449,
+    "chunk_count": 473
+  },
+  {
+    "doc_id": "実践-AWSデ-タサイエンス-エンドツ-エンドのMLOpsパイプライン実装-dd30bf82afc4",
+    "title": "実践 AWSデータサイエンス ―エンドツーエンドのMLOpsパイプライン実装",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/実践 AWSデータサイエンス ―エンドツーエンドのMLOpsパイプライン実装.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873119687",
+        "9784873119687"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 592,
+    "chunk_count": 659
+  },
+  {
+    "doc_id": "実践-LLMアプリケ-ション開発-プロトタイプを脱却し-実用的な実装に迫るための包括的な手引き-0e574684ce71",
+    "title": "実践 LLMアプリケーション開発 ―プロトタイプを脱却し、実用的な実装に迫るための包括的な手引き",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/実践 LLMアプリケーション開発 ―プロトタイプを脱却し、実用的な実装に迫るための包括的な手引き.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401314",
+        "9784814401314"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 369,
+    "chunk_count": 385
+  },
+  {
+    "doc_id": "実践-Webペネトレ-ションテスト-攻撃者の視点で学ぶWebアプリケ-ションセキュリティ-cfb6d5f89b1e",
+    "title": "実践 Webペネトレーションテスト ―攻撃者の視点で学ぶWebアプリケーションセキュリティ",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/実践 Webペネトレーションテスト ―攻撃者の視点で学ぶWebアプリケーションセキュリティ.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401253",
+        "9784814401253"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 410,
+    "chunk_count": 457
+  },
+  {
+    "doc_id": "実践-自然言語処理-実世界NLPアプリケ-ション開発のベストプラクティス-8e0f629d5a6d",
+    "title": "実践 自然言語処理 ―実世界NLPアプリケーション開発のベストプラクティス",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/実践 自然言語処理 ―実世界NLPアプリケーション開発のベストプラクティス.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873119724",
+        "9784873119724"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 393,
+    "chunk_count": 412
+  },
+  {
+    "doc_id": "実践的なプロセス自動化-0cec3d28dc12",
+    "title": "実践的なプロセス自動化",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/実践的なプロセス自動化.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341635098",
+        "9798341635098"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 460,
+    "chunk_count": 466
+  },
+  {
+    "doc_id": "強力なPython-4987d150aca1",
+    "title": "強力なPython",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/強力なPython.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341634039",
+        "9798341634039"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 354,
+    "chunk_count": 369
+  },
+  {
+    "doc_id": "技術リ-ダ-シップのための14のヒント-78bc54c86f54",
+    "title": "技術リーダーシップのための14のヒント",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/技術リーダーシップのための14のヒント.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401178",
+        "9784814401178"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 148,
+    "chunk_count": 148
+  },
+  {
+    "doc_id": "流暢なReact-8d9d7354a7d1",
+    "title": "流暢なReact",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/流暢なReact.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341624689",
+        "9798341624689"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 313,
+    "chunk_count": 376
+  },
+  {
+    "doc_id": "生成AIで強化するSEO戦略-品質-効率-コストを改善するAIファ-ストアプロ-チ-b3ba2c8f453d",
+    "title": "生成AIで強化するSEO戦略 ―品質・効率・コストを改善するAIファーストアプローチ",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/生成AIで強化するSEO戦略 ―品質・効率・コストを改善するAIファーストアプローチ.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401536",
+        "9784814401536"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 223,
+    "chunk_count": 239
+  },
+  {
+    "doc_id": "生成AIの可視化-813dc208e4f1",
+    "title": "生成AIの可視化",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/生成AIの可視化.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-0642572277390",
+        "0642572277390"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 305,
+    "chunk_count": 319
+  },
+  {
+    "doc_id": "生成AIデザインパタ-ン-a14248667d46",
+    "title": "生成AIデザインパターン",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/生成AIデザインパターン.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341671447",
+        "9798341671447"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 855,
+    "chunk_count": 880
+  },
+  {
+    "doc_id": "生成AI時代の価値のつくりかた-実践者のマインド-スキル-デ-タ-ユ-スケ-ス-ab225b1768b6",
+    "title": "生成AI時代の価値のつくりかた ―実践者のマインド、スキル、データ、ユースケース",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/生成AI時代の価値のつくりかた ―実践者のマインド、スキル、データ、ユースケース.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401291",
+        "9784814401291"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 277,
+    "chunk_count": 352
+  },
+  {
+    "doc_id": "経理における人工知能-c6a470db9543",
+    "title": "経理における人工知能",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/経理における人工知能.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341626942",
+        "9798341626942"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 433,
+    "chunk_count": 494
+  },
+  {
+    "doc_id": "脅威モデリング-a830f955664b",
+    "title": "脅威モデリング",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/脅威モデリング.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341625792",
+        "9798341625792"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 327,
+    "chunk_count": 353
+  },
+  {
+    "doc_id": "行動を変えるデザイン-心理学と行動経済学をプロダクトデザインに活用する-63b3ccf30ec4",
+    "title": "行動を変えるデザイン ―心理学と行動経済学をプロダクトデザインに活用する",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/行動を変えるデザイン ―心理学と行動経済学をプロダクトデザインに活用する.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784873119144",
+        "9784873119144"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 42,
+    "chunk_count": 118
+  },
+  {
+    "doc_id": "解読-デ-タア-キテクチャ-モダンデ-タウェアハウス-デ-タファブリック-デ-タレイクハウス-デ-タメッシュの選び方-58e0de536137",
+    "title": "解読 データアーキテクチャ ―モダンデータウェアハウス、データファブリック、データレイクハウス、データメッシュの選び方",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/解読 データアーキテクチャ ―モダンデータウェアハウス、データファブリック、データレイクハウス、データメッシュの選び方.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401505",
+        "9784814401505"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 166,
+    "chunk_count": 187
+  },
+  {
+    "doc_id": "詳解-Terraform-第3版-Infrastructure-as-Codeを実現する-3cddd40c1064",
+    "title": "詳解 Terraform 第3版 ―Infrastructure as Codeを実現する",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/詳解 Terraform 第3版 ―Infrastructure as Codeを実現する.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400522",
+        "9784814400522"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 467,
+    "chunk_count": 558
+  },
+  {
+    "doc_id": "詳解-システム-パフォ-マンス-第2版-e9437a3964e2",
+    "title": "詳解 システム・パフォーマンス 第2版",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/詳解 システム・パフォーマンス 第2版.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400072",
+        "9784814400072"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 1478,
+    "chunk_count": 1524
+  },
+  {
+    "doc_id": "詳解-デ-タレイクハウスア-キテクチャ-Delta-Lakeを使ったデ-タAI活用とガバナンス-df47bf9ad5b7",
+    "title": "詳解 データレイクハウスアーキテクチャ ―Delta Lakeを使ったデータAI活用とガバナンス",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/詳解 データレイクハウスアーキテクチャ ―Delta Lakeを使ったデータAI活用とガバナンス.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401390",
+        "9784814401390"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 468,
+    "chunk_count": 484
+  },
+  {
+    "doc_id": "詳解-組み込みシステム-第2版-高性能-高品質なソフトウェアを実現するデザインパタ-ン-bdc78d3fbbe2",
+    "title": "詳解 組み込みシステム 第2版 ―高性能、高品質なソフトウェアを実現するデザインパターン",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/詳解 組み込みシステム 第2版 ―高性能、高品質なソフトウェアを実現するデザインパターン.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401659",
+        "9784814401659"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 403,
+    "chunk_count": 415
+  },
+  {
+    "doc_id": "責任あるソフトウェアエンジニアリング-現実社会におけるGoogleのケ-ススタディとともに-1566d3d6756f",
+    "title": "責任あるソフトウェアエンジニアリング ―現実社会におけるGoogleのケーススタディとともに",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/責任あるソフトウェアエンジニアリング ―現実社会におけるGoogleのケーススタディとともに.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401581",
+        "9784814401581"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 193,
+    "chunk_count": 211
+  },
+  {
+    "doc_id": "退屈なことはPythonにやらせよう-第3版-ノンプログラマ-にもできる自動化処理プログラミング-4cc97a18828f",
+    "title": "退屈なことはPythonにやらせよう 第3版 ―ノンプログラマーにもできる自動化処理プログラミング",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/退屈なことはPythonにやらせよう 第3版 ―ノンプログラマーにもできる自動化処理プログラミング.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814401529",
+        "9784814401529"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 396,
+    "chunk_count": 405
+  },
+  {
+    "doc_id": "高性能-Python-第-3-版-4ea0f655e00c",
+    "title": "高性能 Python、第 3 版",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/高性能 Python、第 3 版.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9798341651951",
+        "9798341651951"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 895,
+    "chunk_count": 914
+  }
+]

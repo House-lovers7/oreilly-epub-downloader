@@ -1,0 +1,16 @@
+{
+  "domain": "security",
+  "queries": [
+    "認証 認可 最小権限 アクセス制御",
+    "secrets 資格情報 APIキー 管理",
+    "サプライチェーン 依存関係 脆弱性",
+    "入力検証 インジェクション 攻撃 対策",
+    "ゼロトラスト セキュリティ設計 脅威モデル"
+  ],
+  "chunk_count": 100,
+  "book_count": 33,
+  "generated_at": "2026-07-02T08:35:20.216388+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base/cards/security/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

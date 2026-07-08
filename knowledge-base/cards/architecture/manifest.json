@@ -1,0 +1,16 @@
+{
+  "domain": "architecture",
+  "queries": [
+    "software architecture tradeoff 設計 トレードオフ",
+    "アーキテクチャ 設計判断 品質特性",
+    "distributed system design スケーラビリティ 分散システム",
+    "マイクロサービス モノリス 境界 分割",
+    "アーキテクチャ アンチパターン 失敗"
+  ],
+  "chunk_count": 120,
+  "book_count": 41,
+  "generated_at": "2026-07-02T07:56:00.179666+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base/cards/architecture/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

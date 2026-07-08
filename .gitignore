@@ -49,3 +49,10 @@ htmlcov/
 playwright-report/
 test-results/
 .DS_Store
+
+# Knowledge base: copyrighted book text and derived artifacts.
+# Rebuild: technical_library.py build / embed (see OREILLY_KNOWLEDGE_BASE_PLAN.md)
+knowledge-base/books/
+knowledge-base/chunks.jsonl
+knowledge-base/index/
+knowledge-base/cards/*/source-pack.jsonl

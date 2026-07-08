@@ -1,0 +1,7 @@
+# Technical Library Build Report
+
+- built_at: 2026-06-07T17:59:47.999859+09:00
+- doc_count: 131
+- section_count: 57013
+- chunk_count: 62947
+- db_path: /Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base/index/library.sqlite

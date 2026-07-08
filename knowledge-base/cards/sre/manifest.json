@@ -1,0 +1,16 @@
+{
+  "domain": "sre",
+  "queries": [
+    "SLO SLI エラーバジェット アラート設計",
+    "オンコール インシデント対応 ポストモーテム",
+    "モニタリング 可観測性 メトリクス ログ トレース",
+    "リリース デプロイ カナリア ロールバック",
+    "信頼性 障害対応 キャパシティプランニング"
+  ],
+  "chunk_count": 100,
+  "book_count": 26,
+  "generated_at": "2026-07-02T08:35:19.925644+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base/cards/sre/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

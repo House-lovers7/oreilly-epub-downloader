@@ -1,0 +1,19 @@
+{
+  "domain": "testing",
+  "queries": [
+    "テスト駆動",
+    "単体テスト",
+    "リファクタリング",
+    "レガシーコード",
+    "テスト設計",
+    "test driven",
+    "unit test",
+    "E2E テスト"
+  ],
+  "chunk_count": 120,
+  "book_count": 36,
+  "generated_at": "2026-07-06T22:27:32.682457+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base/cards/testing/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

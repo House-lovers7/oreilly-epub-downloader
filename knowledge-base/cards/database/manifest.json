@@ -1,0 +1,16 @@
+{
+  "domain": "database",
+  "queries": [
+    "インデックス クエリ最適化 実行計画",
+    "トランザクション 分離レベル ロック 整合性",
+    "スキーマ設計 正規化 マイグレーション",
+    "レプリケーション バックアップ リカバリ",
+    "パーティショニング シャーディング スケーラビリティ"
+  ],
+  "chunk_count": 100,
+  "book_count": 30,
+  "generated_at": "2026-07-02T08:35:20.409757+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base/cards/database/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

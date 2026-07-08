@@ -1,0 +1,20 @@
+{
+  "domain": "performance",
+  "queries": [
+    "パフォーマンス",
+    "レイテンシ",
+    "CPU",
+    "メモリ",
+    "プロファイリング",
+    "ボトルネック",
+    "スループット",
+    "performance optimization",
+    "latency"
+  ],
+  "chunk_count": 120,
+  "book_count": 38,
+  "generated_at": "2026-07-06T22:27:31.018604+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base/cards/performance/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

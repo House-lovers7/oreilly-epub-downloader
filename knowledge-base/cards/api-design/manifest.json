@@ -1,0 +1,19 @@
+{
+  "domain": "api-design",
+  "queries": [
+    "API 設計",
+    "REST",
+    "GraphQL",
+    "バージョニング 互換性",
+    "API 認証",
+    "OpenAPI",
+    "endpoint design",
+    "API versioning"
+  ],
+  "chunk_count": 120,
+  "book_count": 36,
+  "generated_at": "2026-07-06T22:27:29.317026+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base/cards/api-design/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}
