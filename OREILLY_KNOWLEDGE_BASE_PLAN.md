@@ -2,7 +2,7 @@
 
 このディレクトリには、O'Reillyの専門書をAIが使いやすい検索コンテキストへ変換するための設計メモを置きます。
 
-## 実装状況（2026-07-02 更新）
+## 実装状況（2026-07-12 更新）
 
 本メモの構想は3層モデルとして実装済み。運用原則の原本は ACOS `knowledge/engineering/technical-library-usage-principles.md`、Agent 入口は `skills/engineering/book-knowledge-pack` と `_tool_gateway`。
 
@@ -10,10 +10,13 @@
 |------|------|
 | EPUB extractor / chunks / FTS5 index / search CLI | 実装済み（`_technical_library/technical_library.py`、131冊・62,947チャンク） |
 | context pack | 実装済み + `--domain`（規範カード添付）/ `--project`（PROJECT_BRIEF join）拡張済み |
-| practice / concept card | **practice / antipattern / tradeoff カードとして実装**（`cards/<domain>/*.jsonl`）。蒸留は `domain-pack` で素材収集 → セッション内 subagent → provenance 機械検証の遅延蒸留方式 |
-| project mapping | `cards/project_map.jsonl`（パイロット: model_workbench） |
+| practice / concept card | **practice / antipattern / tradeoff カードとして実装**（`cards/<domain>/*.jsonl`、9ドメイン296カード。2026-07-13 に design-patterns 15枚を需要駆動で追加）。蒸留は `domain-pack` で素材収集 → セッション内 subagent → provenance 機械検証の遅延蒸留方式 |
+| project mapping | `cards/project_map.jsonl`（top30 一括登録済み。検証: `scripts/validate_project_map.py`） |
 | Tool Gateway 化 | `search_practice_cards` / `get_domain_checklist` を追加登録済み（既存3ツールと合わせ計5ツール） |
-| embedding / hybrid search | 未実装（Phase 2 のまま） |
+| embedding / hybrid search | **実装済み**（2026-07-08 embeddings 構築: bge-m3 384次元 + FTS5 bm25 の RRF 融合。Ollama 疎通不可時は keyword-only にフォールバック） |
+| 工程結線 | ACOS 側 11ファイル（6×domain review skill / review-council / engineer-brain / book-knowledge-pack ほか）+ `~/.claude/agents/app-reviewer.md` + `app_development/CLAUDE.md` 導線 |
+| 実戦検証 | パイロット設計レビュー n=5（`knowledge-base/reports/pilot-design-review-*.md`、provenance エラー0） |
+| カード利用実績の計測 | `scripts/card_usage_report.py`（使用/死蔵カード集計。FTSフォールバック需要は `FTS-fallback:` 行の記録を集計、記録側は未計装） |
 
 ## 現状確認
 

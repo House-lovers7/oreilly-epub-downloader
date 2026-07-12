@@ -1,0 +1,25 @@
+{
+  "domain": "design-patterns",
+  "queries": [
+    "デザインパターン 適用",
+    "生成 構造 振る舞い パターン",
+    "リファクタリング 結合 凝集",
+    "plugin 拡張 モジュール",
+    "アンチパターン 実装 失敗",
+    "オブジェクト指向 設計 原則",
+    "pattern implementation"
+  ],
+  "chunk_count": 120,
+  "book_count": 47,
+  "generated_at": "2026-07-13T07:05:42.866913+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base/cards/design-patterns/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations.",
+  "distilled_at": "2026-07-13T07:15:27.769224+09:00",
+  "card_counts": {
+    "practice": 9,
+    "antipattern": 1,
+    "tradeoff": 5
+  },
+  "card_total": 15
+}
