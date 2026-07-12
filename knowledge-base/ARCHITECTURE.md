@@ -2,7 +2,7 @@
 
 > 目的: O'Reilly 131冊を「一流エンジニアの脳・知恵・経験を借りられる」判断材料へ変換し、AI開発工程へ自動供給する。
 > 本書は **他モデル（Sonnet / Codex 等）が単独で実装を継続するための設計図**。運用原則の原本は ACOS `knowledge/engineering/technical-library-usage-principles.md`（本書は実装視点の補完であり、判断原則を再定義しない）。
-> 最終更新: 2026-07-12（プロジェクト対応表 top30 一括登録・利用実績計測の導入まで反映）
+> 最終更新: 2026-07-13（R3一巡目 design-patterns 蒸留まで反映）
 
 ## 1. 全体像（3層モデル）
 
@@ -23,8 +23,8 @@
   + reports/（パイロットレビュー n=5、割当根拠ログ project-map-expansion-2026-07-12.jsonl）
 ```
 
-- card_id 規約: `<prefix>-<p|a|t>-<3桁>`。prefix→domain: arch=architecture, api=api-design, db=database, net=networking, perf=performance, sec=security, sre=sre, test=testing
-- ドメインは現在8つ。追加時は `cards/<新domain>/` を作れば `validate_project_map.py` / gateway が自動認識する
+- card_id 規約: `<prefix>-<p|a|t>-<3桁>`。prefix→domain: arch=architecture, api=api-design, db=database, dp=design-patterns, net=networking, perf=performance, sec=security, sre=sre, test=testing
+- ドメインは現在9つ。追加時は `cards/<新domain>/` を作り、card_id prefix を `scripts/card_usage_report.py` の正規表現へ追加する（`validate_project_map.py` / gateway はディレクトリ自動認識）
 
 ## 2. コンポーネントと所在
 
