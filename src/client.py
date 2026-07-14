@@ -30,6 +30,7 @@ class OreillyClient:
     def __init__(self, session: Session):
         self.session = session
         self.http = httpx.Client(
+            cookies=session.to_cookie_jar(),
             headers={
                 "User-Agent": (
                     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -38,7 +39,6 @@ class OreillyClient:
                 ),
                 "Accept": "application/json, text/html, */*",
                 "Accept-Language": "en-US,en;q=0.9",
-                "Cookie": session.get_cookie_header(),
                 "Referer": "https://learning.oreilly.com/",
             },
             follow_redirects=True,

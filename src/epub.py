@@ -1,6 +1,10 @@
 """EPUB generation from O'Reilly book content."""
 
+import hashlib
+import os
 import re
+import tempfile
+import zipfile
 from pathlib import Path
 
 from ebooklib import epub
@@ -21,6 +25,18 @@ def create_epub(book: Book, output_path: Path) -> Path:
     Returns:
         Path to the created EPUB file
     """
+    missing_chapters = [
+        chapter.title
+        for chapter in book.chapters
+        if chapter.content_url and not chapter.html_content.strip()
+    ]
+    if missing_chapters:
+        preview = ", ".join(missing_chapters[:5])
+        raise RuntimeError(
+            f"Book is incomplete; {len(missing_chapters)} required chapter(s) "
+            f"have no content: {preview}"
+        )
+
     console.print(f"[bold]Creating EPUB: {book.metadata.title}[/]")
 
     # Create EPUB book
@@ -62,6 +78,7 @@ def create_epub(book: Book, output_path: Path) -> Path:
 
     # Add images
     if book.images:
+        _deduplicate_image_filenames(book)
         for url, image in book.images.items():
             if image.data:
                 img_item = epub.EpubItem(
@@ -81,11 +98,7 @@ def create_epub(book: Book, output_path: Path) -> Path:
             continue
 
         # Ensure chapter has actual body content
-        if len(chapter.html_content.strip()) < 50:
-            console.print(f"[dim]Skipping near-empty chapter: {chapter.title}[/]")
-            continue
-
-        epub_chapter = _create_chapter(chapter, css_item)
+        epub_chapter = _create_chapter(chapter, css_item, book.metadata.language)
         epub_book.add_item(epub_chapter)
         epub_chapters.append(epub_chapter)
 
@@ -107,17 +120,35 @@ def create_epub(book: Book, output_path: Path) -> Path:
     # Create spine (reading order)
     epub_book.spine = ["nav"] + epub_chapters
 
-    # Ensure output directory exists
+    # Ensure output directory exists. Write and validate in the destination
+    # directory so os.replace remains atomic on a single filesystem.
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Write EPUB file
-    epub.write_epub(str(output_path), epub_book)
+    fd, temporary_name = tempfile.mkstemp(
+        prefix=f".{output_path.name}.", suffix=".tmp", dir=output_path.parent
+    )
+    os.close(fd)
+    temporary_path = Path(temporary_name)
+    try:
+        epub.write_epub(str(temporary_path), epub_book)
+        with zipfile.ZipFile(temporary_path) as archive:
+            duplicate_names = len(archive.namelist()) != len(set(archive.namelist()))
+            corrupt_member = archive.testzip()
+        if duplicate_names:
+            raise RuntimeError("Generated EPUB contains duplicate archive entries")
+        if corrupt_member:
+            raise RuntimeError(f"Generated EPUB contains a corrupt member: {corrupt_member}")
+        os.replace(temporary_path, output_path)
+    finally:
+        temporary_path.unlink(missing_ok=True)
     console.print(f"[bold green]EPUB saved to: {output_path}[/]")
 
     return output_path
 
 
-def _create_chapter(chapter: Chapter, css_item: epub.EpubItem) -> epub.EpubHtml:
+def _create_chapter(
+    chapter: Chapter, css_item: epub.EpubItem, language: str
+) -> epub.EpubHtml:
     """Create an EPUB chapter from chapter content."""
     # Generate a safe filename
     safe_title = re.sub(r"[^\w\s-]", "", chapter.title)
@@ -133,12 +164,27 @@ def _create_chapter(chapter: Chapter, css_item: epub.EpubItem) -> epub.EpubHtml:
     epub_chapter = epub.EpubHtml(
         title=chapter.title,
         file_name=filename,
-        lang="en",
+        lang=language or "en",
     )
     epub_chapter.content = content.encode("utf-8")
     epub_chapter.add_item(css_item)
 
     return epub_chapter
+
+
+def _deduplicate_image_filenames(book: Book) -> None:
+    """Make duplicate EPUB asset paths deterministic and collision-free."""
+    used: set[str] = set()
+    for url, image in sorted(book.images.items()):
+        candidate = image.filename
+        if candidate in used:
+            path = Path(candidate)
+            digest = hashlib.sha256(url.encode("utf-8")).hexdigest()[:12]
+            candidate = str(path.with_name(f"{path.stem}-{digest}{path.suffix}"))
+            image.filename = candidate
+        if candidate in used:
+            raise RuntimeError(f"Unable to create a unique EPUB image path: {candidate}")
+        used.add(candidate)
 
 
 def _extract_body_content(html: str) -> str:
