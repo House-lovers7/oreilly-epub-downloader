@@ -131,6 +131,43 @@ class CliContractTests(unittest.TestCase):
         self.assertIn('techlib = "techlib.cli:main"', pyproject)
         self.assertIn('oreilly-dl = "src.cli:main"', pyproject)
 
+    def test_oreilly_ingest_is_dry_run_by_default(self) -> None:
+        result = CliRunner().invoke(
+            main,
+            [
+                "ingest",
+                "oreilly",
+                "9780000000000",
+                "--cookies",
+                "cookies.json",
+                "--json",
+            ],
+        )
+
+        self.assertEqual(result.exit_code, 0, result.output)
+        payload = json.loads(result.output)
+        self.assertTrue(payload["dry_run"])
+        self.assertTrue(payload["network_required"])
+        self.assertEqual(payload["book_id"], "9780000000000")
+
+    def test_oreilly_execute_requires_exact_book_approval(self) -> None:
+        result = CliRunner().invoke(
+            main,
+            [
+                "ingest",
+                "oreilly",
+                "9780000000000",
+                "--cookies",
+                "cookies.json",
+                "--execute",
+                "--approve-book-id",
+                "9781111111111",
+            ],
+        )
+
+        self.assertNotEqual(result.exit_code, 0)
+        self.assertIn("approval", result.output.lower())
+
 
 if __name__ == "__main__":
     unittest.main()

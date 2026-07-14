@@ -4,6 +4,9 @@ import tempfile
 import unittest
 import zipfile
 from pathlib import Path
+from unittest.mock import patch
+
+import httpx
 
 from src.client import OreillyClient
 from src.cookie_auth import Session, load_cookies
@@ -46,6 +49,103 @@ class CookieBoundaryTests(unittest.TestCase):
 
             with self.assertRaises(PermissionError):
                 load_cookies(cookie_file)
+
+
+class ClientCompletenessTests(unittest.TestCase):
+    def make_client(self, handler) -> OreillyClient:
+        client = OreillyClient(Session({"orm-jwt": "DUMMY_TOKEN"}))
+        client.http.close()
+        client.http = httpx.Client(
+            transport=httpx.MockTransport(handler),
+            cookies=Session({"orm-jwt": "DUMMY_TOKEN"}).to_cookie_jar(),
+        )
+        self.addCleanup(client.close)
+        return client
+
+    def test_chapter_api_pagination_is_followed(self) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            if request.url.params.get("page") == "2":
+                return httpx.Response(
+                    200,
+                    json={
+                        "results": [
+                            {
+                                "title": "Second",
+                                "content_url": "https://learning.oreilly.com/second.html",
+                                "ourn": "urn:orm:chapter:second.html",
+                            }
+                        ],
+                        "next": None,
+                    },
+                )
+            return httpx.Response(
+                200,
+                json={
+                    "results": [
+                        {
+                            "title": "First",
+                            "content_url": "https://learning.oreilly.com/first.html",
+                            "ourn": "urn:orm:chapter:first.html",
+                        }
+                    ],
+                    "next": "https://learning.oreilly.com/api/v2/epub-chapters/?page=2",
+                },
+            )
+
+        client = self.make_client(handler)
+        with patch("src.client.human_delay"):
+            chapters = client._get_chapters("book-id")
+
+        self.assertEqual([chapter.title for chapter in chapters], ["First", "Second"])
+
+    def test_failed_required_chapter_aborts_download(self) -> None:
+        client = self.make_client(
+            lambda request: httpx.Response(503, request=request, text="unavailable")
+        )
+        chapters = [
+            Chapter(
+                id="required",
+                title="Required",
+                url="",
+                content_url="https://learning.oreilly.com/required.html",
+                order=0,
+            )
+        ]
+
+        with patch("src.client.human_delay"), self.assertRaisesRegex(
+            RuntimeError, "incomplete"
+        ):
+            client._fetch_chapter_content(chapters)
+
+    def test_same_basename_images_receive_unique_local_paths(self) -> None:
+        def handler(request: httpx.Request) -> httpx.Response:
+            return httpx.Response(
+                200,
+                request=request,
+                content=b"synthetic-image",
+                headers={"content-type": "image/png"},
+            )
+
+        client = self.make_client(handler)
+        chapter = Chapter(
+            id="images",
+            title="Images",
+            url="",
+            content_url="https://learning.oreilly.com/images.html",
+            order=0,
+            html_content=(
+                '<p><img src="https://cdn-a.invalid/figure.png"/>'
+                '<img src="https://cdn-b.invalid/figure.png"/></p>'
+            ),
+        )
+
+        with patch("src.client.human_delay"):
+            images = client._fetch_images([chapter])
+
+        filenames = [image.filename for image in images.values()]
+        self.assertEqual(len(filenames), len(set(filenames)))
+        for filename in filenames:
+            self.assertIn(filename, chapter.html_content)
 
 
 class EpubCompletenessTests(unittest.TestCase):
