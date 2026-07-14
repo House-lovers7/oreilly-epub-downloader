@@ -8,6 +8,8 @@ from pathlib import Path
 import click
 
 from .cache import CacheManager
+from .doctor import run_doctor
+from .evaluation import evaluate_pairs
 from .indexing import IncrementalIndexer
 from .lifecycle import CardLifecycle
 from .oreilly_adapter import (
@@ -31,6 +33,27 @@ DEFAULT_SOFT_LIMIT = 5 * 1024 * 1024 * 1024
 @click.version_option(package_name="technical-knowledge-supply")
 def main() -> None:
     """Local technical knowledge supply system."""
+
+
+@main.command("doctor")
+@click.option("--repo", type=click.Path(path_type=Path), default=REPO)
+@click.option("--soft-limit", type=click.IntRange(min=1), default=DEFAULT_SOFT_LIMIT)
+@click.option("--json", "as_json", is_flag=True, help="Emit structured JSON.")
+@click.pass_context
+def doctor_command(
+    context: click.Context, repo: Path, soft_limit: int, as_json: bool
+) -> None:
+    """Check index, card provenance, lifecycle state, and cache budget."""
+    report = run_doctor(repo, soft_limit_bytes=soft_limit)
+    payload = dataclasses.asdict(report)
+    if as_json:
+        click.echo(json.dumps(payload, ensure_ascii=False, indent=2))
+    else:
+        click.echo("ok" if report.ok else "failed")
+        for finding in report.findings:
+            click.echo(f"- {finding.severity}: {finding.code}: {finding.message}")
+    if not report.ok:
+        context.exit(1)
 
 
 @main.command("search")
@@ -163,6 +186,50 @@ def cache_prune_plan(repo: Path, target_bytes: int, soft_limit: int) -> None:
     )
 
 
+@main.group("eval")
+def eval_group() -> None:
+    """Score paired baseline/assisted skill utility observations."""
+
+
+@eval_group.command("score")
+@click.option(
+    "--cases", "cases_path", type=click.Path(exists=True, dir_okay=False, path_type=Path), required=True
+)
+@click.option(
+    "--baseline", type=click.Path(exists=True, dir_okay=False, path_type=Path), required=True
+)
+@click.option(
+    "--assisted", type=click.Path(exists=True, dir_okay=False, path_type=Path), required=True
+)
+@click.option("--json", "as_json", is_flag=True, help="Emit structured JSON.")
+@click.pass_context
+def eval_score(
+    context: click.Context,
+    cases_path: Path,
+    baseline: Path,
+    assisted: Path,
+    as_json: bool,
+) -> None:
+    """Apply the deterministic utility gates to one aligned eval run."""
+    try:
+        result = evaluate_pairs(
+            _load_json_list(cases_path),
+            _load_json_list(baseline),
+            _load_json_list(assisted),
+        )
+    except (OSError, json.JSONDecodeError, ValueError) as error:
+        raise click.ClickException(str(error)) from error
+    payload = dataclasses.asdict(result)
+    if as_json:
+        click.echo(json.dumps(payload, ensure_ascii=False, indent=2))
+    else:
+        click.echo("pass" if result.passed else "fail")
+        for failure in result.failures:
+            click.echo(f"- {failure}")
+    if not result.passed:
+        context.exit(1)
+
+
 @main.group("ingest")
 def ingest_group() -> None:
     """Plan or execute one explicitly approved source acquisition."""
@@ -216,3 +283,10 @@ def ingest_oreilly(
         raise click.ClickException(str(error)) from error
     payload = result_payload(result)
     click.echo(json.dumps(payload, ensure_ascii=False, indent=2) if as_json else payload)
+
+
+def _load_json_list(path: Path) -> list[dict]:
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(payload, list) or not all(isinstance(row, dict) for row in payload):
+        raise ValueError(f"{path} must contain a JSON array of objects")
+    return payload
