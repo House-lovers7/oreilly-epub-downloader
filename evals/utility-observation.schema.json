@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/technical-knowledge-supply/utility-observation.schema.json",
+  "title": "Paired utility observation",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "library_used",
+    "accepted_findings",
+    "false_positives",
+    "duration_ms",
+    "context_tokens",
+    "citations_total",
+    "citations_valid",
+    "leakage_events"
+  ],
+  "properties": {
+    "task_id": {"type": "string", "minLength": 1},
+    "library_used": {"type": "boolean"},
+    "accepted_findings": {"type": "integer", "minimum": 0},
+    "false_positives": {"type": "integer", "minimum": 0},
+    "duration_ms": {"type": "integer", "minimum": 0},
+    "context_tokens": {"type": "integer", "minimum": 0},
+    "citations_total": {"type": "integer", "minimum": 0},
+    "citations_valid": {"type": "integer", "minimum": 0},
+    "leakage_events": {"type": "integer", "minimum": 0}
+  }
+}

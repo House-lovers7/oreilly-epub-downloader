@@ -1,0 +1,106 @@
+[
+  {
+    "task_id": "utility-01",
+    "title": "段階的モノリス移行のADR",
+    "prompt": "稼働中モノリスを停止せず段階移行するADRの選択肢と棄却条件を整理する",
+    "retrieval_query": "strangler pattern modular monolith migration tradeoff",
+    "should_use_library": true,
+    "expected_first_source": "library",
+    "acceptance_notes": "一般原則と対象コードへの適用を分離し、根拠chunkを示す"
+  },
+  {
+    "task_id": "utility-02",
+    "title": "リトライと冪等性の設計レビュー",
+    "prompt": "外部API書き込みの再試行で二重実行を防ぐ設計をレビューする",
+    "retrieval_query": "idempotency retry partial failure distributed systems",
+    "should_use_library": true,
+    "expected_first_source": "codebase",
+    "acceptance_notes": "実装箇所を先に確認し、書籍知識は設計判断の補助に限定する"
+  },
+  {
+    "task_id": "utility-03",
+    "title": "DBトランザクション境界",
+    "prompt": "複数テーブル更新のトランザクション境界と失敗時の整合性を設計する",
+    "retrieval_query": "database transaction boundary error handling consistency",
+    "should_use_library": true,
+    "expected_first_source": "codebase",
+    "acceptance_notes": "既存保存処理を根拠に、適用可能な原則と不適用条件を示す"
+  },
+  {
+    "task_id": "utility-04",
+    "title": "API契約の進化",
+    "prompt": "公開APIの後方互換性を保ちながらスキーマを進化させる方針を決める",
+    "retrieval_query": "API contract backward compatibility schema evolution",
+    "should_use_library": true,
+    "expected_first_source": "library",
+    "acceptance_notes": "仕様の最新値ではなく、設計上のトレードオフを根拠付きで扱う"
+  },
+  {
+    "task_id": "utility-05",
+    "title": "テストダブルの境界",
+    "prompt": "統合テストで実依存とテストダブルをどこで使い分けるか決める",
+    "retrieval_query": "test double real dependency integration testing tradeoff",
+    "should_use_library": true,
+    "expected_first_source": "codebase",
+    "acceptance_notes": "現行テスト構成を確認し、障害カテゴリごとの選択理由を示す"
+  },
+  {
+    "task_id": "utility-06",
+    "title": "性能最適化の優先順位",
+    "prompt": "レイテンシとスループットが競合する処理の改善方針を比較する",
+    "retrieval_query": "latency throughput batching performance tradeoff",
+    "should_use_library": true,
+    "expected_first_source": "codebase",
+    "acceptance_notes": "実測値を優先し、一般論を測定前の断定に使わない"
+  },
+  {
+    "task_id": "utility-07",
+    "title": "SLOベース運用設計",
+    "prompt": "ユーザー影響に結びつくSLOとアラート方針を設計する",
+    "retrieval_query": "SLO alerting error budget user impact",
+    "should_use_library": true,
+    "expected_first_source": "library",
+    "acceptance_notes": "可用性目標の根拠と過剰運用を避ける棄却条件を示す"
+  },
+  {
+    "task_id": "utility-08",
+    "title": "ゼロトラスト境界レビュー",
+    "prompt": "内部サービス間通信の認証認可境界を設計レビューする",
+    "retrieval_query": "zero trust internal service authentication authorization least privilege",
+    "should_use_library": true,
+    "expected_first_source": "codebase",
+    "acceptance_notes": "現行権限境界を先に確認し、カードを規範的補助として用いる"
+  },
+  {
+    "task_id": "utility-09",
+    "title": "最新SDKの引数確認",
+    "prompt": "現在のOpenAI SDKで特定メソッドの最新引数名を確認する",
+    "should_use_library": false,
+    "expected_first_source": "official_docs",
+    "acceptance_notes": "変動する外部仕様は公式一次情報を使い、書籍KBを呼ばない"
+  },
+  {
+    "task_id": "utility-10",
+    "title": "局所的なtypo修正",
+    "prompt": "既存READMEの明白な誤字を1箇所だけ直す",
+    "should_use_library": false,
+    "expected_first_source": "codebase",
+    "acceptance_notes": "設計判断がないためKBを呼ばず、対象差分だけ確認する"
+  },
+  {
+    "task_id": "utility-11",
+    "title": "既存関数の挙動説明",
+    "prompt": "このrepo内の関数が例外時に何を返すかコードから説明する",
+    "should_use_library": false,
+    "expected_first_source": "codebase",
+    "acceptance_notes": "回答可能な事実は実装とテストを根拠にし、一般知識を注入しない"
+  },
+  {
+    "task_id": "utility-12",
+    "title": "KB利用禁止の明示依頼",
+    "prompt": "外部資料や書籍を使わず、提示された差分だけをレビューする",
+    "should_use_library": false,
+    "expected_first_source": "codebase",
+    "acceptance_notes": "ユーザー指定を守り、ライブラリ取得を発生させない"
+  }
+]
