@@ -71,6 +71,23 @@ class SearchEngine:
                 reason="card_evidence_insufficient",
             )
 
+        if self.vector_search is not None:
+            vector_items = self.vector_search(query, limit)
+            if vector_items:
+                return RetrievalResult(
+                    stage="vector",
+                    query=query,
+                    items=vector_items,
+                    trace=["cards", "fts", "vector"],
+                    reason="lexical_evidence_insufficient",
+                )
+            return RetrievalResult(
+                stage="insufficient_evidence",
+                query=query,
+                trace=["cards", "fts", "vector"],
+                reason="no_local_evidence",
+            )
+
         return RetrievalResult(
             stage="insufficient_evidence",
             query=query,
