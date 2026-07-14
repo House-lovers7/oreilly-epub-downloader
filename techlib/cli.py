@@ -10,6 +10,13 @@ import click
 from .cache import CacheManager
 from .indexing import IncrementalIndexer
 from .lifecycle import CardLifecycle
+from .oreilly_adapter import (
+    DEFAULT_MAX_BYTES,
+    execute_ingest,
+    extract_book_id,
+    plan_ingest,
+    result_payload,
+)
 from .search import SearchEngine
 from .telemetry import MetadataTelemetry
 from .vector import LazyVectorSearch
@@ -154,3 +161,58 @@ def cache_prune_plan(repo: Path, target_bytes: int, soft_limit: int) -> None:
             indent=2,
         )
     )
+
+
+@main.group("ingest")
+def ingest_group() -> None:
+    """Plan or execute one explicitly approved source acquisition."""
+
+
+@ingest_group.command("oreilly")
+@click.argument("book")
+@click.option("--cookies", type=click.Path(path_type=Path), required=True)
+@click.option("--downloads-dir", type=click.Path(path_type=Path), default=REPO / "downloads")
+@click.option("--kb-dir", type=click.Path(path_type=Path), default=DEFAULT_KB)
+@click.option("--output", type=click.Path(path_type=Path))
+@click.option("--max-bytes", type=click.IntRange(min=1), default=DEFAULT_MAX_BYTES)
+@click.option("--execute", is_flag=True, help="Perform the approved network operation.")
+@click.option("--approve-book-id", help="Exact ID binding for this one execution.")
+@click.option("--json", "as_json", is_flag=True)
+def ingest_oreilly(
+    book: str,
+    cookies: Path,
+    downloads_dir: Path,
+    kb_dir: Path,
+    output: Path | None,
+    max_bytes: int,
+    execute: bool,
+    approve_book_id: str | None,
+    as_json: bool,
+) -> None:
+    """Dry-run by default; download and index one approved O'Reilly book."""
+    try:
+        plan = plan_ingest(book, cookies, max_bytes=max_bytes)
+    except ValueError as error:
+        raise click.ClickException(str(error)) from error
+    if not execute:
+        payload = dataclasses.asdict(plan)
+        click.echo(json.dumps(payload, ensure_ascii=False, indent=2) if as_json else payload)
+        return
+    if approve_book_id != extract_book_id(book):
+        raise click.ClickException(
+            "approval must be bound to this exact book_id via --approve-book-id"
+        )
+    try:
+        result = execute_ingest(
+            book,
+            cookies,
+            approved_book_id=approve_book_id,
+            downloads_dir=downloads_dir,
+            kb_dir=kb_dir,
+            output=output,
+            max_bytes=max_bytes,
+        )
+    except (PermissionError, ValueError, RuntimeError, OSError) as error:
+        raise click.ClickException(str(error)) from error
+    payload = result_payload(result)
+    click.echo(json.dumps(payload, ensure_ascii=False, indent=2) if as_json else payload)

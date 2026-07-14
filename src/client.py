@@ -3,7 +3,9 @@
 import random
 import re
 import time
-from urllib.parse import urljoin
+import hashlib
+from pathlib import PurePosixPath
+from urllib.parse import unquote, urljoin, urlparse
 
 import httpx
 from bs4 import BeautifulSoup
@@ -116,32 +118,52 @@ class OreillyClient:
         chapters_url = f"{API_BASE}epub-chapters/?epub_identifier=urn:orm:book:{book_id}"
         human_delay(500, 1000)
 
-        response = self.http.get(chapters_url)
-        if response.status_code != 200:
-            console.print(f"[yellow]Chapters API returned {response.status_code}, trying fallback...[/]")
-            return self._get_chapters_fallback(book_id)
+        next_url: str | None = chapters_url
+        seen_pages: set[str] = set()
+        chapters: list[Chapter] = []
+        while next_url:
+            if next_url in seen_pages:
+                raise RuntimeError("Chapter API pagination loop detected")
+            seen_pages.add(next_url)
+            parsed = urlparse(next_url)
+            if parsed.scheme != "https" or parsed.hostname != "learning.oreilly.com":
+                raise RuntimeError("Chapter API returned an unsafe pagination URL")
 
-        data = response.json()
-        results = data.get("results", data) if isinstance(data, dict) else data
-
-        chapters = []
-        for i, item in enumerate(results):
-            title = item.get("title", f"Chapter {i + 1}")
-            content_url = item.get("content_url", "")
-            chapter_id = item.get("ourn", "").split(":")[-1].replace(".html", "") or f"ch{i}"
-
-            # Skip cover and other front matter that we don't need
-            # (we'll handle cover separately)
-
-            chapters.append(
-                Chapter(
-                    id=chapter_id,
-                    title=title,
-                    url=item.get("url", ""),
-                    content_url=content_url,
-                    order=i,
+            response = self.http.get(next_url)
+            if response.status_code != 200:
+                if not chapters:
+                    console.print(
+                        f"[yellow]Chapters API returned {response.status_code}, "
+                        "trying fallback...[/]"
+                    )
+                    return self._get_chapters_fallback(book_id)
+                raise RuntimeError(
+                    f"Book download incomplete; chapter pagination failed with "
+                    f"HTTP {response.status_code}"
                 )
-            )
+
+            data = response.json()
+            results = data.get("results", data) if isinstance(data, dict) else data
+            if not isinstance(results, list):
+                raise RuntimeError("Chapter API returned an invalid result collection")
+            for item in results:
+                index = len(chapters)
+                title = item.get("title", f"Chapter {index + 1}")
+                content_url = item.get("content_url", "")
+                chapter_id = (
+                    item.get("ourn", "").split(":")[-1].replace(".html", "")
+                    or f"ch{index}"
+                )
+                chapters.append(
+                    Chapter(
+                        id=chapter_id,
+                        title=title,
+                        url=item.get("url", ""),
+                        content_url=content_url,
+                        order=index,
+                    )
+                )
+            next_url = data.get("next") if isinstance(data, dict) else None
 
         return chapters
 
@@ -195,10 +217,17 @@ class OreillyClient:
         ) as progress:
             task = progress.add_task("Downloading chapters...", total=len(chapters))
 
+            failures: list[str] = []
             for i, chapter in enumerate(chapters):
                 progress.update(task, description=f"Downloading: {chapter.title[:40]}")
 
                 if not chapter.content_url:
+                    progress.advance(task)
+                    continue
+
+                parsed = urlparse(chapter.content_url)
+                if parsed.scheme != "https" or parsed.hostname != "learning.oreilly.com":
+                    failures.append(chapter.title)
                     progress.advance(task)
                     continue
 
@@ -224,6 +253,8 @@ class OreillyClient:
 
                     # Clean up the HTML content
                     chapter.html_content = self._clean_html(chapter.html_content)
+                    if not chapter.html_content.strip():
+                        failures.append(chapter.title)
 
                 except httpx.HTTPError as e:
                     console.print(
@@ -231,8 +262,16 @@ class OreillyClient:
                     )
                     # On error, wait a bit longer before next request
                     human_delay(2000, 4000)
+                    failures.append(chapter.title)
 
                 progress.advance(task)
+
+        if failures:
+            preview = ", ".join(failures[:5])
+            raise RuntimeError(
+                f"Book download incomplete; {len(failures)} required chapter(s) "
+                f"failed: {preview}"
+            )
 
     def _fetch_images(self, chapters: list[Chapter]) -> dict[str, Image]:
         """Extract and download all images from chapters."""
@@ -258,6 +297,7 @@ class OreillyClient:
         # Download images
         images: dict[str, Image] = {}
 
+        failures: list[str] = []
         with Progress(
             SpinnerColumn(),
             TextColumn("[progress.description]{task.description}"),
@@ -273,11 +313,15 @@ class OreillyClient:
                     response = self.http.get(url)
                     response.raise_for_status()
 
-                    # Generate filename from URL
-                    filename = url.split("/")[-1]
+                    # Include a stable URL digest so different origins or query
+                    # variants cannot collide inside the EPUB archive.
+                    basename = PurePosixPath(unquote(urlparse(url).path)).name
+                    filename = re.sub(r"[^A-Za-z0-9._-]", "_", basename)
                     # Ensure it has an extension
                     if "." not in filename:
                         filename = f"{filename}.png"
+                    digest = hashlib.sha256(url.encode("utf-8")).hexdigest()[:12]
+                    filename = f"{digest}-{filename}"
 
                     # Determine media type
                     content_type = response.headers.get("content-type", "image/png")
@@ -301,6 +345,7 @@ class OreillyClient:
 
                 except httpx.HTTPError as e:
                     console.print(f"[yellow]Warning: Failed to fetch image {url}: {e}[/]")
+                    failures.append(url)
 
                 progress.advance(task)
 
@@ -308,6 +353,11 @@ class OreillyClient:
         for chapter in chapters:
             if chapter.html_content:
                 chapter.html_content = self._rewrite_image_urls(chapter.html_content, images)
+
+        if failures:
+            raise RuntimeError(
+                f"Book download incomplete; {len(failures)} image asset(s) failed"
+            )
 
         return images
 
