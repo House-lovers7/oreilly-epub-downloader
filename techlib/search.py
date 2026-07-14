@@ -6,7 +6,7 @@ import re
 import sqlite3
 from dataclasses import dataclass, field
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 
 CARD_FILES = ("practices.jsonl", "antipatterns.jsonl", "tradeoffs.jsonl")
@@ -31,9 +31,16 @@ class SearchEngine:
     available through :meth:`get_section`.
     """
 
-    def __init__(self, kb_dir: Path, *, excerpt_chars: int = 700):
+    def __init__(
+        self,
+        kb_dir: Path,
+        *,
+        excerpt_chars: int = 700,
+        vector_search: Callable[[str, int], list[dict[str, Any]]] | None = None,
+    ):
         self.kb_dir = Path(kb_dir)
         self.excerpt_chars = excerpt_chars
+        self.vector_search = vector_search
 
     def search(
         self, query: str, *, domain: str | None = None, limit: int = 5
