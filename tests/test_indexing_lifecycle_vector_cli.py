@@ -248,6 +248,36 @@ class CliContractTests(unittest.TestCase):
             self.assertTrue(payload["dry_run"])
             self.assertTrue(payload["approval_required"])
 
+    def test_feedback_command_records_metadata_without_raw_content(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            kb = Path(tmp) / "knowledge-base"
+
+            result = CliRunner().invoke(
+                main,
+                [
+                    "feedback",
+                    "--kb-dir",
+                    str(kb),
+                    "--card-id",
+                    "arch-p-001",
+                    "--accepted",
+                    "--outcome",
+                    "applied",
+                    "--duration-ms",
+                    "25",
+                    "--json",
+                ],
+            )
+
+            self.assertEqual(result.exit_code, 0, result.output)
+            event = json.loads(
+                (kb / "telemetry" / "events.jsonl").read_text(encoding="utf-8")
+            )
+            self.assertEqual(event["event"], "feedback")
+            self.assertTrue(event["accepted"])
+            self.assertNotIn("query", event)
+            self.assertNotIn("output", event)
+
 
 if __name__ == "__main__":
     unittest.main()

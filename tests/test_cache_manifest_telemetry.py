@@ -86,6 +86,18 @@ class TelemetryTests(unittest.TestCase):
             self.assertEqual(payload["card_ids"], ["arch-p-001"])
             self.assertIn("recorded_at", payload)
 
+    def test_feedback_types_are_strict(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            telemetry = MetadataTelemetry(Path(tmp) / "events.jsonl")
+            with self.assertRaises(ValueError):
+                telemetry.record(
+                    {
+                        "event": "feedback",
+                        "card_ids": ["arch-p-001"],
+                        "accepted": "yes",
+                    }
+                )
+
 
 if __name__ == "__main__":
     unittest.main()
