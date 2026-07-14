@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import math
 import re
 import sqlite3
 from dataclasses import dataclass, field
@@ -223,27 +224,47 @@ class SearchEngine:
         }:
             raise ValueError("unsupported source_type filter")
         source_clause = " AND c.source_type = ?" if source_type else ""
-        parameters: tuple[Any, ...] = (
-            (fts_query, source_type, limit)
-            if source_type
-            else (fts_query, limit)
-        )
+        terms = list(dict.fromkeys(_query_terms(query)))
         try:
             with self._connect_read_only() as connection:
                 connection.row_factory = sqlite3.Row
-                rows = connection.execute(
-                    f"""
-                    SELECT c.chunk_id, c.doc_id, c.title, c.heading,
-                           c.source_ref, c.source_path, c.source_type, c.text,
-                           bm25(chunks_fts) AS score
-                    FROM chunks_fts
-                    JOIN chunks c ON c.chunk_id = chunks_fts.chunk_id
-                    WHERE chunks_fts MATCH ?{source_clause}
-                    ORDER BY score
-                    LIMIT ?
-                    """,
-                    parameters,
-                ).fetchall()
+                rows = _execute_fts(
+                    connection,
+                    fts_query,
+                    source_clause=source_clause,
+                    source_type=source_type,
+                    limit=limit,
+                )
+                retrieval_mode = "strict_and"
+                if not rows and len(terms) >= 3:
+                    candidate_limit = min(500, max(100, limit * 30))
+                    relaxed = _execute_fts(
+                        connection,
+                        _safe_fts_query(query, operator="OR"),
+                        source_clause=source_clause,
+                        source_type=source_type,
+                        limit=candidate_limit,
+                    )
+                    minimum_matches = max(2, math.ceil(len(terms) * 0.4))
+                    candidates: list[tuple[int, float, str, sqlite3.Row]] = []
+                    for row in relaxed:
+                        haystack = " ".join(
+                            str(row[field])
+                            for field in ("title", "heading", "text")
+                        ).casefold()
+                        matches = sum(term in haystack for term in terms)
+                        if matches >= minimum_matches:
+                            candidates.append(
+                                (
+                                    matches,
+                                    float(row["score"]),
+                                    str(row["chunk_id"]),
+                                    row,
+                                )
+                            )
+                    candidates.sort(key=lambda item: (-item[0], item[1], item[2]))
+                    rows = [row for _, _, _, row in candidates[:limit]]
+                    retrieval_mode = "relaxed_or"
         except sqlite3.OperationalError:
             return []
 
@@ -251,6 +272,7 @@ class SearchEngine:
         for row in rows:
             item = dict(row)
             text = _normalize_text(str(item.pop("text", "")))
+            item["retrieval_mode"] = retrieval_mode
             item["excerpt"] = text[: self.excerpt_chars] + (
                 "…" if len(text) > self.excerpt_chars else ""
             )
@@ -288,11 +310,39 @@ def _card_score(card: dict[str, Any], terms: list[str]) -> float:
     return matches / len(terms) if terms else 0.0
 
 
-def _safe_fts_query(query: str) -> str:
+def _safe_fts_query(query: str, *, operator: str = "AND") -> str:
     terms = _query_terms(query)
-    return " AND ".join(
+    if operator not in {"AND", "OR"}:
+        raise ValueError("unsupported FTS operator")
+    return f" {operator} ".join(
         f'"{term.replace(chr(34), chr(34) * 2)}"*' for term in terms
     )
+
+
+def _execute_fts(
+    connection: sqlite3.Connection,
+    query: str,
+    *,
+    source_clause: str,
+    source_type: str | None,
+    limit: int,
+) -> list[sqlite3.Row]:
+    parameters: tuple[Any, ...] = (
+        (query, source_type, limit) if source_type else (query, limit)
+    )
+    return connection.execute(
+        f"""
+        SELECT c.chunk_id, c.doc_id, c.title, c.heading,
+               c.source_ref, c.source_path, c.source_type, c.text,
+               bm25(chunks_fts) AS score
+        FROM chunks_fts
+        JOIN chunks c ON c.chunk_id = chunks_fts.chunk_id
+        WHERE chunks_fts MATCH ?{source_clause}
+        ORDER BY score
+        LIMIT ?
+        """,
+        parameters,
+    ).fetchall()
 
 
 def _normalize_text(text: str) -> str:
