@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import os
 import sqlite3
 import tempfile
 import unittest
@@ -8,11 +9,13 @@ from pathlib import Path
 
 from click.testing import CliRunner
 
+from src.cli import main as legacy_main
 from techlib.cli import main
 from techlib.indexing import IncrementalIndexer
 from techlib.lifecycle import CardLifecycle
 from techlib.search import SearchEngine
-from tests.kb_fixture import create_index
+from tests.kb_fixture import add_card, create_index
+from tests.test_doctor_evaluation import CASES, observations
 
 
 class IncrementalIndexerTests(unittest.TestCase):
@@ -167,6 +170,83 @@ class CliContractTests(unittest.TestCase):
 
         self.assertNotEqual(result.exit_code, 0)
         self.assertIn("approval", result.output.lower())
+
+    def test_doctor_command_exposes_machine_readable_health(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            kb = repo / "knowledge-base"
+            create_index(
+                kb,
+                [
+                    {
+                        "chunk_id": "chunk-1",
+                        "doc_id": "book-1",
+                        "title": "Synthetic Book",
+                        "source_path": "guide.md",
+                        "text": "Use an idempotency key.",
+                    }
+                ],
+            )
+            add_card(kb, status="candidate")
+
+            result = CliRunner().invoke(
+                main, ["doctor", "--repo", str(repo), "--json"]
+            )
+
+            self.assertEqual(result.exit_code, 0, result.output)
+            payload = json.loads(result.output)
+            self.assertTrue(payload["ok"])
+            self.assertEqual(payload["metrics"]["cards_total"], 1)
+
+    def test_eval_score_command_rejects_failed_utility_gate(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            files = {
+                "cases": CASES,
+                "baseline": observations(assisted=False),
+                "assisted": observations(assisted=True, false_positives=4),
+            }
+            paths: dict[str, Path] = {}
+            for name, payload in files.items():
+                path = root / f"{name}.json"
+                path.write_text(json.dumps(payload), encoding="utf-8")
+                paths[name] = path
+
+            result = CliRunner().invoke(
+                main,
+                [
+                    "eval",
+                    "score",
+                    "--cases",
+                    str(paths["cases"]),
+                    "--baseline",
+                    str(paths["baseline"]),
+                    "--assisted",
+                    str(paths["assisted"]),
+                    "--json",
+                ],
+            )
+
+            self.assertEqual(result.exit_code, 1, result.output)
+            payload = json.loads(result.output)
+            self.assertFalse(payload["passed"])
+            self.assertIn("false_positive_rate", payload["failures"])
+
+    def test_legacy_downloader_is_an_offline_plan_by_default(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cookie = Path(tmp) / "cookies.json"
+            cookie.write_text("{}", encoding="utf-8")
+            os.chmod(cookie, 0o600)
+
+            result = CliRunner().invoke(
+                legacy_main,
+                ["9780000000000", "--cookies", str(cookie), "--json"],
+            )
+
+            self.assertEqual(result.exit_code, 0, result.output)
+            payload = json.loads(result.output)
+            self.assertTrue(payload["dry_run"])
+            self.assertTrue(payload["approval_required"])
 
 
 if __name__ == "__main__":
