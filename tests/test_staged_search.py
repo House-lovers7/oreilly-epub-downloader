@@ -66,6 +66,37 @@ class StagedSearchTests(unittest.TestCase):
             assert result is not None
             self.assertEqual(result["text"], CHUNK["text"])
 
+    def test_fts_relaxes_all_term_match_without_accepting_single_generic_term(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            kb = Path(tmp)
+            create_index(
+                kb,
+                [
+                    {
+                        "chunk_id": "chunk-1",
+                        "doc_id": "book-1",
+                        "title": "Retry Guide",
+                        "source_path": "guide.md",
+                        "text": "Idempotency makes a retry safe after partial failure.",
+                    },
+                    {
+                        "chunk_id": "chunk-2",
+                        "doc_id": "book-2",
+                        "title": "Generic Guide",
+                        "source_path": "generic.md",
+                        "text": "A system can have many unrelated properties.",
+                    },
+                ],
+            )
+
+            result = SearchEngine(kb).search(
+                "idempotency retry distributed system consistency", limit=5
+            )
+
+            self.assertEqual(result.stage, "fts")
+            self.assertEqual([item["chunk_id"] for item in result.items], ["chunk-1"])
+            self.assertEqual(result.items[0]["retrieval_mode"], "relaxed_or")
+
 
 if __name__ == "__main__":
     unittest.main()
