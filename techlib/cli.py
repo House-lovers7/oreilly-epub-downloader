@@ -8,6 +8,7 @@ from pathlib import Path
 import click
 
 from .cache import CacheManager
+from .distillation import build_domain_pack
 from .doctor import run_doctor
 from .evaluation import evaluate_pairs
 from .indexing import IncrementalIndexer
@@ -61,6 +62,9 @@ def doctor_command(
 @click.option("--kb-dir", type=click.Path(path_type=Path), default=DEFAULT_KB)
 @click.option("--domain")
 @click.option("--limit", type=click.IntRange(1, 50), default=5, show_default=True)
+@click.option(
+    "--source-type", type=click.Choice(["epub", "pdf", "md", "markdown", "txt"])
+)
 @click.option("--semantic/--no-semantic", default=True, show_default=True)
 @click.option("--json", "as_json", is_flag=True, help="Emit structured JSON.")
 @click.option("--telemetry/--no-telemetry", default=True, show_default=True)
@@ -69,6 +73,7 @@ def search_command(
     kb_dir: Path,
     domain: str | None,
     limit: int,
+    source_type: str | None,
     semantic: bool,
     as_json: bool,
     telemetry: bool,
@@ -76,7 +81,7 @@ def search_command(
     """Search cards first, then FTS, then optional local vectors."""
     vector = LazyVectorSearch(kb_dir) if semantic else None
     result = SearchEngine(kb_dir, vector_search=vector).search(
-        query, domain=domain, limit=limit
+        query, domain=domain, limit=limit, source_type=source_type
     )
     payload = dataclasses.asdict(result)
     if telemetry:
@@ -156,6 +161,53 @@ def card_transition(card_id: str, status: str, basis: str, kb_dir: Path) -> None
     lifecycle = CardLifecycle(kb_dir / "cards" / "lifecycle.json")
     lifecycle.transition(card_id, status, basis=basis)
     click.echo(f"{card_id}: {status}")
+
+
+@main.group("distill")
+def distill_group() -> None:
+    """Prepare bounded local material for on-demand card distillation."""
+
+
+@distill_group.command("pack")
+@click.argument("domain")
+@click.option("--query", multiple=True, required=True)
+@click.option("--kb-dir", type=click.Path(path_type=Path), default=DEFAULT_KB)
+@click.option("--limit-per-query", type=click.IntRange(min=1), default=40)
+@click.option("--max-chunks", type=click.IntRange(min=1), default=120)
+@click.option(
+    "--source-type", type=click.Choice(["epub", "pdf", "md", "markdown", "txt"])
+)
+@click.option("--output-dir", type=click.Path(path_type=Path))
+@click.option("--json", "as_json", is_flag=True)
+def distill_pack(
+    domain: str,
+    query: tuple[str, ...],
+    kb_dir: Path,
+    limit_per_query: int,
+    max_chunks: int,
+    source_type: str | None,
+    output_dir: Path | None,
+    as_json: bool,
+) -> None:
+    """Write an atomic source pack only after this explicit command."""
+    try:
+        result = build_domain_pack(
+            kb_dir,
+            domain,
+            list(query),
+            limit_per_query=limit_per_query,
+            max_chunks=max_chunks,
+            source_type=source_type,
+            output_dir=output_dir,
+        )
+    except (OSError, RuntimeError, ValueError) as error:
+        raise click.ClickException(str(error)) from error
+    payload = {
+        **dataclasses.asdict(result),
+        "pack_path": str(result.pack_path),
+        "manifest_path": str(result.manifest_path),
+    }
+    click.echo(json.dumps(payload, ensure_ascii=False, indent=2) if as_json else payload)
 
 
 @main.group("cache")

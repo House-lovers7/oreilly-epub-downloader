@@ -71,7 +71,8 @@ class GatewayCompatibilityTests(unittest.TestCase):
             payload = json.loads(result.stdout)
             self.assertEqual(payload["cards"], [])
             self.assertEqual(payload["candidate_available"], 1)
-            self.assertEqual(payload["match_status"], "insufficient_active_evidence")
+            self.assertEqual(payload["match_status"], "insufficient_evidence")
+            self.assertEqual(payload["reason_code"], "no_active_card_match")
 
     def test_active_card_is_returned_without_opening_the_index(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

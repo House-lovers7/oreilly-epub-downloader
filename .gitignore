@@ -55,4 +55,7 @@ test-results/
 knowledge-base/books/
 knowledge-base/chunks.jsonl
 knowledge-base/index/
+knowledge-base/manifests/
+knowledge-base/telemetry/
 knowledge-base/cards/*/source-pack.jsonl
+downloads/.staging/

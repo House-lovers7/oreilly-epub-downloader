@@ -43,7 +43,12 @@ class SearchEngine:
         self.vector_search = vector_search
 
     def search(
-        self, query: str, *, domain: str | None = None, limit: int = 5
+        self,
+        query: str,
+        *,
+        domain: str | None = None,
+        limit: int = 5,
+        source_type: str | None = None,
     ) -> RetrievalResult:
         query = query.strip()
         if not query:
@@ -51,7 +56,11 @@ class SearchEngine:
         if limit < 1 or limit > 50:
             raise ValueError("limit must be between 1 and 50")
 
-        cards = self._search_cards(query, domain=domain, limit=limit)
+        cards = (
+            self.search_cards(query, domain=domain, limit=limit)
+            if source_type is None
+            else []
+        )
         if cards:
             return RetrievalResult(
                 stage="cards",
@@ -61,7 +70,7 @@ class SearchEngine:
                 reason="active_card_match",
             )
 
-        chunks = self._search_fts(query, limit=limit)
+        chunks = self.search_chunks(query, limit=limit, source_type=source_type)
         if chunks:
             return RetrievalResult(
                 stage="fts",
@@ -95,6 +104,54 @@ class SearchEngine:
             reason="no_local_evidence",
         )
 
+    def search_cards(
+        self, query: str, *, domain: str | None = None, limit: int = 5
+    ) -> list[dict[str, Any]]:
+        """Search only active cards; candidate cards never leak into results."""
+        return self._search_cards(query, domain=domain, limit=limit)
+
+    def list_cards(
+        self,
+        *,
+        domain: str | None = None,
+        card_type: str | None = None,
+        status: str | None = None,
+    ) -> list[dict[str, Any]]:
+        """Return card metadata with its effective lifecycle state."""
+        root = self.kb_dir / "cards"
+        if domain:
+            directories = [root / _plain_domain(domain)]
+        elif root.exists():
+            directories = sorted(path for path in root.iterdir() if path.is_dir())
+        else:
+            directories = []
+        lifecycle = self._load_lifecycle()
+        cards: list[dict[str, Any]] = []
+        for directory in directories:
+            for filename in CARD_FILES:
+                path = directory / filename
+                if not path.exists():
+                    continue
+                for line in path.read_text(encoding="utf-8").splitlines():
+                    if not line.strip():
+                        continue
+                    card = json.loads(line)
+                    effective_status = self._card_status(card, lifecycle)
+                    if card_type and card.get("type") != card_type:
+                        continue
+                    if status and effective_status != status:
+                        continue
+                    item = dict(card)
+                    item["status"] = effective_status
+                    cards.append(item)
+        return cards
+
+    def search_chunks(
+        self, query: str, *, limit: int = 5, source_type: str | None = None
+    ) -> list[dict[str, Any]]:
+        """Search bounded FTS excerpts without loading full documents."""
+        return self._search_fts(query, limit=limit, source_type=source_type)
+
     def get_section(self, chunk_id: str) -> dict[str, Any] | None:
         db = self._db_path()
         if not db.exists():
@@ -117,32 +174,14 @@ class SearchEngine:
         terms = _query_terms(query)
         if not terms:
             return []
-        lifecycle = self._load_lifecycle()
-        root = self.kb_dir / "cards"
-        if domain:
-            directories = [root / _plain_domain(domain)]
-        else:
-            directories = sorted(path for path in root.glob("*") if path.is_dir())
-
         scored: list[tuple[float, str, dict[str, Any]]] = []
-        for directory in directories:
-            for filename in CARD_FILES:
-                path = directory / filename
-                if not path.exists():
-                    continue
-                for line in path.read_text(encoding="utf-8").splitlines():
-                    if not line.strip():
-                        continue
-                    card = json.loads(line)
-                    if self._card_status(card, lifecycle) != "active":
-                        continue
-                    score = _card_score(card, terms)
-                    if score <= 0:
-                        continue
-                    item = dict(card)
-                    item["status"] = "active"
-                    item["match_score"] = round(score, 4)
-                    scored.append((score, str(card.get("card_id", "")), item))
+        for card in self.list_cards(domain=domain, status="active"):
+            score = _card_score(card, terms)
+            if score <= 0:
+                continue
+            item = dict(card)
+            item["match_score"] = round(score, 4)
+            scored.append((score, str(card.get("card_id", "")), item))
         scored.sort(key=lambda entry: (-entry[0], entry[1]))
         return [item for _, _, item in scored[:limit]]
 
@@ -166,28 +205,44 @@ class SearchEngine:
             return override["status"]
         return str(card.get("status") or lifecycle.get("default_status") or "candidate")
 
-    def _search_fts(self, query: str, *, limit: int) -> list[dict[str, Any]]:
+    def _search_fts(
+        self, query: str, *, limit: int, source_type: str | None = None
+    ) -> list[dict[str, Any]]:
         db = self._db_path()
         if not db.exists():
             return []
         fts_query = _safe_fts_query(query)
         if not fts_query:
             return []
+        if source_type is not None and source_type not in {
+            "epub",
+            "pdf",
+            "md",
+            "markdown",
+            "txt",
+        }:
+            raise ValueError("unsupported source_type filter")
+        source_clause = " AND c.source_type = ?" if source_type else ""
+        parameters: tuple[Any, ...] = (
+            (fts_query, source_type, limit)
+            if source_type
+            else (fts_query, limit)
+        )
         try:
             with self._connect_read_only() as connection:
                 connection.row_factory = sqlite3.Row
                 rows = connection.execute(
-                    """
+                    f"""
                     SELECT c.chunk_id, c.doc_id, c.title, c.heading,
                            c.source_ref, c.source_path, c.source_type, c.text,
                            bm25(chunks_fts) AS score
                     FROM chunks_fts
                     JOIN chunks c ON c.chunk_id = chunks_fts.chunk_id
-                    WHERE chunks_fts MATCH ?
+                    WHERE chunks_fts MATCH ?{source_clause}
                     ORDER BY score
                     LIMIT ?
                     """,
-                    (fts_query, limit),
+                    parameters,
                 ).fetchall()
         except sqlite3.OperationalError:
             return []
