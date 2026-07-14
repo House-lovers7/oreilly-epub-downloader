@@ -66,20 +66,23 @@ class LazyVectorSearch:
                         heapq.heapreplace(best, candidate)
             ranked = sorted(best, reverse=True)
             return _fetch_results(db, [(score, chunk_ids[index]) for score, index in ranked])
-        except (OSError, ValueError, KeyError, sqlite3.Error):
+        except (ImportError, OSError, RuntimeError, ValueError, KeyError, sqlite3.Error):
             return []
 
 
 def _ollama_embed_query(query: str, model: str) -> list[float]:
     import httpx
 
-    response = httpx.post(
-        "http://127.0.0.1:11434/api/embed",
-        json={"model": model, "input": [query]},
-        timeout=3.0,
-        trust_env=False,
-    )
-    response.raise_for_status()
+    try:
+        response = httpx.post(
+            "http://127.0.0.1:11434/api/embed",
+            json={"model": model, "input": [query]},
+            timeout=3.0,
+            trust_env=False,
+        )
+        response.raise_for_status()
+    except httpx.HTTPError as error:
+        raise RuntimeError("local embedding backend is unavailable") from error
     payload = response.json()
     embeddings = payload.get("embeddings") or []
     if len(embeddings) != 1:

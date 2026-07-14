@@ -57,6 +57,46 @@ def doctor_command(
         context.exit(1)
 
 
+@main.command("feedback")
+@click.option("--kb-dir", type=click.Path(path_type=Path), default=DEFAULT_KB)
+@click.option("--card-id", multiple=True, help="Stable card ID; repeat as needed.")
+@click.option("--chunk-id", multiple=True, help="Stable chunk ID; repeat as needed.")
+@click.option("--accepted", "accepted", flag_value=True, default=None)
+@click.option("--rejected", "accepted", flag_value=False)
+@click.option("--outcome", help="Safe metadata outcome code, without free-form content.")
+@click.option("--duration-ms", type=click.IntRange(min=0))
+@click.option("--json", "as_json", is_flag=True)
+def feedback_command(
+    kb_dir: Path,
+    card_id: tuple[str, ...],
+    chunk_id: tuple[str, ...],
+    accepted: bool | None,
+    outcome: str | None,
+    duration_ms: int | None,
+    as_json: bool,
+) -> None:
+    """Record whether retrieved evidence was adopted, without raw query text."""
+    if accepted is None:
+        raise click.UsageError("one of --accepted or --rejected is required")
+    if not card_id and not chunk_id:
+        raise click.UsageError("at least one --card-id or --chunk-id is required")
+    event: dict[str, object] = {
+        "event": "feedback",
+        "card_ids": list(card_id),
+        "chunk_ids": list(chunk_id),
+        "accepted": accepted,
+        "outcome": outcome or ("applied" if accepted else "rejected"),
+    }
+    if duration_ms is not None:
+        event["duration_ms"] = duration_ms
+    try:
+        MetadataTelemetry(kb_dir / "telemetry" / "events.jsonl").record(event)
+    except (OSError, ValueError) as error:
+        raise click.ClickException(str(error)) from error
+    payload = {"recorded": True, **event}
+    click.echo(json.dumps(payload, ensure_ascii=False, indent=2) if as_json else payload)
+
+
 @main.command("search")
 @click.argument("query")
 @click.option("--kb-dir", type=click.Path(path_type=Path), default=DEFAULT_KB)

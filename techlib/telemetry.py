@@ -72,6 +72,8 @@ class MetadataTelemetry:
 
     @staticmethod
     def _validate_values(event: dict[str, Any]) -> None:
+        if "event" not in event:
+            raise ValueError("telemetry requires an event identifier")
         for field in ("event", "stage", "domain", "outcome", "reason_code"):
             value = event.get(field)
             if value is not None and (
@@ -85,6 +87,18 @@ class MetadataTelemetry:
                 or not all(isinstance(item, str) and SAFE_VALUE_RE.fullmatch(item) for item in value)
             ):
                 raise ValueError(f"telemetry field {field} must contain safe identifiers")
+        for field in ("accepted", "cache_hit"):
+            value = event.get(field)
+            if value is not None and not isinstance(value, bool):
+                raise ValueError(f"telemetry field {field} must be boolean")
+        for field in ("result_count", "duration_ms"):
+            value = event.get(field)
+            if value is not None and (
+                isinstance(value, bool) or not isinstance(value, int) or value < 0
+            ):
+                raise ValueError(
+                    f"telemetry field {field} must be a non-negative integer"
+                )
 
     def _rotate_if_needed(self) -> None:
         if not self.path.exists() or self.path.stat().st_size < self.rotate_bytes:
