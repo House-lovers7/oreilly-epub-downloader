@@ -56,3 +56,17 @@ Cookies expire periodically. When downloads fail, re-export cookies from your br
 
 - Python 3.11+
 - Active O'Reilly Learning subscription
+
+<!-- BEGIN GENERATED ENGINEERING HANDBOOK -->
+## Engineering handbook
+
+- [Start here](./docs/engineering/README.md)
+- [Architecture / system diagram](./docs/engineering/02_architecture.md)
+- [API](./docs/engineering/04_api.md) / [Data model](./docs/engineering/05_data_model.md) / [Screens](./docs/engineering/06_screen_design.md)
+- Detected check: `oreilly-dl`
+- Snapshot: API 0 / entity 1 / screen 0 / test files 0
+- Data sources: `src/epub.py`
+- Handoff gaps: 0 P0/P1 items — [details](./docs/engineering/00_one_pager.md#引継ぎ時の未解決ギャップ)
+
+> Generated from the current checkout. Existing ADR/schema/runbook remains authoritative; production state is not asserted.
+<!-- END GENERATED ENGINEERING HANDBOOK -->
