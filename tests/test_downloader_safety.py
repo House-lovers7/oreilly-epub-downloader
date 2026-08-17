@@ -85,6 +85,46 @@ class CookieBoundaryTests(unittest.TestCase):
                 load_cookies(cookie_file)
 
 
+class CookieExportShapeTests(unittest.TestCase):
+    """A console-copied export carries one extra layer of JSON encoding."""
+
+    @staticmethod
+    def write_raw_cookie_file(directory: Path, content: str) -> Path:
+        cookie_file = directory / "cookies.json"
+        cookie_file.write_text(content, encoding="utf-8")
+        os.chmod(cookie_file, 0o600)
+        return cookie_file
+
+    def test_double_encoded_export_is_recovered(self) -> None:
+        export = json.dumps({"orm-jwt": "DUMMY_TOKEN"})
+
+        with tempfile.TemporaryDirectory() as tmp:
+            cookie_file = self.write_raw_cookie_file(Path(tmp), json.dumps(export))
+
+            self.assertEqual(
+                load_cookies(cookie_file).cookies, {"orm-jwt": "DUMMY_TOKEN"}
+            )
+
+    def test_plain_string_content_is_still_rejected(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cookie_file = self.write_raw_cookie_file(
+                Path(tmp), json.dumps("orm-jwt=DUMMY_TOKEN")
+            )
+
+            with self.assertRaisesRegex(ValueError, "Invalid cookie file format"):
+                load_cookies(cookie_file)
+
+    def test_further_encoding_layers_are_not_unwrapped(self) -> None:
+        # Unwrapping repeatedly would accept files no browser export produces.
+        export = json.dumps(json.dumps(json.dumps({"orm-jwt": "DUMMY_TOKEN"})))
+
+        with tempfile.TemporaryDirectory() as tmp:
+            cookie_file = self.write_raw_cookie_file(Path(tmp), export)
+
+            with self.assertRaisesRegex(ValueError, "Invalid cookie file format"):
+                load_cookies(cookie_file)
+
+
 class TokenFreshnessTests(unittest.TestCase):
     """An expired subscription token must fail before the first request."""
 

@@ -38,7 +38,19 @@ class Session:
 
 
 def _cookie_map(data: object) -> dict[str, str]:
-    """Normalise both supported cookie file shapes into a flat mapping."""
+    """Normalise the supported cookie file shapes into a flat mapping.
+
+    Besides the object and array exports, a string is unwrapped once: the
+    DevTools console renders a ``JSON.stringify`` result as a quoted literal,
+    so copying what the console shows saves the export with one extra layer of
+    encoding.  Anything that does not unwrap into an object or array keeps the
+    original rejection.
+    """
+    if isinstance(data, str):
+        try:
+            data = json.loads(data)
+        except ValueError:
+            pass
     if isinstance(data, dict):
         return {str(name): str(value) for name, value in data.items()}
     if isinstance(data, list):
