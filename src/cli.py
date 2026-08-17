@@ -6,6 +6,7 @@ import sys
 from pathlib import Path
 
 import click
+import httpx
 from rich.console import Console
 
 from techlib.oreilly_adapter import (
@@ -106,7 +107,13 @@ def main(
     except KeyboardInterrupt:
         console.print("\n[yellow]Cancelled[/]")
         sys.exit(130)
-    except (PermissionError, ValueError, RuntimeError, OSError) as error:
+    except (
+        PermissionError,
+        ValueError,
+        RuntimeError,
+        OSError,
+        httpx.HTTPError,
+    ) as error:
         raise click.ClickException(str(error)) from error
 
 

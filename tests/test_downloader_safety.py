@@ -1,5 +1,9 @@
 from __future__ import annotations
 
+import base64
+import datetime as dt
+import json
+import os
 import tempfile
 import unittest
 import zipfile
@@ -7,11 +11,41 @@ from pathlib import Path
 from unittest.mock import patch
 
 import httpx
+from click.testing import CliRunner
 
+from src.cli import main as legacy_main
 from src.client import OreillyClient
 from src.cookie_auth import Session, load_cookies
 from src.epub import create_epub
 from src.models import Book, BookMetadata, Chapter, Image
+from techlib.oreilly_adapter import plan_ingest
+
+
+def jwt_with_expiry(expiry: dt.datetime) -> str:
+    """Build a signature-free JWT carrying only the ``exp`` claim."""
+    payload = (
+        base64.urlsafe_b64encode(
+            json.dumps({"exp": int(expiry.timestamp())}).encode("utf-8")
+        )
+        .decode("utf-8")
+        .rstrip("=")
+    )
+    return f"header.{payload}.signature"
+
+
+def cli_text(result) -> str:
+    """Read a CliRunner result across click's stderr split."""
+    try:
+        return result.output + result.stderr
+    except ValueError:
+        return result.output
+
+
+def write_cookie_file(directory: Path, token: str, *, mode: int = 0o600) -> Path:
+    cookie_file = directory / "cookies.json"
+    cookie_file.write_text(json.dumps({"orm-jwt": token}), encoding="utf-8")
+    os.chmod(cookie_file, mode)
+    return cookie_file
 
 
 def sample_metadata(*, language: str = "en") -> BookMetadata:
@@ -49,6 +83,89 @@ class CookieBoundaryTests(unittest.TestCase):
 
             with self.assertRaises(PermissionError):
                 load_cookies(cookie_file)
+
+
+class TokenFreshnessTests(unittest.TestCase):
+    """An expired subscription token must fail before the first request."""
+
+    def test_expired_token_is_rejected_without_network_access(self) -> None:
+        stale = dt.datetime.now(dt.UTC) - dt.timedelta(minutes=9)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            cookie_file = write_cookie_file(Path(tmp), jwt_with_expiry(stale))
+
+            with self.assertRaisesRegex(PermissionError, "expired at"):
+                load_cookies(cookie_file)
+
+    def test_unexpired_token_is_accepted(self) -> None:
+        fresh = dt.datetime.now(dt.UTC) + dt.timedelta(minutes=30)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            cookie_file = write_cookie_file(Path(tmp), jwt_with_expiry(fresh))
+
+            self.assertIn("orm-jwt", load_cookies(cookie_file).cookies)
+
+    def test_opaque_token_is_treated_as_unknown_expiry(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cookie_file = write_cookie_file(Path(tmp), "DUMMY_TOKEN")
+
+            self.assertIn("orm-jwt", load_cookies(cookie_file).cookies)
+
+    def test_plan_reports_stale_token_without_raising(self) -> None:
+        stale = dt.datetime.now(dt.UTC) - dt.timedelta(minutes=9)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            # A cookie file execution would reject must still yield a plan.
+            cookie_file = write_cookie_file(
+                Path(tmp), jwt_with_expiry(stale), mode=0o644
+            )
+
+            plan = plan_ingest("9780000000000", cookie_file, max_bytes=1024)
+
+        self.assertTrue(plan.dry_run)
+        self.assertTrue(plan.token_expired)
+        self.assertEqual(plan.token_expires_at, stale.replace(microsecond=0).isoformat())
+
+    def test_plan_reports_unknown_expiry_for_opaque_token(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cookie_file = write_cookie_file(Path(tmp), "DUMMY_TOKEN")
+
+            plan = plan_ingest("9780000000000", cookie_file, max_bytes=1024)
+
+        self.assertIsNone(plan.token_expired)
+        self.assertIsNone(plan.token_expires_at)
+
+
+class CliErrorSurfaceTests(unittest.TestCase):
+    def test_http_error_is_reported_as_a_cli_error(self) -> None:
+        book_id = "9780000000000"
+
+        with tempfile.TemporaryDirectory() as tmp:
+            cookie_file = write_cookie_file(Path(tmp), "DUMMY_TOKEN")
+
+            with patch(
+                "src.cli.execute_ingest",
+                side_effect=httpx.HTTPStatusError(
+                    "401 Unauthorized",
+                    request=httpx.Request("GET", "https://learning.oreilly.com/"),
+                    response=httpx.Response(401),
+                ),
+            ):
+                result = CliRunner().invoke(
+                    legacy_main,
+                    [
+                        book_id,
+                        "--cookies",
+                        str(cookie_file),
+                        "--execute",
+                        "--approve-book-id",
+                        book_id,
+                    ],
+                )
+
+        self.assertEqual(result.exit_code, 1)
+        self.assertNotIsInstance(result.exception, httpx.HTTPError)
+        self.assertIn("401 Unauthorized", cli_text(result))
 
 
 class ClientCompletenessTests(unittest.TestCase):

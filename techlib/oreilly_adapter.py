@@ -15,7 +15,7 @@ from pathlib import Path
 from typing import Any
 
 from src.client import OreillyClient
-from src.cookie_auth import load_cookies
+from src.cookie_auth import load_cookies, peek_jwt_expiry
 from src.epub import create_epub
 
 from .indexing import IncrementalIndexer, IngestResult
@@ -32,6 +32,8 @@ class OreillyIngestPlan:
     network_required: bool = True
     approval_required: bool = True
     max_bytes: int = DEFAULT_MAX_BYTES
+    token_expires_at: str | None = None
+    token_expired: bool | None = None
     stop_condition: str = "abort before promotion when size or completeness gate fails"
 
 
@@ -56,10 +58,14 @@ def extract_book_id(value: str) -> str:
 
 
 def plan_ingest(book: str, cookie_file: Path, *, max_bytes: int) -> OreillyIngestPlan:
+    book_id = extract_book_id(book)
+    expiry = peek_jwt_expiry(cookie_file)
     return OreillyIngestPlan(
-        book_id=extract_book_id(book),
+        book_id=book_id,
         cookie_file=str(cookie_file),
         max_bytes=max_bytes,
+        token_expires_at=expiry.isoformat() if expiry else None,
+        token_expired=expiry <= dt.datetime.now(dt.UTC) if expiry else None,
     )
 
 
