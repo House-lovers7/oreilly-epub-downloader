@@ -124,7 +124,8 @@ class TokenFreshnessTests(unittest.TestCase):
 
         self.assertTrue(plan.dry_run)
         self.assertTrue(plan.token_expired)
-        self.assertEqual(plan.token_expires_at, stale.replace(microsecond=0).isoformat())
+        expected = stale.replace(microsecond=0).isoformat()
+        self.assertEqual(plan.token_expires_at, expected)
 
     def test_plan_reports_unknown_expiry_for_opaque_token(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
