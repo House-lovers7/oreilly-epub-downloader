@@ -23,6 +23,8 @@ pip install -e .
    ```
 4. Save the output to `cookies.json`
 
+> **Note:** Don't copy the quoted string DevTools prints to the console — pasting that double-encodes the JSON and breaks cookie loading. Wrap the command in `copy(...)` (e.g. `copy(JSON.stringify(...))`) to copy the raw value to your clipboard instead.
+
 ### 2. Download books
 
 ```bash
