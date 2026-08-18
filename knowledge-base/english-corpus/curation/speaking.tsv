@@ -1,0 +1,108 @@
+expression	pos	gloss_ja	nuance	example_sentence	source_book
+let's start with	提案・導入	〜から始めましょう	話や説明の冒頭で最初の話題・例を導入する際の定番表現。プレゼンや講義で頻出。	To answer these questions, let's start with a concrete example.	100 Go Mistakes and How to Avoid Them
+let's start by	提案・導入	まず〜することから始めましょう	let's start withと同義だが後ろに動名詞(-ing)が続く形。手順の最初のステップを示す時に使う。	Let's start by looking into different kinds of tools a model can use.	AI Engineering
+let's look at	提案	〜を見てみましょう	資料・コード・図などに注意を向けさせる際の定番。プレゼンでスライドを指すときにも使う。	First, let's look at an example where using an init function can be considered inappropriate: holding a database connection pool.	100 Go Mistakes and How to Avoid Them
+let's dive into	提案	〜に深く入っていきましょう	本格的な説明・詳細な議論に入る合図。ややカジュアルだが技術系のトークでよく使われる。	Let's dive into a few specific cases to show the importance of live updates:	Communicating with Data
+let's walk through	提案	〜を一緒に順を追って見ていきましょう	手順やコードを一段階ずつ説明する際の定番。デモやコードレビューで多用。	Let's walk through a simple example to examine the effect of temperature on probabilities.	AI Engineering
+let's go through	提案	〜を順に見ていきましょう	walk throughとほぼ同義。リストや複数項目を一つずつ確認する際に使う。	Let's go through a few examples to make things clearer.	100 Go Mistakes and How to Avoid Them
+let's move on	話題転換	次に進みましょう	現在の話題を切り上げて次の話題へ移る合図。会議やプレゼンの進行でよく使う。	Now that we've covered two key modeling decisions - architecture and scale - let's move on to the next critical set of design choices: how to align models with human preferences.	AI Engineering
+let's talk about	提案	〜について話しましょう	新しい話題を切り出す定番表現。ディスカッションの導入に使う。	Before covering informed ignoring within FinOps, let's talk about simply ignoring FinOps.	Cloud FinOps, 2nd Edition
+let's think about	提案	〜について考えてみましょう	聴衆に一緒に考えるよう促す表現。問いかけの前に使うと効果的。	Now, let's think about what it means to deliver this same application in a multi-tenant SaaS environment.	Building Multi-Tenant SaaS Architectures
+let's consider	提案	〜を考えてみましょう	let's think aboutよりやや形式的。具体例や前提を提示する前置きとして使う。	First, let's consider the following interface, which contains a method to get the coordinates from a given address:	100 Go Mistakes and How to Avoid Them
+let's assume that	仮定・例示	〜と仮定しましょう	議論を進めるための前提条件を置く時の定番。技術的な説明で頻出。	For now, let's assume that you have a way to transform texts into embeddings.	AI Engineering
+let's say	仮定・例示	たとえば〜としましょう	仮の数値や状況を提示する際のカジュアルな定番表現。口頭説明で非常によく使われる。	Let's say that you've pre-trained a foundation model using self-supervision.	AI Engineering
+let's see	提案・つなぎ	見てみましょう	単独でも使えるつなぎ表現。次の行動に移る前のフィラー的用法もある。	Let's see how different models read the same situation.	AI Agents: The Definitive Guide
+let's see how	提案	どのように〜するか見てみましょう	プロセスや仕組みの説明に入る前の定番導入句。	Let's see how it works with a concrete example.	100 Go Mistakes and How to Avoid Them
+let's see what	提案	何が〜か見てみましょう	結果や中身を確認する場面で使う導入句。	Let's see what the receive end looks like:	AI Agents with MCP
+let's try	提案	試してみましょう	実演・実験を促す表現。デモやハンズオンで頻出。	Now, let's try this exercise again with the same function but implemented differently:	100 Go Mistakes and How to Avoid Them
+let's examine	提案	〜を検討してみましょう	let's lookよりやや形式的で、詳細に精査するニュアンス。技術レビューに向く。	Now, let's examine concrete cases where we should and shouldn't use generics.	100 Go Mistakes and How to Avoid Them
+let's explore	提案	〜を探ってみましょう	未知の領域やアイデアを掘り下げる際に使う、やや前向きなニュアンスの表現。	Next, let's explore the impact of how a model is designed on its performance.	AI Engineering
+let's discuss	提案	〜について議論しましょう	話し合いの開始を明示する表現。会議で使いやすい。	Let's discuss a few common uses where generics are recommended:	100 Go Mistakes and How to Avoid Them
+let's define	提案	〜を定義しましょう	用語や基準をはっきりさせる際の導入句。議論の前提をそろえる時に有効。	Now that you've developed your criteria and scoring rubrics, let's define what methods and data you want to use to evaluate your application.	AI Engineering
+let's imagine	仮定・例示	〜を想像してみましょう	仮想的なシナリオを提示する際の表現。let's assumeより物語的・具体的なニュアンス。	Let's imagine the object store represents a globally managed construct that holds information that is centrally managed for all tenants.	Building Multi-Tenant SaaS Architectures
+let's use the	提案	〜を使いましょう	既出の例やツールを使って説明を続ける際の表現。	To make these reasoning steps a bit more explicit, let's use the example we saw at the beginning of this chapter.	An Illustrated Guide to AI Agents
+let us	提案・フォーマル	〜しましょう	let'sのフォーマル版。講演やドキュメント調の話し方でやや硬めの印象を与える。	Let us take a quick look at some possibilities.	Computer Networks, Fifth Edition
+break down	提案・説明	分解する、噛み砕いて説明する	複雑な内容を要素ごとに分けて説明する動詞句。'Let's break down...'の形で導入にも使われる。	The orchestrator-worker workflow uses one LLM to break down a task, calls worker LLMs to work on the smaller tasks, and finally calls an aggregator LLM to put the results together.	AI Agents with MCP
+for example	例示	例えば	最も基本的な例示表現。文中どこでも挿入可能。	For example, in pure reinforcement learning, agents can be trained directly through trial-and-error interaction with an environment.	AI Agents: The Definitive Guide
+for instance	例示	例えば	for exampleとほぼ同義でよりやや硬い印象。文の途中に挿入することも多い。	For instance, what output from the outline generation state triggers the drafting state.	AI Agents: The Definitive Guide
+as an example	例示	一例として	文末や文頭に置いて具体例を示す表現。プレゼンのスライド説明でも使える。	As an example, if a model is trained to classify whether an email is spam or not, there are only two possible outcomes: spam and not spam.	AI Engineering
+suppose that	仮定・例示	〜だとしましょう	let's assumeと同様、仮定の状況を設定する表現。やや数学・論理的な文脈で好まれる。	Suppose that the network is down in Germany.	Computer Networks, Fifth Edition
+suppose we	仮定・例示	私たちが〜だとしましょう	主語を明示した仮定表現。設計議論やホワイトボードでの説明に向く。	Suppose we have a SaaS architecture that resembles the model shown in Figure 1-6.	Building Multi-Tenant SaaS Architectures
+imagine that	仮定・例示	〜だと想像してください	聴衆に具体的な情景を思い描かせる導入表現。	Imagine that we have a model that has only two possible outputs: A and B.	AI Engineering
+one way to	提案・意見	〜する一つの方法として	複数ある解決策の一つを提示する際の柔らかい言い方。断定を避けたい時に有効。	One way to measure the amount of compute needed is by considering the number of machines, e.g., GPUs, CPUs, and TPUs.	AI Engineering
+another way to	提案・意見	別の方法としては	one way toに続けて代案を出す際に使う表現。	Next, let's look at another way to categorize tests: short mode.	100 Go Mistakes and How to Avoid Them
+i think	意見表明	私は〜だと思います	最も基本的な意見表明。断定を避けやわらかく主張する。	I think of agents as dynamic, collaborative systems rather than isolated components.	AI Agents: The Definitive Guide
+i believe	意見表明	私は〜だと考えます	i thinkよりやや確信度が高く、フォーマルな場面にも使える。	However, in SaaS environments, I believe that successful teams are better off when they adopt a broader view of the scope of their operational model.	Building Multi-Tenant SaaS Architectures
+i mean	意見表明・言い換え	つまり、というのは	発言を補足・言い換える際のつなぎ言葉。カジュアルな口頭表現で頻出。	Anyone, and I mean anyone, can now develop AI applications.	AI Engineering
+i want to	意見表明・提案	〜したいと思います	自分がこれから話す内容や意図を宣言する表現。プレゼンの冒頭にも使える。	I want to give you a blueprint for building LLM agents that are robust, reliable, and adaptable.	AI Agents: The Definitive Guide
+just want to	意見表明・前置き	ちょっと〜したいだけなのですが	控えめに要望や補足を切り出す表現。i want toよりカジュアルで柔らかい。	If you just want to learn and have fun, jump right in.	AI Engineering
+you know	フィラー・同意確認	ご存知の通り	相手の理解を前提にした軽い確認・フィラー表現。多用は避けたい。	You know by now that AI agents are not magic.	AI Agents: The Definitive Guide
+arguably the	意見表明・強調	間違いなく〜と言える(最上級を伴うことが多い)	断定を避けつつ強い主張をする際のヘッジ表現。arguably the bestのように最上級と共に使われることが多い。	Arguably, the smallest evaluation unit is a single LLM completion or a retrieval query against a vector store.	Building AI Agent Platforms
+not necessarily	意見表明・留保	必ずしも〜というわけではない	相手の発言や一般論を穏やかに否定・留保する際の表現。	Go is simple to learn but not necessarily easy to master.	100 Go Mistakes and How to Avoid Them
+to be clear	譲歩・強調	はっきり言うと	誤解を避けるために明確化する前置き表現。会議での確認発言に便利。	To be clear, routing and fallback strategies are vital architectural patterns when developing AI applications.	Building AI Agent Platforms
+to be fair	譲歩	公平に言うと	反対意見や批判の前に、相手の立場も認める際に使う譲歩表現。	To be fair, this does make sense on some level.	Cloud FinOps, 2nd Edition
+keep in mind	確認・注意喚起	〜を覚えておいてください	重要な注意点を念押しする表現。説明の締めや途中の注意喚起に使う。	Keep in mind that real agent failures rarely occur in calm, perfectly structured interactions.	AI Agents: The Definitive Guide
+note that	確認・注意喚起	〜に注意してください	keep in mindよりやや事務的・技術文書寄りだが、口頭のレクチャーでも頻出。	Note that the goal isn't to be exhaustive because the more cases we add, the more they would depend on the context.	100 Go Mistakes and How to Avoid Them
+notice that	確認・注意喚起	〜に気づいてください	聴衆に特定のポイントへ注意を向けさせる表現。	You'll also notice that much of what you've learned so far comes together here.	AI Agents: The Definitive Guide
+make sure	確認・依頼	必ず〜するようにしてください	行動を促す際の定番表現。指示・レビューコメントで頻出。	But before delving into most topics, we make sure the foundations are clear.	100 Go Mistakes and How to Avoid Them
+make sure that	確認・依頼	〜であることを確認してください	make sureに接続詞thatを伴う形。認識をすり合わせる際にも使う。	I've mentioned model adaptation several times in this chapter, so before we move on, I want to make sure that we're on the same page about what model adaptation means.	AI Engineering
+make sure you	確認・依頼	あなたが必ず〜するようにしてください	相手に直接行動を促す時の表現。命令文的だが指導・レビューでは自然。	Make sure you also account for the correct IAM permissions when mounting, otherwise you'll quickly find yourself debugging access errors instead of shipping.	AI Agents: The Definitive Guide
+you can see	参照・指示	ご覧の通り、見て分かるように	画面やスライド、図を指し示しながら説明する際の定番。	You can see how different OpenAI models tokenize text on the OpenAI website.	AI Engineering
+we can see	参照・指示	私たちが見て分かるように	you can seeより一緒に確認しているニュアンス。デモや共同作業で使いやすい。	In Figure 2-1, we can see this general workflow.	An Illustrated Guide to AI Agents
+as we saw	参照・振り返り	先ほど見たように	既出の内容を振り返って参照する際の表現。	As we saw in Chapter 1, the LLM powers agents to go from observations to actions.	An Illustrated Guide to AI Agents
+as we discussed	参照・振り返り	先ほど議論したように	会議やレビューで以前の議論内容を引用する際に使う。	As we discussed, interfaces are made to create abstractions.	100 Go Mistakes and How to Avoid Them
+as we mentioned	参照・振り返り	先ほど触れたように	as we discussedより軽く言及した内容を指す。	As we mentioned in Chapter 4, this could be anything from unblended costs or amortized costs or fully loaded costs.	Cloud FinOps, 2nd Edition
+as shown in	参照・指示	〜に示されている通り	図表やスライドを指し示す際の表現。プレゼンで資料を参照する時に使う。	Now, to give the LLM access to the tool, you just bind the tools to the LLM as shown in Example 1-3.	AI Agents: The Definitive Guide
+as expected	感想・様子	予想通り	結果を報告する際の一言コメントとしてよく使われる。	This helps you understand whether the system behaves as expected and produces useful results.	AI Agents: The Definitive Guide
+turns out	感想・様子	実は〜だった、〜ということが判明した	意外な結果や真相を語る際のカジュアルな導入句。	It turns out that tokenization can be much more efficient for some languages than others.	AI Engineering
+it turns out	感想・様子	実は〜だと分かった	turns outに主語itを補った完全形。会議での報告に使いやすい。	As it turns out, scaling your model can be done in more ways than one.	An Illustrated Guide to AI Agents
+makes sense	確認・同意	納得できる、理にかなっている	相手の説明に同意・納得する際の短い相槌としても使われる。	This parallel highlights why extending pure LLMs with tools makes sense.	AI Agents: The Definitive Guide
+make sense to	確認・同意	〜にとって理にかなう	makes senseに前置詞toを伴う形。「〜するのが合理的だ」という判断を述べる際に使う。	For businesses in commercial areas, it may make sense to lease a high-speed transmission line from the offices to the nearest ISP.	Computer Networks, Fifth Edition
+sounds like	感想・様子	〜のように聞こえる	相手の発言に対する感想・反応を述べる際の表現。	Even though this sounds like a simplistic rule, it's important to remember.	100 Go Mistakes and How to Avoid Them
+looks like	感想・様子	〜のように見える	視覚的な情報に基づく感想を述べる際の表現。	Visually, in the figure, it looks like circular dependencies.	100 Go Mistakes and How to Avoid Them
+seems like	感想・様子	〜のように思われる	sounds like/looks likeと同系統で、印象や推測を柔らかく述べる際に使う。	While this seems like a complex process, it is largely a standard part of properly implementing OAuth in your code.	AI Agents with MCP
+of course	強調・同意	もちろん	同意や当然の事実を強調する際の定番表現。	Of course, it's impossible to be exhaustive, as there will always be edge cases, but this section's goal was to provide guidance to cover most cases.	100 Go Mistakes and How to Avoid Them
+no doubt	強調	間違いなく	確信を強調する表現。文頭・文中どちらにも置ける。	I have no doubt that these benchmarks will soon become saturated.	AI Engineering
+for sure	強調・カジュアル	確実に、間違いなく	of courseやno doubtよりカジュアルな口語表現。	We can't say this for sure because it's impossible to comb through the training data to verify whether it contains an idea.	AI Engineering
+worth noting	強調	特筆すべき、注目に値する	重要なポイントを補足的に強調する際の表現。	This is worth noting so we're not tempted to implement it manually.	100 Go Mistakes and How to Avoid Them
+worth noting that	強調	〜ということは特筆すべきだ	worth notingに接続詞thatを伴う完全形。	It's also worth noting that this book is not trying to include every permutation of SaaS.	Building Multi-Tenant SaaS Architectures
+worth mentioning	強調	言及する価値がある	worth notingとほぼ同義。やや控えめに補足を加える際に使う。	It is worth mentioning that Evaluation-Driven Development (EDD) is a technique that goes hand in hand with many of these concepts.	Building AI Agent Platforms
+worth considering	提案・強調	検討する価値がある	選択肢や代案を提示する際に使う表現。	However, it is worth considering as you're defining your data partitioning model.	Building Multi-Tenant SaaS Architectures
+it's worth noting	強調	特筆すべき点として	worth noting thatの主語付き完全形。プレゼンや説明の合間の強調に使いやすい。	It's worth noting that this move to shared infrastructure also introduces a range of new challenges.	Building Multi-Tenant SaaS Architectures
+important to note	強調	重要な点として、注意すべき点として	説明の中で重要な留意点を強調する際の定番。	It's important to note that completions are predictions, based on probabilities, and not guaranteed to be correct.	AI Engineering
+important thing to	強調	重要なことは〜すること	the important thing to note/rememberなどの形で使われ、要点を明示する。	The important thing to note is to start thinking about what it means to have standardization, why it's required, and with what common methodologies it can be achieved.	An Illustrated Guide to AI Agents
+it's important to	強調	〜することが重要です	important to noteより一般的で、行動や理解の重要性を述べる際に使う。	However, it's important to know that this chapter isn't meant as an introduction to the transformer architectures or to parameter-efficient fine-tuning (PEFT) methods.	AI Agents: The Definitive Guide
+to highlight the	強調	〜を強調するために	特定のポイントを際立たせたい時に使う表現。	These questions aren't meant to criticize these public leaderboards but to highlight the challenge of selecting benchmarks to rank models.	AI Engineering
+to note that	確認・強調	〜ということに触れておくと	important to noteよりやや軽い注意喚起・補足。	It's important to note that there are other types of AI agents in practice that do not utilize LLMs.	An Illustrated Guide to AI Agents
+the key is	要点提示	重要なのは〜だ	話の核心・結論を一言で示す際の定番表現。	The key is that whatever you use for your sandbox, MCP tool calls have to get back to the MCP client so that the server can execute them.	AI Agents with MCP
+the key to	要点提示	〜の鍵は	成功や理解のための重要な要素を示す表現。	The key to good API design, however, is to think from the user's perspective.	Building AI Agent Platforms
+the key idea	要点提示	重要なアイデアは	コンセプトや発想の核心を紹介する際に使う。	The key idea is to use one generation stage to propose multiple potential paths, an evaluation stage to score or select among them, and an execution stage to follow the chosen path.	AI Agents: The Definitive Guide
+the key difference	要点提示・比較	重要な違いは	比較を行う際に、最も重要な相違点を示す表現。	The key difference is that while prompt tokens are included in the input context, they are excluded from the loss computation so the model is trained on only the response tokens.	An Illustrated Guide to AI Agents
+the point is	要点提示	要するに、ポイントは〜だ	議論の核心・主張をまとめる際の表現。	The point is that the resource no longer belongs to any one consumer; it is a shared infrastructure that is consumed by any tenant of our system.	Building Multi-Tenant SaaS Architectures
+the point of	要点提示・問いかけ	〜の目的・意義は	What's the point of...?のように目的を問う疑問文でもよく使われる。	What is the point of creating these abstractions?	100 Go Mistakes and How to Avoid Them
+the idea is	要点提示	考え方としては、要は	アイデアやアプローチの要旨を説明する際の表現。	The idea is that for different questions, different methodologies might be needed to solve them.	An Illustrated Guide to AI Agents
+the idea behind	要点提示	〜の背後にある考え方は	設計思想やコンセプトの意図を説明する際に使う。	The idea behind contextual retrieval is to augment each chunk with relevant context to make it easier to retrieve the relevant chunks.	AI Engineering
+key takeaway	要約・要点提示	重要な学び、要点	説明やプレゼンの締めくくりで要点をまとめる際に使う。	The key takeaway is that you'll need to give careful consideration to determining how and where identity fits into your environment.	Building Multi-Tenant SaaS Architectures
+to summarize the	要約	〜をまとめると	要約に入る際の定番表現。プレゼンの終盤で使われることが多い。	To summarize, the quality of a RAG system should be evaluated both component by component and end to end.	AI Engineering
+that said	譲歩・話題転換	とはいえ、そうは言っても	直前の発言を踏まえつつ、条件や反論を付け加える際のつなぎ表現。	That said, leaderless systems can have performance problems as well:	Designing Data-Intensive Applications, 2nd Edition
+to some extent	譲歩・留保	ある程度は	全面的な同意や否定を避け、部分的に認める際のヘッジ表現。	Remember that your colleagues are probably already working with data to some extent, at different levels of data literacy.	Communicating with Data
+in a way	譲歩・留保	ある意味では	断定を避けつつ独自の見方を示す際に使う表現。	It's essential to organize all this data in a way that can be searched later.	AI Engineering
+either way	譲歩・結論	どちらにしても	選択肢の違いを問わず結論が同じであることを示す表現。	Either way this is an area to watch closely in the future.	Building AI Agent Platforms
+rule of thumb	比喩・目安	経験則として	厳密ではないが実務上役立つ目安を示す際の定番表現。as a rule of thumbの形で使われることが多い。	As a rule of thumb, KV cache memory grows with sequence length × layers × KV heads × head dimension × 2 × precision in bytes.	AI Agents: The Definitive Guide
+at first glance	比喩・感想	一見すると	第一印象を述べたあとに、実は違うという展開へつなげる際によく使われる。	At first glance, a stronger judge makes sense.	AI Engineering
+at a glance	比喩・要約	一目で、ぱっと見て	at first glanceと似るが、こちらは概観するというニュアンスでダッシュボードや図の説明に使われる。	They help you understand, at a glance, how your system is doing.	AI Engineering
+to start with	提案・導入	まず最初に	let's start withと同義だが主語なしでも使える柔軟な導入表現。	Before looking more closely at adaptive algorithms, it helps to start with two simpler strategies.	AI Agents: The Definitive Guide
+before we start	提案・前置き	始める前に	本題に入る前の前置きとして使う表現。	Before we start making things more efficient, we need to understand how efficiency is measured.	AI Engineering
+before we get	提案・前置き	〜に入る前に	before we startと同系統で、特定の話題に入る前の前置きに使う。	But before we get into those details, we need to align on what exactly an agent even is.	Agent Memory
+before we dive	提案・前置き	深く掘り下げる前に	let's dive intoと対になる前置き表現。詳細な説明に入る前に使う。	Before we dive more deeply into these topics, let's go over some important terminology, depicted in Figure 2-10.	Communicating with Data
+before we can	提案・前置き	〜できるようになる前に	前提条件を先に説明する必要がある時に使う表現。	Before we can dig into defining SaaS, we need to understand where this journey started and the factors that have driven the momentum of the SaaS delivery model.	Building Multi-Tenant SaaS Architectures
+moving on to	話題転換	〜に話を移すと	let's move onよりやや文語的だが、口頭のプレゼンでも進行の合図として使える。	After finishing a task, the agent reasons over its current plan to choose the next step, here marking the Google search complete and moving on to research papers on arXiv	An Illustrated Guide to AI Agents
+next step is	話題転換・手順	次のステップは〜です	手順やロードマップを説明する際の定番表現。	Once you have a runnable app and checkpoints in place, the next step is to make its execution observable.	AI Agents: The Definitive Guide
+now that we	話題転換	〜した今となっては、〜したので	前段の内容を踏まえて次の話題に移る際のつなぎ表現。	Now that we have these SaaS mindset basics in place, we can start thinking about how these principles are mapped to more specific architectural patterns and constructs.	Building Multi-Tenant SaaS Architectures
+now that we've	話題転換	〜し終えた今	now that weの完了形版。ある作業や説明が終わったことを踏まえて次に進む際に使う。	Now that we've updated our MCP client, we need to make sure our agent uses it.	AI Agents with MCP
+by the time	時間関係	〜する頃には	時間的な前後関係を示す表現。進捗報告や見通しを語る際に使いやすい。	By the time something looks wrong, the impact radius may already be significant.	AI Agents: The Definitive Guide
+by the end	時間関係	〜の終わりまでには	プレゼンや説明の到達目標を示す際の定番表現(By the end of this talk...)。	By the end, you'll know how to staff your team, assign the right tasks, and optimize for both performance and spend.	AI Agents: The Definitive Guide
+at this point	時間関係・話題転換	この時点で、現時点では	現在の状況を整理して次に進む際のつなぎ表現。	At this point, your agent has the essential components for self improvement.	AI Agents: The Definitive Guide
+at this stage	時間関係	この段階では	at this pointと近いが、プロセスの段階に焦点を当てる表現。	At this stage, dataset management becomes a collaborative effort involving a broader audience beyond the engineering team.	Building AI Agent Platforms
+on the fly	比喩・様子	その場で、リアルタイムで	計画せずその都度対応する様子を表す口語的表現。技術トークで頻出。	Once you enforce that boundary, you gain control over execution: you can change your systems settings on the fly, resume from the last stable checkpoint, and avoid rerunning upstream agents.	AI Agents: The Definitive Guide
+feel free to	提案・依頼	遠慮なく〜してください	相手に行動を促す柔らかい許可表現。Q&Aや依頼の場面で多用。	If you're primarily focused on building agents, feel free to proceed to the next chapter after reading Part 1 - you'll have everything you need.	An Illustrated Guide to AI Agents
