@@ -1,0 +1,117 @@
+expression	pos	gloss_ja	nuance	example_sentence	source_book
+accordingly	副詞	それに応じて	"therefore"よりやや控えめで、前述の内容に応じて行動・対応することを示す	Segmenting traces in this way helps you identify which user groups experience specific failures and allows you to build more realistic evaluation datasets, and improve your agents accordingly.	AI Agents: The Definitive Guide
+consequently	副詞	その結果として	原因と結果の因果関係を明示するフォーマルな接続副詞	Consequently, if a function returns a slice, we shouldn't do as in other languages and return a non-nil collection for defensive reasons.	100 Go Mistakes and How to Avoid Them
+conversely	副詞	逆に、反対に	前文と対照的な内容を導入する書き言葉的な接続副詞	Conversely, if the gradients are large, they grow exponentially with each step, leading to instability in the learning process.	AI Engineering
+hence	副詞	それゆえに、従って	論理的帰結を導く硬い書き言葉。文頭で使われることが多い	Hence, it has strict compile-time rules, which ensure the code is type-safe in most cases.	100 Go Mistakes and How to Avoid Them
+thus	副詞	このように、従って	henceと同様に結論・要約を導く	The otherwise valid generated JSONs can also be truncated, and thus not parsable, if the generation stops too soon, such as when it reaches the maximum output token length.	AI Engineering
+moreover	副詞	さらに、その上	追加の論拠を重ねる接続副詞。furthermoreとほぼ同義	Moreover, a key difference between traditional LLM usage and agentic systems is whether the workflow is stateless or stateful.	AI Agents: The Definitive Guide
+nevertheless	副詞	それにもかかわらず	howeverより強い譲歩のニュアンスを持つ	Nevertheless, there is considerable overlap between the two subjects.	Computer Networks, Fifth Edition
+likewise	副詞	同様に	前述と同じパターンが当てはまることを示す	Likewise, a traditional agent can reply only in text, but what if the situation requires it to have a voice instead?	An Illustrated Guide to AI Agents
+namely	副詞	すなわち、具体的には	直前の内容を具体的に言い換える際に使う	Multi-turn conversations expose a vital flaw of LLMs, namely that they're forgetful entities and do not remember past conversations (Figure 1-9).	An Illustrated Guide to AI Agents
+whereas	接続詞	一方で〜	2つの事柄を対比する。whileよりフォーマルで文書向き	Closed models remove infrastructure complexity and provide direct access, whereas open models might require infrastructure management.	AI Agents: The Definitive Guide
+regarding	前置詞	〜に関して	aboutのフォーマルな言い換え	While working in this new context, I noticed some common patterns regarding Go coding mistakes.	100 Go Mistakes and How to Avoid Them
+given	前置詞	〜を踏まえると	"Given X, Y"の形で前提条件を示す	Given a task, the agent first reasons about what is missing or what step comes next, then takes actions by calling tools to retrieve data, run code, or check results.	AI Agents: The Definitive Guide
+essentially	副詞	本質的には、要するに	複雑な説明を簡潔にまとめる前置き	In a production-grade agentic system, you are essentially running two distinct types of "Correction Loops".	AI Agents: The Definitive Guide
+ultimately	副詞	最終的には	一連のプロセスの結論を導く	No amount of internal hardening changes the fact that your agent ultimately depends on external systems you don't control.	AI Agents: The Definitive Guide
+ideally	副詞	理想的には	現実とのギャップを含意しつつ望ましい状態を述べる	Ideally, you have already worked on an existing Go project at work or home.	100 Go Mistakes and How to Avoid Them
+naturally	副詞	当然ながら	文脈により「当然」と「自然に」の両義がある	Expressivity - We can define expressivity in a programming language by how naturally and intuitively we can write and read code.	100 Go Mistakes and How to Avoid Them
+particularly	副詞	特に、とりわけ	一般論の中で強調したい点を導入する	HSMs are particularly relevant to more advanced MAS.	AI Agents: The Definitive Guide
+specifically	副詞	具体的には	一般論を絞り込んで詳細を述べる際に使う	Handling an error multiple times is a mistake made frequently by developers, not specifically in Go.	100 Go Mistakes and How to Avoid Them
+primarily	副詞	主に、第一に	複数要因のうち最も重要なものを示す	Sub-agents are primarily used to isolate context and to apply specialized instructions, so the main agent stays focused on high-level planning rather than implementation details.	AI Agents: The Definitive Guide
+broadly	副詞	大まかに、広く	"broadly speaking"のように全体像を示す	Broadly, there are users and there are builders.	An Illustrated Guide to AI Agents
+largely	副詞	主として、大部分は	largeから意味を推測しにくい語。程度や割合を表す	Still, these actions were largely confined to the prompt.	AI Agents with MCP
+mainly	副詞	主に	largely/primarilyとほぼ同義でやや口語的	Type embedding is mainly used for convenience: in most cases, to promote behaviors.	100 Go Mistakes and How to Avoid Them
+increasingly	副詞	ますます	時間とともに程度が増す様子を示す	Modern LLMs are not only capable of calling tools, they are increasingly trained and optimized specifically for agentic tasks.	AI Agents: The Definitive Guide
+relatively	副詞	比較的	絶対的でなく相対的な評価であることを明示する	In practice, it allows even relatively small models to perform complex tasks more reliably, while making their decision-making process transparent.	AI Agents: The Definitive Guide
+respectively	副詞	それぞれ	複数の対象を列挙順に対応させる際に文末で使う	There are two methods that set the perfect stage for you to understand the tradeoff between exploring more answers or going deeper into a specific answer: repeated sampling and sequential sampling, respectively.	AI Agents: The Definitive Guide
+similarly	副詞	同様に	likewiseとほぼ同義でやや口語寄り	Agents are similarly constrained by their workflows, operating only within the scope of the tools, permissions, and safeguards they are provided.	AI Agents: The Definitive Guide
+considerably	副詞	かなり、相当に	veryより書き言葉的	Software engineering has evolved considerably during the past decades.	100 Go Mistakes and How to Avoid Them
+significantly	副詞	著しく、大幅に	無視できない程度であることを示す	Then it grows significantly after having added 1 million elements to the map.	100 Go Mistakes and How to Avoid Them
+roughly	副詞	おおよそ	正確でないことを断る概数表現	As the context grows, the denominator of Softmax, which sums over all token scores, becomes very large while each individual score stays roughly the same.	AI Agents: The Definitive Guide
+approximately	副詞	おおよそ、約	roughlyよりフォーマルで数値の前に置かれる	The timeframe starts with user-level code; then a "stop the world" is executed, which occupies the four CPU cores for approximately 40 ms.	100 Go Mistakes and How to Avoid Them
+precisely	副詞	正確に、まさに	exactlyよりやや硬い	If a client can pass multiple options, but we want to handle precisely the case that a port is invalid, it makes error handling more complex.	100 Go Mistakes and How to Avoid Them
+merely	副詞	単に、ただ〜にすぎない	onlyより硬く、過小評価・限定のニュアンスを含む	This string merely represents the LLM's intention to take an action, but the action itself is not taken without outside intervention.	An Illustrated Guide to AI Agents
+solely	副詞	もっぱら、〜のみ	onlyの硬い言い換え。単一の要因を強調	Because of this, early evaluation shouldn't rely solely on standardized benchmarks.	AI Agents: The Definitive Guide
+exclusively	副詞	もっぱら、排他的に	他を除外して一つに限定するニュアンス	The only data type that we omit is strings because a later chapter deals with this type exclusively.	100 Go Mistakes and How to Avoid Them
+entirely	副詞	完全に	completelyとほぼ同義だが書き言葉で好まれる	Encoder-only architectures remove the decoder stack entirely and rely on bidirectional attention, which means every token can attend to every other token in the sequence.	AI Agents: The Definitive Guide
+slightly	副詞	わずかに	程度がわずかであることを示す	Of these two solutions, we have seen that the second tends to be slightly faster.	100 Go Mistakes and How to Avoid Them
+gradually	副詞	徐々に	急激でなく段階的に変化する様子	MCTS allows an LLM to explore a structured space of possible answers and gradually converge on the best one.	AI Agents: The Definitive Guide
+dramatically	副詞	劇的に	変化の大きさ・急激さを強調する	KV caching speeds up inference dramatically, but at a cost.	AI Agents: The Definitive Guide
+necessarily	副詞	必ずしも（〜ない）	"not necessarily"の形で部分否定を作る頻出パターン	They aren't necessarily adversarial, but emerge from execution under real conditions.	AI Agents: The Definitive Guide
+inherently	副詞	本質的に、生まれつき	外部要因でなく内在する性質であることを示す	This solution is inherently more straightforward than the first one (which was partial, as we didn't handle the error).	100 Go Mistakes and How to Avoid Them
+explicitly	副詞	明示的に	implicitlyの対義語。暗黙でなく明確に示す様子	For example, models such as Kimi K2, Llama 4, and Qwen3.6 are explicitly tuned for coding, tool use, and powering agentic systems.	AI Agents: The Definitive Guide
+arbitrary	形容詞	任意の、恣意的な	規則性がなく自由に決められる、または独断的というニュアンスも	However, a string is a sequence of arbitrary bytes; it's not necessarily based on UTF-8.	100 Go Mistakes and How to Avoid Them
+beneficial	形容詞	有益な	usefulよりやや硬い書き言葉	This kind of information is also beneficial if we suspect goroutine leaks.	100 Go Mistakes and How to Avoid Them
+compelling	形容詞	説得力のある、魅力的な	議論や理由が強く人を納得させる様子	I'll focus particularly on one compelling category: adapter-based techniques.	AI Engineering
+comprehensive	形容詞	包括的な、網羅的な	抜け漏れなく全体をカバーしている様子	This book offers a comprehensive, well-structured guide to the essential aspects of building generative AI systems.	AI Engineering
+concise	形容詞	簡潔な	無駄がなく要点を押さえた様子	Therefore, a package name should be short, concise, expressive, and, by convention, a single lowercase word.	100 Go Mistakes and How to Avoid Them
+considerable	形容詞	かなりの、相当な	名詞の前に置き量や程度の大きさを示す	There is considerable confusion in the literature between a computer network and a distributed system.	Computer Networks, Fifth Edition
+crucial	形容詞	決定的に重要な	importantより強い必須性を示す	This step is crucial in ToT, as it ensures the agent doesn't simply proceed with the first idea but instead critically assesses the alternatives and chooses the most promising path to pursue.	AI Agents: The Definitive Guide
+desirable	形容詞	望ましい	理想として好ましい状態を示す	Generally, having a nil pointer isn't a desirable state and means a probable bug.	100 Go Mistakes and How to Avoid Them
+feasible	形容詞	実行可能な	理論上でなく実際に実行できるかを問う語	If this isn't feasible, use an import alias to change the qualifier to differentiate the package name from the variable name, or think of a better name.	100 Go Mistakes and How to Avoid Them
+inherent	形容詞	本質的に備わった、固有の	外から付加されたものでなく元から備わる性質	These are just a few of the most popular use cases for agents, but agents' inherent flexibility and autonomy make the possibilities for their use nearly endless.	AI Agents with MCP
+intuitive	形容詞	直感的な	説明なしに理解・操作できる様子。UI文脈で頻出	This might be intuitive: these are the main operations that could potentially return a large number of items, and so are the ones you'd most want to paginate.	AI Agents with MCP
+numerous	形容詞	多数の	manyのフォーマルな言い換え	Over the course of writing this book, I've seen three specification releases, numerous SDK updates, and at least one (as yet incomplete) major update to the Python SDK.	AI Agents with MCP
+prominent	形容詞	顕著な、著名な	目立って際立っている様子	We have seen two prominent cases, one to signal a programmer error and another where our application fails to create a mandatory dependency.	100 Go Mistakes and How to Avoid Them
+prone	形容詞	〜しがちな、〜の傾向がある	"prone to X"の形で好ましくない傾向を述べる	This principle, called variable shadowing, is prone to common mistakes.	100 Go Mistakes and How to Avoid Them
+redundant	形容詞	冗長な、不要な	重複していて余分・不要であることを指す	For example, GoLand, the Go JetBrains IDE, warns about a redundant type conversion.	100 Go Mistakes and How to Avoid Them
+relevant	形容詞	関連する、妥当な	話題・文脈に直接関係している様子	HSMs are particularly relevant to more advanced MAS.	AI Agents: The Definitive Guide
+sensible	形容詞	分別のある、賢明な	sensitive（敏感な）と綴りが似ており混同注意	While some companies chase the latest hype, sensible business decisions are still being made based on returns on investment, not hype.	AI Engineering
+sophisticated	形容詞	洗練された、高度な	技術・手法が高度で複雑に発達している様子	Later on, Claude Shannon used more sophisticated statistics to decipher enemies' messages during the Second World War.	AI Engineering
+straightforward	形容詞	分かりやすい、単純な	複雑さがなく直接理解・実行できる様子	However, building a mental model encompassing all the different cases is probably not a straightforward task.	100 Go Mistakes and How to Avoid Them
+subsequent	形容詞	その後の、後続の	followingのフォーマルな言い換え	The system keeps track of which agent was last active so that subsequent interactions continue seamlessly with the right one.	AI Agents: The Definitive Guide
+substantial	形容詞	かなりの、実質的な	considerableと近いが「量・規模が大きい」を強調	This example demonstrates how spatial locality can have a substantial impact on performance.	100 Go Mistakes and How to Avoid Them
+subtle	形容詞	微妙な、繊細な	気づきにくいほどわずかな違いを指す	There is a subtle difference between simple and easy.	100 Go Mistakes and How to Avoid Them
+sufficient	形容詞	十分な	enoughのフォーマルな言い換え	The term ML engineering won't be sufficient to capture this differentiation.	AI Engineering
+suitable	形容詞	適した	目的・条件に合っている様子	Observing how important concurrency is these days also demonstrates why Go is such a suitable language for the present and probably for the foreseeable future.	100 Go Mistakes and How to Avoid Them
+trivial	形容詞	些細な、自明な	重要でない、またはCS文脈では「自明で証明不要」の意味でも使われる	We must also understand that allocating on the stack is faster for the Go runtime because it's trivial: a pointer references the following available memory address.	100 Go Mistakes and How to Avoid Them
+ubiquitous	形容詞	至る所にある、遍在する	どこにでも存在し当たり前になっている様子	Customer service agents are becoming ubiquitous.	AI Agents with MCP
+underlying	形容詞	根底にある、基礎となる	表面には現れない基盤・原因を指す	The transport is the underlying communication protocol that allows communication between the client and server.	AI Agents with MCP
+vital	形容詞	不可欠な、極めて重要な	crucialとほぼ同義	However, remember that consistency is also vital to ease maintainability.	100 Go Mistakes and How to Avoid Them
+widespread	形容詞	広範囲に及ぶ、普及した	広い範囲で一般的に見られる様子	Forgetting to pass an appropriate value for both of these parameters when it makes sense is a widespread mistake.	100 Go Mistakes and How to Avoid Them
+comparable	形容詞	匹敵する、比較可能な	"comparable to X"の形でXと同程度であることを示す	Even though only a fraction of the parameters are updated, LoRA achieves performance comparable to full fine-tuning.	AI Agents: The Definitive Guide
+cumulative	形容詞	累積的な	積み重なって増えていく様子	The budget tracker checks the cumulative history of the run.	AI Agents: The Definitive Guide
+extensive	形容詞	広範な、大規模な	範囲・量が広く及ぶ様子	Using a pointer can make the call more efficient, as doing so prevents making an extensive copy.	100 Go Mistakes and How to Avoid Them
+irrelevant	形容詞	無関係な	relevantの対義語	This flattens the distribution, reduces contrast between important and irrelevant tokens, and makes it harder for the model to identify key information.	AI Agents: The Definitive Guide
+malicious	形容詞	悪意のある	セキュリティ文脈で「悪意ある攻撃者・コード」を指す頻出語	Otherwise, requests may be stuck forever due to an absence of time- outs or even malicious clients that exploit the fact that our server doesn't have any timeouts.	100 Go Mistakes and How to Avoid Them
+massive	形容詞	膨大な、大規模な	hugeより書き言葉的でインパクトを強調	This is why we observed such a massive difference between the two benchmarks.	100 Go Mistakes and How to Avoid Them
+transparent	形容詞	（比喩的に）透明性のある、隠し立てのない	物理的な「透明」だけでなく「情報公開・正直」の意味でも頻出	To be transparent, I was also a decent source of inspiration regarding mistakes.	100 Go Mistakes and How to Avoid Them
+adjacent	形容詞	隣接する	物理的・概念的に隣り合っている様子	One last thing to mention regarding package documentation is that comments not adjacent to the declaration are omitted.	100 Go Mistakes and How to Avoid Them
+facilitate	動詞	促進する、容易にする	helpのフォーマルな言い換え	Accompanied by concrete examples, it can help people learn new skills efficiently and facilitate remembering the context of a mistake and how to avoid it.	100 Go Mistakes and How to Avoid Them
+mitigate	動詞	緩和する、軽減する	リスクや問題の影響を和らげる際に使う	Let's look at a concrete example and then try to mitigate it.	100 Go Mistakes and How to Avoid Them
+leverage	動詞	活用する、てこにする	useより「既存の資産を有利に使う」ニュアンスが強い	Therefore, to leverage these architectures, concurrency has become critical for software developers.	100 Go Mistakes and How to Avoid Them
+utilize	動詞	活用する、利用する	useのフォーマルな言い換え	If you run attention naively on modern GPUs, you are paying for compute you cannot fully utilize.	AI Agents: The Definitive Guide
+convey	動詞	伝える、示す	意味や意図を相手に伝達する様子	It's not a dogmatic book: each solution is detailed to convey the context in which it should apply.	100 Go Mistakes and How to Avoid Them
+denote	動詞	示す、意味する	記号や用語が何を指すかを定義する際に使う	For example, some languages, like Vietnamese, have pronouns to denote the relationship between the two speakers.	AI Engineering
+distinguish	動詞	区別する	"distinguish A from B"の形で頻出	Depending on your underlying language model, it may already have gathered experience, compared its own reasoning paths, and learned how to distinguish good decisions from poor ones.	AI Agents: The Definitive Guide
+span	動詞	（範囲に）またがる、及ぶ	空間・時間・システムの範囲を横断することを示す	In more complex systems, tracing may span multiple services such as agent runtimes, MCP servers, or external APIs.	AI Agents: The Definitive Guide
+yield	動詞	（結果を）もたらす、生み出す	produceのフォーマルな言い換え。「譲る」の意味もある多義語	Because a nil pointer is a valid receiver, converting the result into an interface won't yield a nil value.	100 Go Mistakes and How to Avoid Them
+arise	動詞	生じる、発生する	問題や疑問が自然に生じる際に使う。riseと混同しやすい	When designing an API, one question may arise: how do we deal with optional configurations?	100 Go Mistakes and How to Avoid Them
+drawback	名詞	欠点、短所	デメリットを指すフォーマルな語	The main drawback of this option is that following the copy and until the next garbage collection, we may consume twice the current memory for a short period.	100 Go Mistakes and How to Avoid Them
+downside	名詞	欠点、マイナス面	drawbackとほぼ同義でやや口語的	Another important downside is related to testing.	100 Go Mistakes and How to Avoid Them
+notion	名詞	概念、考え	conceptよりやや軽い、漠然とした「考え」のニュアンス	To understand the notion of an agent "harness", let's look at Example 1-5, programmed using the LangGraph Python SDK.	Agent Memory
+extent	名詞	程度、範囲	"to what extent"、"to some extent"などの形で頻出	That is the extent of your responsibility when it comes to implementing OAuth for your MCP server.	AI Agents with MCP
+scope	名詞	範囲、対象領域	プロジェクトや変数の適用範囲を指す	The scope of a variable refers to the places a variable can be referenced: in other words, the part of an application where a name binding is valid.	100 Go Mistakes and How to Avoid Them
+consequence	名詞	結果、影響	resultより「重大な帰結」のニュアンスを含むことが多い	Rewards close the loop between action and consequence.	AI Agents: The Definitive Guide
+significant	形容詞	著しい、重要な	importantよりデータ・規模の大きさを含意することが多い	A significant part of software complexity comes from the fact that, as developers, we strive to think about imaginary futures.	100 Go Mistakes and How to Avoid Them
+eventually	副詞	最終的に、いずれは	時間が経過した末に至る結果を示す	If it's no longer referenced, it's eventually freed by the garbage collector (GC) if allocated on the heap.	100 Go Mistakes and How to Avoid Them
+rarely	副詞	めったに〜ない	頻度が低いことを示す	First, let's note that it's rarely a necessity, and it means that whatever the use case, we can probably solve it as well without type embedding.	100 Go Mistakes and How to Avoid Them
+likely	形容詞	〜しそうな	"be likely to do"の形で可能性の高さを示す	The discussions of most of the mistakes are accompanied by concrete examples to illustrate when we are likely to make such errors.	100 Go Mistakes and How to Avoid Them
+distinct	形容詞	明確に異なる、別個の	はっきり区別できる様子	A map provides an unordered collection of key-value pairs in which all the keys are distinct.	100 Go Mistakes and How to Avoid Them
+explicit	形容詞	明示的な	暗黙でなく明確に述べられている様子。implicitの対義語	LangGraph makes the stateful, graph based model explicit, while CrewAI presents a higher level framework around agents, crews, and flows.	AI Agents: The Definitive Guide
+implicit	形容詞	暗黙の	明示されていないが前提とされている様子	Routing decisions should never rely on implicit assumptions.	AI Agents: The Definitive Guide
+obviously	副詞	明らかに	話者の確信を示す談話標識としても使われる	This helps prevent obviously sensitive or malformed content from being persisted into long-term storage.	AI Agents: The Definitive Guide
+partially	副詞	部分的に	fullyの対義的な程度副詞	The primary concern here is preventing untrusted or partially trusted code from accessing host resources, escaping its execution environment, or interfering with other workloads.	AI Agents: The Definitive Guide
+perspective	名詞	視点、観点	"from a X perspective"の形で頻出	From an implementation perspective, this function is correct.	100 Go Mistakes and How to Avoid Them
+poorly	副詞	不十分に、下手に	wellの対義語	A system that performs poorly with one technique might perform much better with another.	AI Engineering
+predictable	形容詞	予測可能な	結果が事前に見通せる様子	These constraints are what make agents viable today: safe to deploy, predictable in behavior, and aligned with their intended goals.	AI Agents: The Definitive Guide
+properly	副詞	適切に、きちんと	correctlyより広く「本来あるべき形で」の意味	For the framework to work properly, you need to have a model callback.	AI Agents: The Definitive Guide
+strictly	副詞	厳密に	"strictly speaking"の形で用語の正確な定義を断る際に頻出	Strictly speaking, however, an AI agent does not need to involve a language model at all.	AI Agents: The Definitive Guide
+surprisingly	副詞	驚くほど、意外にも	話者の予想に反する結果を導入する談話標識	Surprisingly, the parallel version is almost an order of magnitude slower.	100 Go Mistakes and How to Avoid Them
+tightly	副詞	密接に、きつく	"tightly coupled"のように結合の強さを表す	Their results showed that both forms of compute are tightly related.	An Illustrated Guide to AI Agents
+unlikely	形容詞	ありそうにない	likelyの対義語	Even though general-purpose foundation models can answer everyday questions about different domains, they are unlikely to perform well on domain-specific tasks, especially if they never saw these tasks during training.	AI Engineering
+variant	名詞	変種、派生形	元の形から派生した別バージョンを指す	Another popular variant of agents is the coding agent.	An Illustrated Guide to AI Agents
+contrast	名詞	対比、対照	"in contrast"の形で頻出。対照的な違いを示す	In contrast, other goroutines will receive updates and print a message whenever a specific goal is reached (listener goroutines).	100 Go Mistakes and How to Avoid Them
+fairly	副詞	かなり、まずまず	fair（公正な）と語形が似るが無関係。程度を表すhedge語	It's fairly common to see interfaces being overused in Go projects.	100 Go Mistakes and How to Avoid Them
+inconsistent	形容詞	一貫性のない	矛盾していたりばらつきがある様子	This structure counters unstructured, one-shot prompts that often lead to inconsistent results with LLMs alone.	AI Agents: The Definitive Guide
+provided	形容詞	与えられた、提供された	"the provided X"の形でAPIドキュメント等に頻出。接続詞的に"provided that〜"（〜という条件で）の用法もある	Hence, we also need to return an error if the provided type is unknown.	100 Go Mistakes and How to Avoid Them
