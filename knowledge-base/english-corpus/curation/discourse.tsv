@@ -1,0 +1,102 @@
+expression	pos	gloss_ja	nuance	example_sentence	source_book
+after this	時間関係	この後は／これ以降は	直前に述べた出来事に続く時間関係を示す。文中・文末でも使われる。	Writing a book might be one of the hardest things I've undertaken in my life, so much so that I think I'm going to take a vow of silence for a while after this.	AI Agents with MCP
+along the way	時間関係	その過程で／途中で	プロセスの進行中に起こる付随的な事柄を示す際に使う。	Once you've committed to building an application with foundation models, evaluation will be an integral part of every step along the way.	AI Engineering
+as a consequence	因果	その結果として	"as a result"よりやや硬い言い方で、前文の直接的な帰結を導入する。	As a consequence, the protocols in the OSI model are better hidden than in the TCP/IP model and can be replaced relatively easily as the technology changes.	Computer Networks, Fifth Edition
+as a result	因果	その結果	前文の原因・条件から生じた結果を導入する最も基本的な因果表現。	As a result, encoder-only transformers remain central to modern AI systems, quietly powering the understanding layer beneath today's most advanced agentic systems.	AI Agents: The Definitive Guide
+as a rule	一般化	経験則として／原則として	"as a rule of thumb"の形で使われることが多く、目安・経験則を提示する前置き。	As a rule of thumb, KV cache memory grows with sequence length × layers × KV heads × head dimension × 2 × precision in bytes.	AI Agents: The Definitive Guide
+as a whole	総括	全体として	個別要素ではなく対象全体を指して総括する際に使う。	Each agent can be designed as a domain expert, which boosts the system's performance as a whole.	AI Agents: The Definitive Guide
+as always	前置き	いつものように	読者の既存の期待・慣習に沿うことを示す前置き表現。	As always, these can be found in the notebook on the associated GitHub repository.	An Illustrated Guide to AI Agents
+as before	参照・比較	以前と同様に	既出の状況・方法を踏襲することを示す。	As before, I omit the rest of the code for the other nodes for brevity, but you can find the complete implementation in the book's repository.	AI Agents: The Definitive Guide
+as discussed	参照	既に述べたように	前出の議論・図表を参照する際に使う。	For genuinely untrusted code, nest it inside a stronger isolation tier, as discussed in Table 6-4.	AI Agents: The Definitive Guide
+as expected	評価	予想通り	結果が事前の予測と一致したことを示す評価表現。	This helps you understand whether the system behaves as expected and produces useful results.	AI Agents: The Definitive Guide
+as follows	例示・列挙導入	次の通り	直後に箇条書きや詳細な説明が続くことを予告する。	Although there are different implementations with minor variations, the main idea is as follows:	100 Go Mistakes and How to Avoid Them
+as illustrated	参照・例示	図示されているように	図表・例で示された内容を参照する。	This can include a short handoff phrase that signals the budget boundary, as illustrated in Example 4-3.	AI Agents: The Definitive Guide
+as mentioned	参照	前述の通り	既出の内容を簡潔に呼び戻す際に使う汎用的な参照表現。	As mentioned in Chapter 1, a model's training process is often divided into pre-training and post-training.	AI Engineering
+as mentioned earlier	参照	前に述べた通り	"as mentioned"よりも時間的に前の言及であることを明確に示す。	As mentioned earlier, the MCPServer API automatically infers input and output schemas from the tool's function signature.	AI Agents with MCP
+as noted	参照	指摘した通り	既に指摘・注記した内容を引き合いに出す。	As noted in "The Direct Access Pattern", organizational accounts typically allow platform teams to configure rate limits and cost thresholds for individual team accounts.	Building AI Agent Platforms
+as opposed to	対比	〜とは対照的に	二者を明確に対比させる際に使う、ややフォーマルな表現。	Note that this section focuses on evaluating open-ended responses (arbitrary text generation) as opposed to close-ended responses (such as classification).	AI Engineering
+as shown	参照・例示	示されているように	図・例で示された内容への参照。	Now, to give the LLM access to the tool, you just bind the tools to the LLM as shown in Example 1-3.	AI Agents: The Definitive Guide
+as such	結論	それゆえ／そのようなものとして	直前の内容を受けて結論を導く。文脈により「それ自体としては」の意味にもなる。	As such, we consider the following definition of AI agents meaningful through both the fundamentals and new advances in this field:	An Illustrated Guide to AI Agents
+as usual	前置き	いつも通り	通常のやり方・慣例に従うことを示す。	After wiring the tools, you instantiate the LangGraph agent as usual and prompt the agent to search for data and plot the results inside the sandbox.	AI Agents: The Definitive Guide
+as we saw	参照	見てきたように	既出の内容を読者と共に振り返る参照表現。	As we saw in Chapter 1, the LLM powers agents to go from observations to actions.	An Illustrated Guide to AI Agents
+as we will	予告・時間関係	これから見るように	これから述べる内容を予告する（"as we will see"の形が多い）。	Networks come in many sizes, shapes and forms, as we will see later.	Computer Networks, Fifth Edition
+as with	比較	〜と同様に	既知の事例と類似点があることを示して導入する。	As with general hiring, you preselect here based on the capabilities and overall fit of the model for its final role in your agent system.	AI Agents: The Definitive Guide
+at this point	時間関係	この時点で	議論・プロセスの現在地点を示す。	At this point, your agent has the essential components for self improvement.	AI Agents: The Definitive Guide
+by definition	定義補足	定義上	用語・概念の定義から自明に導かれることを補足する。	We mentioned in the previous section that an empty slice has, by definition, a length of zero.	100 Go Mistakes and How to Avoid Them
+either way	結論	どちらにしても	直前に示した2つの選択肢のいずれであっても結論が変わらないことを示す。	Either way, this state also identifies tenants that could be candidates for additional outreach.	Building Multi-Tenant SaaS Architectures
+even if	譲歩	たとえ〜でも	仮定的な条件下でも結論が変わらないことを示す譲歩表現。	Their autonomy is orchestrated rather than self-evolving, decisions happen within a framework of predefined states, transitions, and toolsets, even if the agent can adaptively choose among them at runtime.	AI Agents: The Definitive Guide
+even though	譲歩	〜にもかかわらず	事実として成立している逆接的条件を示す（even ifより事実性が高い）。	This clearly shows that the agent successfully learned how to solve the countdown tasks, even though I just used a small split of the dataset.	AI Agents: The Definitive Guide
+first and foremost	結論・強調	まず何よりも	最も重要な点を最初に提示する際の強い前置き。	First and foremost, FinOps is a cultural change that focuses on breaking down the silos between teams that historically haven't worked closely together.	Cloud FinOps, 2nd Edition
+following this	時間関係	これに続いて	直前の内容を受けて次の展開に進むことを示す。	Following this metaphor, that is what a platform should strive for.	Building AI Agent Platforms
+for example	例示	例えば	最も一般的な具体例の導入表現。	For example, in pure reinforcement learning, agents can be trained directly through trial-and-error interaction with an environment.	AI Agents: The Definitive Guide
+for instance	例示	例えば	"for example"とほぼ同義でよりフォーマルな響きを持つ。	For instance, what output from the outline generation state triggers the drafting state.	AI Agents: The Definitive Guide
+for this purpose	目的	この目的のために	直前で述べた目的を受けて手段を示す。	Again, existing distributed tracing solutions from IDPs can be leveraged for this purpose.	Building AI Agent Platforms
+for this reason	因果	この理由で	直前に述べた理由を受けて結論・帰結を導く。	For this reason, the loop includes a short wrap-up instruction that forces a final assistant message if the run reaches the step limit after a tool observation.	AI Agents: The Definitive Guide
+given that	条件・因果	〜であることを踏まえると	前提条件を明示してから結論を述べる。	Given that this function isn't performance sensitive, it was decided to favor the easiest option to read.	100 Go Mistakes and How to Avoid Them
+important to note	補足・強調	注意すべき重要な点として	誤解されやすい点や見落としがちな点を強調する定番表現（it's important to note thatの形）。	It's important to note that completions are predictions, based on probabilities, and not guaranteed to be correct.	AI Engineering
+in a way	言い換え	ある意味では	断定を和らげたり、限定的な視点を示す際に使う。	The agent follows instructions, selects tools, and updates memory, but does so in a way that leads to unintended outcomes.	AI Agents: The Definitive Guide
+in addition	追加	加えて	前文の内容に情報を追加する基本的な表現。	In addition, the moment you need facts from outside training data, or you want the model to act (search, compute), you introduce tools.	AI Agents: The Definitive Guide
+in any case	結論	いずれにせよ	前述の複数の可能性に関わらず成り立つ結論を示す。	In any case, regulatory constraints and the need to avoid interference usually dictate the choice of frequencies.	Computer Networks, Fifth Edition
+in comparison	比較	比較すると	他の対象と比べた際の相対的な特徴を述べる。	It jumps off the page, especially in comparison to Figure 3-18.	Communicating with Data
+in contrast	対比	それとは対照的に	前文と明確に異なる性質・結果を提示する。	In contrast, other goroutines will receive updates and print a message whenever a specific goal is reached (listener goroutines).	100 Go Mistakes and How to Avoid Them
+in either case	条件	どちらの場合でも	直前に述べた2つの場合いずれにも当てはまることを示す。	In either case, the domain still typically ends up playing some role in identifying the tenant that is accessing your system.	Building Multi-Tenant SaaS Architectures
+in essence	言い換え	要するに／本質的には	複雑な説明を簡潔に言い換える際に使う。	In essence, a masked language model is trained to be able to fill in the blank.	AI Engineering
+in fact	強調	実際	前文の内容をさらに強調・補強する事実を提示する。	In fact, the use of verifiers resulted in approximately the same performance boost as a 30× model size increase.	AI Engineering
+in general	一般化	一般的に	個別事例ではなく全体的な傾向を述べる際の前置き。	In general, your hard checks should do as much of the work as possible.	AI Agents: The Definitive Guide
+in many cases	一般化	多くの場合	例外を認めつつ大部分に当てはまることを示す。	Having humans in the loop for sanity checks is always helpful, and in many cases, human evaluation is essential.	AI Engineering
+in most cases	一般化	ほとんどの場合	"in many cases"よりやや強い一般化。	In most cases, you will work with a curated subset rather than the full dataset.	AI Agents: The Definitive Guide
+in other words	言い換え	言い換えれば	直前の内容を分かりやすく言い換える際の代表的な表現。	In other words, your goal is to get the model to predict what comes next in the training data.	AI Engineering
+in particular	強調・例示	特に	一般的な内容の中から特定の点を取り上げて強調する。	In particular, you will learn how to monitor agent behavior, trace system execution, and identify weaknesses or unexpected behaviors during development and after deployment.	AI Agents: The Definitive Guide
+in practice	対比	実際には	理論・建前と対比して現実の状況を述べる。	In practice, nearly all real-world systems fall into the middle: they are agentic systems, not truly autonomous agents.	AI Agents: The Definitive Guide
+in principle	対比	原則として	理屈の上では成り立つことを述べ、実際との対比を暗示する。	In principle, almost any software that you can self-host could also be provided as a cloud service,	Designing Data-Intensive Applications, 2nd Edition
+in reality	対比	実際には	想定・理論と対比して現実を述べる。	In reality, each new agent, tool, or provider adds another special case.	AI Agents: The Definitive Guide
+in relation to	関連	〜との関連で	二つの事柄の関係性を明示する。	The executive team sets the company's KPIs, which are important measures that, taken together, form a picture of how the company is performing in relation to its goals.	Communicating with Data
+in short	結論	要するに	議論を簡潔にまとめる際の結論表現。	In short, this chapter will help you design the emergence of agency for your agents.	AI Agents: The Definitive Guide
+in some cases	条件	場合によっては	一部の状況にのみ当てはまることを示す限定表現。	These agents are used to do deep research on a topic, making use of memory, tools like web search, and in some cases, additional autonomous agents to pursue various avenues of research.	AI Agents with MCP
+in summary	結論	まとめると	議論全体を要約する際の代表的な結論表現。	In summary, three numbers signal a model's scale:	AI Engineering
+in that case	条件	その場合は	直前に述べた特定の条件が成立した場合の対応を示す。	In that case, you want the model to run the code in a minimal, capability-scoped interpreter embedded in the agent.	AI Agents: The Definitive Guide
+in the end	結論	結局のところ	一連の議論の最終的な結論を述べる。	What matters in the end isn't the number of mistakes we make, but our capacity to learn from them.	100 Go Mistakes and How to Avoid Them
+in the meantime	時間関係	それまでの間	別の出来事が起こるまでの間の状況を示す。	I cover exception handling fully in Chapter 7, but in the meantime you will occasionally need to declare methods that can throw exceptions.	Core Java, Vol. I: Fundamentals, 14th Edition
+in theory	対比	理論上は	実際とは異なる可能性を暗示しつつ理屈上の話をする。	Due to its RNN nature, in theory, it doesn't have the same context length limitation that transformer-based models have.	AI Engineering
+in this case	条件	この場合は	直前に示した特定の状況に限定して述べる。	In this case, the "roles" are workflow stages rather than independent agents.	AI Agents: The Definitive Guide
+in this context	文脈限定	この文脈では	議論の前提となる文脈・状況を明示して限定する。	In this context, the LLM can be seen as part of a function to optimize.	An Illustrated Guide to AI Agents
+in this regard	関連	この点に関して	直前の話題を受けてその観点から補足する。	Knowledge in this regard has two components: subject-matter expertise and data skills.	Communicating with Data
+in this way	言い換え	このようにして	直前で述べた方法・手段を受けてその帰結を示す。	In this way, for any number M of LLMs, you just write N connectors, transforming the MxN problem into M+N.	AI Agents with MCP
+in turn	因果	今度は／それに伴って	連鎖的な因果関係・順序を示す。	Foundation models emerged from large language models, which, in turn, originated as just language models.	AI Engineering
+it is worth	補足・強調	〜する価値がある	"it is worth noting/bearing in mind"などの形で重要な補足を導入する。	It is worth noting that the opposite can be true as well.	Cloud FinOps, 2nd Edition
+it turns out	結果・発見	実際には〜であることが分かる	予想に反した、あるいは調査の結果判明した事実を導入する。	It turns out that tokenization can be much more efficient for some languages than others.	AI Engineering
+just as	比較	ちょうど〜のように	類似した状況を並べて論を展開する際の比較表現。	Just as individual skills eventually meet their limits, a single agent can only take a workflow so far before complexity demands coordination.	AI Agents: The Definitive Guide
+just like	比較	〜と同じように	"just as"と同様、類似の事例を挙げて説明を導入する。	Just like The Hitchhiker's Guide to the Galaxy advises not to panic, I'll say the same here in my guide.	AI Agents: The Definitive Guide
+keep in mind	補足	心に留めておくこと	読者に注意喚起する定番のフレーズ。	Keep in mind that real agent failures rarely occur in calm, perfectly structured interactions.	AI Agents: The Definitive Guide
+last but	結論・列挙	最後になるが（重要な点として）	通常"last but not least"の形で使われ、列挙の最後の項目が軽視されるべきではないことを示す。	Last but not least, the scope of evaluation has expanded for general-purpose models.	AI Engineering
+more importantly	強調	さらに重要なことに	直前の内容よりも重要な点を追加する。	More importantly, you need to establish a policy and budget for monitoring, maintaining, and updating your model.	AI Engineering
+more specifically	詳細化	より具体的には	直前の一般的な説明を具体化・詳細化する。	More specifically, it's the chat history of the LLM that is continuously fed back to the LLM.	An Illustrated Guide to AI Agents
+most importantly	強調	最も重要なことに	複数の論点の中で最重要のものを提示する。	Most importantly, they give models the ability to directly interact with the world, enabling them to automate many aspects of our lives.	AI Engineering
+moving on to	時間関係	次に移って	話題やステップを次に進める際の移行表現。	development is done hand-in-hand with testing, allowing individual behaviors to be fully tested and validated on their own before moving on to the next one.	AI Agents with MCP
+much like	比較	〜とほとんど同じように	類似のたとえを挙げて説明を補強する。	Each step or branch in the reasoning process can be evaluated and compared, much like a human reviewing a line of argument or debugging code.	AI Agents: The Definitive Guide
+note that	補足	〜に注意	見落としやすい前提・注意点を読者に伝える。	Note that I focus on the key code snippets here and omit helper functions or minor sections to highlight the core logic.	AI Agents: The Definitive Guide
+notice that	補足	〜に気づくだろう	"note that"と似るが、読者自身が気づくという視点で述べる。	You'll also notice that much of what you've learned so far comes together here.	AI Agents: The Definitive Guide
+not only	追加	〜だけでなく	"not only X but also Y"の相関構文で範囲を拡張する。	It will empower you to not only understand the concepts but to apply them effectively as you learn about more complex topics later in the book.	AI Agents: The Definitive Guide
+on average	一般化	平均して	統計的な傾向・平均値を述べる際の表現。	A LinkedIn survey from August 2023 shows that the number of professionals adding terms like "Generative AI," "ChatGPT," "Prompt Engineering," and "Prompt Crafting" to their profile increased on average 75% each month.	AI Engineering
+on top of	追加	それに加えて	"on top of that"の形で、既にある事柄にさらに追加することを示す。	But on top of that, you have additional tools, such as MCP Inspector (which we've been using throughout the server chapters) which	AI Agents with MCP
+one way	例示・列挙	一つの方法として	複数ある方法のうち一つを提示する導入表現（"another way"と対で使われることが多い）。	One way to measure the amount of compute needed is by considering the number of machines, e.g., GPUs, CPUs, and TPUs.	AI Engineering
+recall that	参照	〜を思い出してほしい	既出の知識を読者に想起させる。	Recall that a softmax layer is used to compute the probability distribution over all possible values.	AI Engineering
+similarly to	比較	〜と同様に	既知の対象と類似点を示して説明を導入する。	You'll see how to use this in "Deep Agents: Planning Before Execution" for deep agents, which operate similarly to Claude Code and Manus.	AI Agents: The Definitive Guide
+so far	時間関係	これまでのところ	これまでの議論・進捗を振り返る際に使う。	What's the rationale for breaking the rule we've discussed so far?	100 Go Mistakes and How to Avoid Them
+such as	例示	〜のような	具体例を列挙して直前の一般的な概念を補足する。	Then comes action, such as searching for documentation, writing functions, or debugging errors.	AI Agents: The Definitive Guide
+that is	言い換え	すなわち	直前の内容をより正確・具体的に言い換える。	That is, the ReAct agent alternates between reasoning traces and tool outputs, and those traces feed back into context.	AI Agents: The Definitive Guide
+that said	譲歩	とはいえ	直前の内容を認めた上で、それに対する留保・逆接を導入する。	That said, every concept will be grounded in code, so your knowledge becomes usable again without requiring you to dust off old textbooks.	AI Agents: The Definitive Guide
+that way	結果	そうすることで	直前の方法・行動がもたらす結果を示す（文頭で使う場合に談話標識として機能）。	That way, the answer is more difficult to score programmatically or using an exact match and instead requires a judge.	An Illustrated Guide to AI Agents
+these days	時間関係	近頃は	現在の状況を過去と対比しながら述べる際に使われることが多い。	Truly, with the capabilities of agents these days, it all boils down to iteratively calling an LLM until it decides to stop the loop.	An Illustrated Guide to AI Agents
+this means	言い換え	これはつまり〜ということだ	直前の事実から導かれる意味・帰結を説明する。	This means that to support M models and N tools, agent developers had to write MxN connectors.	AI Agents with MCP
+to be clear	明確化	はっきり言うと	誤解を避けるために主張を明確にする際の前置き。	To be clear, routing and fallback strategies are vital architectural patterns when developing AI applications.	Building AI Agent Platforms
+to clarify	明確化	明確にすると	曖昧になりがちな点を明らかにする際に使う。	It's also important to clarify the role of humans in the application.	AI Engineering
+to illustrate	例示	説明のために	具体例を通して直前の説明を裏付ける。	To illustrate, the next example uses the open source TreeQuest library to refine Python code for the Fibonacci sequence.	AI Agents: The Definitive Guide
+to summarize	結論	まとめると	議論全体を簡潔にまとめる際の結論表現。	To summarize, the slice length is the number of available elements in the slice, whereas the slice capacity is the number of elements in the backing array.	100 Go Mistakes and How to Avoid Them
+when it comes	話題導入	〜のこととなると	特定の話題・観点に絞って議論を導入する（多くは"when it comes to"の形）。	Let's first go into what exactly open source means when it comes to models, then discuss the pros and cons of these two approaches.	AI Engineering
+which means	言い換え	つまり〜ということだ	直前の事実がもたらす意味を非制限的関係節で説明する。	Encoder-only architectures remove the decoder stack entirely and rely on bidirectional attention, which means every token can attend to every other token in the sequence.	AI Agents: The Definitive Guide
+while this	譲歩	〜ではあるが	一部の限定を認めた上で、それでも成り立つ一般的な主張を導入する譲歩表現。	While this example is in the context of a single agent, the same structure extends naturally into larger MAS.	AI Agents: The Definitive Guide
+with respect to	関連	〜に関して	特定の観点・基準を明示して論じる際に使う。	By looking at your FinOps practice through a variety of lenses, you can assess the strengths of each with respect to your broader organization as well as specific target groups within it.	Cloud FinOps, 2nd Edition
+with this	参照・因果	これによって	直前に述べた内容・手段を受けて、その結果や次の展開を導入する。	With this small implementation, you now see exactly what the graph remembers, how it routed, and what the latest assistant state is for each branch.	AI Agents: The Definitive Guide
+worth mentioning	補足	言及する価値がある	追加の重要な情報を控えめに提示する際に使う。	One further point worth mentioning here is that what it means to be on the Internet is changing.	Computer Networks, Fifth Edition
+worth noting	補足・強調	注目に値する	"it's worth noting that"の形で、重要だが見落とされがちな点を補足する。	On the topic of model performance given a compute budget, it's worth noting that the cost of achieving a given model performance is decreasing.	AI Engineering
