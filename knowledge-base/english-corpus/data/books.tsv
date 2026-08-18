@@ -1,0 +1,174 @@
+title	filename	included	reason	tokens	en_ratio
+100 Go Mistakes and How to Avoid Them	100 Go Mistakes and How to Avoid Them.epub	true	ok	94291	0.3979
+AI Agents: The Definitive Guide	AI Agents The Definitive Guide.epub	true	ok	73564	0.3034
+AI Agents with MCP	AI Agents with MCP.epub	true	ok	81104	0.4073
+AI Engineering	AI Engineering.epub	true	ok	156574	0.3488
+AIに適したデータ設計図 (Japanese Edition)	AIに適したデータ設計図 (Japanese Edition).epub	false	japanese	3550	0.0093
+AIインタフェースの設計 (Japanese Edition)	AIインタフェースの設計 (Japanese Edition).epub	false	japanese	1868	0.0219
+AIエンジニアリング ―基盤モデルを用いたAIアプリケーション開発の基礎と実践	AIエンジニアリング ―基盤モデルを用いたAIアプリケーション開発の基礎と実践.epub	false	japanese	1523	0.0401
+AIエージェントを用いたアプリケーション構築	AIエージェントを用いたアプリケーション構築.epub	false	japanese	3163	0.0550
+AIシステムのセキュリティ確保 (Japanese Edition)	AIシステムのセキュリティ確保 (Japanese Edition).epub	false	japanese	442	0.0181
+AIシステム性能エンジニアリング (Japanese Edition)	AIシステム性能エンジニアリング (Japanese Edition).epub	false	japanese	896	0.0022
+AIネイティブのソフトウェアデリバリー	AIネイティブのソフトウェアデリバリー.epub	false	japanese	3319	0.0256
+AI支援プログラミング	AI支援プログラミング.epub	false	japanese	4457	0.0197
+API スタイルについて学ぶ	API スタイルについて学ぶ.epub	false	japanese	11010	0.0286
+APIハンズオンラーニング ―手を動かして学ぶAPIの設計と実装	APIハンズオンラーニング ―手を動かして学ぶAPIの設計と実装.epub	false	japanese	12010	0.0363
+AWS Lambdaのプログラミング	AWS Lambdaのプログラミング.epub	false	japanese	5904	0.0117
+AWS におけるセキュリティとマイクロサービスアーキテクチャ	AWS におけるセキュリティとマイクロサービスアーキテクチャ.epub	false	japanese	8876	0.0275
+AWS クックブック	AWS クックブック.epub	false	japanese	6144	0.0133
+AWSでのサーバーレス開発	AWSでのサーバーレス開発.epub	false	japanese	4933	0.0371
+AWS上のシステム設計	AWS上のシステム設計.epub	false	japanese	7165	0.0106
+Agent Memory	Agent Memory.epub	true	ok	12408	0.3627
+An Illustrated Guide to AI Agents	An Illustrated Guide to AI Agents.epub	true	ok	73274	0.3685
+Architecture as Code	Architecture as Code.epub	true	ok	2318	0.3374
+Building AI Agent Platforms	Building AI Agent Platforms.epub	true	ok	62078	0.3302
+Building Multi-Tenant SaaS Architectures	Building Multi-Tenant SaaS Architectures.epub	true	ok	146209	0.3809
+Cloud FinOps, 2nd Edition	Cloud FinOps, 2nd Edition.epub	true	ok	64660	0.3527
+Cloud Native Go, 2nd Edition	Cloud Native Go, 2nd Edition.epub	true	ok	3524	0.3431
+Cloud Native Go	Cloud Native Go.epub	false	low_english_ratio	2922	0.0219
+Communicating with Data	Communicating with Data.epub	true	ok	81898	0.3804
+Computer Networks, Fifth Edition	Computer Networks, Fifth Edition.epub	true	ok	371026	0.3899
+Core Java, Vol. I: Fundamentals, 14th Edition	Core Java, Vol. I Fundamentals, 14th Edition.epub	true	ok	148915	0.4299
+Cybersecurity Architect's Handbook - Second Edition	Cybersecurity Architect's Handbook - Second Edition.epub	true	ok	2134	0.3196
+Data Mesh	Data Mesh.epub	false	japanese	1245	0.0546
+Designing Data-Intensive Applications, 2nd Edition	Designing Data-Intensive Applications, 2nd Edition.epub	true	ok	216203	0.3607
+Efficient Go	Efficient Go.epub	false	french	189101	0.0062
+Financial Data Engineering	Financial Data Engineering.epub	true	ok	140542	0.3268
+Fine-Tuning AI	Fine-Tuning AI.epub	true	ok	2256	0.3639
+From Models to Money	From Models to Money.epub	true	ok	818	0.3325
+Fundamentals of Data Visualization	Fundamentals of Data Visualization.epub	true	ok	34082	0.3699
+Fundamentals of DevOps and Software Delivery	Fundamentals of DevOps and Software Delivery.epub	true	ok	150781	0.3665
+GPU Programming with C++ and CUDA	GPU Programming with C++ and CUDA.epub	true	ok	54419	0.4148
+Gitハンズオンラーニング ―手を動かして学ぶバージョン管理システムの基本	Gitハンズオンラーニング ―手を動かして学ぶバージョン管理システムの基本.epub	false	japanese	1825	0.0581
+Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス	Googleのソフトウェアエンジニアリング ―持続可能なプログラミングを支える技術、文化、プロセス.epub	false	japanese	3466	0.0323
+GraphQL Best Practices	GraphQL Best Practices.epub	true	ok	39192	0.3965
+Hands-On RAG for Production	Hands-On RAG for Production.epub	true	ok	93518	0.3474
+How Linux Works, 3rd Edition	How Linux Works, 3rd Edition.epub	true	ok	109790	0.3838
+Infrastructure as Code ―クラウドにおけるサーバ管理の原則とプラクティス	Infrastructure as Code ―クラウドにおけるサーバ管理の原則とプラクティス.epub	false	japanese	1446	0.1355
+Infrastructure as Code, 3rd Edition	Infrastructure as Code, 3rd Edition.epub	true	ok	67502	0.3555
+JavaScriptデザインパターンを学ぶ 第2版	JavaScriptデザインパターンを学ぶ 第2版.epub	false	japanese	2917	0.0120
+Javaへの関数的アプローチ	Javaへの関数的アプローチ.epub	false	japanese	2865	0.0401
+Kubernetesで実践するクラウドネイティブDevOps	Kubernetesで実践するクラウドネイティブDevOps.epub	false	japanese	6162	0.0153
+Learn Go with Pocket-Sized Projects	Learn Go with Pocket-Sized Projects.epub	true	ok	92630	0.4154
+Learning AI-Native Software Engineering	Learning AI-Native Software Engineering.epub	true	ok	1307	0.3305
+Learning Domain-Driven Design	Learning Domain-Driven Design.epub	true	ok	38447	0.3747
+Learning Go, 3rd Edition	Learning Go, 3rd Edition.epub	true	ok	1305	0.3096
+Learning Modern Linux	Learning Modern Linux.epub	true	ok	55202	0.3778
+Linux Bible, 11th Edition	Linux Bible, 11th Edition.epub	true	ok	66015	0.3892
+MLOps実装ガイド ―本番運用を見据えた開発戦略	MLOps実装ガイド ―本番運用を見据えた開発戦略.epub	false	japanese	7196	0.0197
+Mastering API Architecture	Mastering API Architecture.epub	true	ok	76070	0.3883
+Mastering Go for DevOps	Mastering Go for DevOps.epub	true	ok	50059	0.3460
+Modern REST API Development in Go	Modern REST API Development in Go.epub	true	ok	53979	0.4325
+Multimodal, Real-Time AI Agent Systems	Multimodal, Real-Time AI Agent Systems.epub	true	ok	3812	0.3568
+Platform Engineering at Google	Platform Engineering at Google.epub	true	ok	1387	0.3172
+PostgreSQL: Up and Running, 4th Edition	PostgreSQL Up and Running, 4th Edition.epub	true	ok	1263	0.3381
+Practical Malware Analysis	Practical Malware Analysis.epub	true	ok	1904	0.3288
+Prompt Engineering for LLMs	Prompt Engineering for LLMs.epub	true	ok	48995	0.3875
+Pythonによるアーキテクチャパターン	Pythonによるアーキテクチャパターン.epub	false	japanese	2257	0.0279
+Pythonによるテスト駆動開発, 3rd Edition	Pythonによるテスト駆動開発, 3rd Edition.epub	false	japanese	3114	0.0067
+RESTful Web API パターンと実践クックブック	RESTful Web API パターンと実践クックブック.epub	false	japanese	4456	0.0189
+Real World HTTP 第3版 ―歴史とコードに学ぶインターネットとウェブ技術	Real World HTTP 第3版 ―歴史とコードに学ぶインターネットとウェブ技術.epub	false	japanese	11730	0.0095
+SQLではじめるデータ分析 ―クエリで行う前処理、時系列解析、コホート分析、テキスト分析、異常検知	SQLではじめるデータ分析 ―クエリで行う前処理、時系列解析、コホート分析、テキスト分析、異常検知.epub	false	japanese	2307	0.0377
+SQLアンチパターン 第2版 ―データベースプログラミングで陥りがちな失敗とその対策	SQLアンチパターン 第2版 ―データベースプログラミングで陥りがちな失敗とその対策.epub	false	japanese	1595	0.0194
+SRE サイトリライアビリティエンジニアリング ―Googleの信頼性を支えるエンジニアリングチーム	SRE サイトリライアビリティエンジニアリング ―Googleの信頼性を支えるエンジニアリングチーム.epub	false	japanese	2551	0.0278
+SREの探求 ―様々な企業におけるサイトリライアビリティエンジニアリングの導入と実践	SREの探求 ―様々な企業におけるサイトリライアビリティエンジニアリングの導入と実践.epub	false	japanese	4322	0.0539
+Scaling AI Adoption in Engineering	Scaling AI Adoption in Engineering.epub	true	ok	14174	0.3578
+Security in Computing, 6th Edition	Security in Computing, 6th Edition.epub	true	ok	1865	0.3115
+Skills for AI Agents	Skills for AI Agents.epub	true	ok	895	0.3117
+Snowflake Data Engineering	Snowflake Data Engineering.epub	true	ok	51656	0.3803
+Tableau Strategies	Tableau Strategies.epub	true	ok	103132	0.3806
+Terraform in Depth	Terraform in Depth.epub	true	ok	2009	0.3395
+The Anti-Perfectionist Guide to Data Quality	The Anti-Perfectionist Guide to Data Quality.epub	true	ok	1027	0.3252
+The Developer's Guide to AI	The Developer's Guide to AI.epub	true	ok	71738	0.3549
+Think Python 第3版 ―コンピュータ科学者の思考で問題を解決する	Think Python 第3版 ―コンピュータ科学者の思考で問題を解決する.epub	false	japanese	830	0.0904
+UX for Business ―デジタル変革時代のビジネスデザイン手法	UX for Business ―デジタル変革時代のビジネスデザイン手法.epub	false	japanese	412	0.0777
+UXデザインの法則 第2版 ―最高のプロダクトとサービスを支える心理学	UXデザインの法則 第2版 ―最高のプロダクトとサービスを支える心理学.epub	false	japanese	473	0.1290
+Universal Data Modeling	Universal Data Modeling.epub	true	ok	3340	0.3536
+Web API クックブック	Web API クックブック.epub	false	japanese	1320	0.0068
+Webブラウザエンジニアリング ―Chrome開発者たちから学ぶ、作って理解するブラウザとWebの仕組み	Webブラウザエンジニアリング ―Chrome開発者たちから学ぶ、作って理解するブラウザとWebの仕組み.epub	false	japanese	10417	0.0160
+Windowsセキュリティインターナル ―PowerShellで理解するWindowsの認証、認可、監査の仕組み	Windowsセキュリティインターナル ―PowerShellで理解するWindowsの認証、認可、監査の仕組み.epub	false	japanese	4328	0.0079
+はじめての設計をやり抜くための本 第2版 概念モデリングからアプリケーション、データベース、アーキテクチャ設計、アジャイル開発まで	はじめての設計をやり抜くための本 第2版 概念モデリングからアプリケーション、データベース、アーキテクチャ設計、アジャイル開発まで.epub	false	japanese	3286	0.0612
+イベント駆動型マイクロサービスの構築, 2nd Edition	イベント駆動型マイクロサービスの構築, 2nd Edition.epub	false	japanese	1586	0.0259
+インタフェースの設計 第3版	インタフェースの設計 第3版.epub	false	japanese	3584	0.0513
+インテリジェントな自律型エージェント	インテリジェントな自律型エージェント.epub	false	japanese	247	0.0162
+ウェブAPIの設計	ウェブAPIの設計.epub	false	japanese	3991	0.0215
+エッジのAI	エッジのAI.epub	false	japanese	4782	0.0512
+エンタープライズビッグデータレイク	エンタープライズビッグデータレイク.epub	false	japanese	2093	0.0798
+オブザーバビリティ・エンジニアリング	オブザーバビリティ・エンジニアリング.epub	false	japanese	1275	0.0369
+クラウドアプリケーションアーキテクチャパターン	クラウドアプリケーションアーキテクチャパターン.epub	false	japanese	8982	0.0641
+クラウドセキュリティを学ぶ (Japanese Edition)	クラウドセキュリティを学ぶ (Japanese Edition).epub	false	japanese	4934	0.0284
+クラウドデータレイク ―無限の可能性があるデータを無駄なく活かすアーキテクチャ設計ガイド	クラウドデータレイク ―無限の可能性があるデータを無駄なく活かすアーキテクチャ設計ガイド.epub	false	japanese	2944	0.0340
+クラウドネイティブGo	クラウドネイティブGo.epub	false	japanese	3528	0.0561
+クラウドネイティブアプリケーションのデザインパターン	クラウドネイティブアプリケーションのデザインパターン.epub	false	japanese	4508	0.0246
+グラフデータの実践ガイド	グラフデータの実践ガイド.epub	false	japanese	3445	0.0763
+コードが動かないので帰れません！ 新人プログラマーのためのエラーが怖くなくなる本	コードが動かないので帰れません！ 新人プログラマーのためのエラーが怖くなくなる本.epub	false	japanese	544	0.1176
+サイトリライアビリティワークブック ―SREの実践方法	サイトリライアビリティワークブック ―SREの実践方法.epub	false	japanese	4282	0.0229
+システム思考の世界へ ―複雑化する時代で考え続けるソフトウェア技術者のために	システム思考の世界へ ―複雑化する時代で考え続けるソフトウェア技術者のために.epub	false	japanese	1507	0.0876
+システム思考を学ぶ	システム思考を学ぶ.epub	false	japanese	1025	0.0644
+システム運用アンチパターン ―エンジニアがDevOpsで解決する組織・自動化・コミュニケーション	システム運用アンチパターン ―エンジニアがDevOpsで解決する組織・自動化・コミュニケーション.epub	false	japanese	1642	0.0384
+スクラム実践者が知るべき97のこと	スクラム実践者が知るべき97のこと.epub	false	japanese	120	0.2083
+スタッフエンジニアの道 ―優れた技術専門職になるためのガイド	スタッフエンジニアの道 ―優れた技術専門職になるためのガイド.epub	false	japanese	2726	0.0679
+ストリーミング・データベース	ストリーミング・データベース.epub	false	japanese	4018	0.0149
+セキュリティカオスエンジニアリング	セキュリティカオスエンジニアリング.epub	false	japanese	7370	0.1429
+ソフトウェアアーキテクチャの促進	ソフトウェアアーキテクチャの促進.epub	false	japanese	2615	0.0696
+ソフトウェアエンジニアガイドブック ―世界基準エンジニアの成功戦略ロードマップ	ソフトウェアエンジニアガイドブック ―世界基準エンジニアの成功戦略ロードマップ.epub	false	japanese	154	0.1753
+ソフトウェアサプライチェーンセキュリティ	ソフトウェアサプライチェーンセキュリティ.epub	false	japanese	7072	0.0785
+デジタルアイデンティティのすべて ―安全かつユーザー中心のアイデンティティシステムを実現するための知識	デジタルアイデンティティのすべて ―安全かつユーザー中心のアイデンティティシステムを実現するための知識.epub	false	japanese	3975	0.0521
+テスト駆動開発を学ぶ	テスト駆動開発を学ぶ.epub	false	japanese	1019	0.0226
+ディフェンシブ・セキュリティ・ハンドブック第2版	ディフェンシブ・セキュリティ・ハンドブック第2版.epub	false	japanese	2153	0.0334
+デザインスプリント ―プロダクトを成功に導く短期集中実践ガイド	デザインスプリント ―プロダクトを成功に導く短期集中実践ガイド.epub	false	japanese	599	0.0434
+データのセマンティック・モデリング	データのセマンティック・モデリング.epub	false	japanese	1904	0.1166
+データエンジニアリングの基礎 ―データプロジェクトで失敗しないために	データエンジニアリングの基礎 ―データプロジェクトで失敗しないために.epub	false	japanese	9773	0.0694
+データエンジニアリングの設計パターン	データエンジニアリングの設計パターン.epub	false	japanese	4259	0.0237
+データベースリライアビリティエンジニアリング ―回復力のあるデータベースシステムの設計と運用	データベースリライアビリティエンジニアリング ―回復力のあるデータベースシステムの設計と運用.epub	false	japanese	3335	0.0315
+データ保護完全ガイド ―あらゆるデータの保全と回復を可能にする	データ保護完全ガイド ―あらゆるデータの保全と回復を可能にする.epub	false	japanese	3702	0.0373
+データ品質モニタリングの自動化	データ品質モニタリングの自動化.epub	false	japanese	1635	0.0318
+データ指向アプリケーションデザイン ―信頼性、拡張性、保守性の高い分散システム設計の原理	データ指向アプリケーションデザイン ―信頼性、拡張性、保守性の高い分散システム設計の原理.epub	false	japanese	8664	0.0795
+データ集約型アプリケーションの設計 (Japanese Edition), 2nd Edition	データ集約型アプリケーションの設計 (Japanese Edition), 2nd Edition.epub	false	japanese	17904	0.0262
+トランスフォーマー：定義ガイド (Japanese Edition)	トランスフォーマー：定義ガイド (Japanese Edition).epub	false	japanese	6242	0.0191
+ドメイン駆動型トランスフォーマー変換 (Japanese Edition)	ドメイン駆動型トランスフォーマー変換 (Japanese Edition).epub	false	japanese	1771	0.0779
+ドメイン駆動設計をはじめよう ―ソフトウェアの実装と事業戦略を結びつける実践技法	ドメイン駆動設計をはじめよう ―ソフトウェアの実装と事業戦略を結びつける実践技法.epub	false	japanese	831	0.0758
+ビジネス、データ、コードの統一	ビジネス、データ、コードの統一.epub	false	japanese	2895	0.0263
+ファストAPI	ファストAPI.epub	false	japanese	2258	0.0089
+ベクトルデータベース (Japanese Edition)	ベクトルデータベース (Japanese Edition).epub	false	japanese	2578	0.0109
+マスタリングAPIアーキテクチャ ―モノリシックからマイクロサービスへとアーキテクチャを進化させるための実践的手法	マスタリングAPIアーキテクチャ ―モノリシックからマイクロサービスへとアーキテクチャを進化させるための実践的手法.epub	false	japanese	6101	0.0180
+マルチテナントSaaSアーキテクチャの構築 ―原則、ベストプラクティス、AWSアーキテクチャパターン	マルチテナントSaaSアーキテクチャの構築 ―原則、ベストプラクティス、AWSアーキテクチャパターン.epub	false	japanese	2619	0.0088
+メダリオンアーキテクチャの構築	メダリオンアーキテクチャの構築.epub	false	japanese	4528	0.0170
+リアルタイム分析システムの構築	リアルタイム分析システムの構築.epub	false	japanese	2376	0.0412
+レガシーコードからの脱却 ―ソフトウェアの寿命を延ばし価値を高める9つのプラクティス	レガシーコードからの脱却 ―ソフトウェアの寿命を延ばし価値を高める9つのプラクティス.epub	false	japanese	1081	0.1267
+侵入技術入門 ―bashで学ぶ攻撃者の技法	侵入技術入門 ―bashで学ぶ攻撃者の技法.epub	false	japanese	4947	0.0251
+先駆者に学ぶAIプロダクトマネジメント ―アイディエーションから設計、構築、市場投入、運用まで	先駆者に学ぶAIプロダクトマネジメント ―アイディエーションから設計、構築、市場投入、運用まで.epub	false	japanese	3933	0.0173
+分散システムの設計 第2版	分散システムの設計 第2版.epub	false	japanese	1021	0.0245
+初めてのGo言語 第2版 ―他言語プログラマーのためのイディオマティックGo実践ガイド	初めてのGo言語 第2版 ―他言語プログラマーのためのイディオマティックGo実践ガイド.epub	false	japanese	4508	0.0353
+初めてのGraphQL ―Webサービスを作って学ぶ新世代API	初めてのGraphQL ―Webサービスを作って学ぶ新世代API.epub	false	japanese	2853	0.0266
+初めてのLangChain ―LangChainとLangGraphによるAI/LLMアプリケーションの構築	初めてのLangChain ―LangChainとLangGraphによるAILLMアプリケーションの構築.epub	false	japanese	2918	0.0332
+効率的なGo ―データ指向によるGoアプリケーションの性能最適化	効率的なGo ―データ指向によるGoアプリケーションの性能最適化.epub	false	japanese	6323	0.0367
+実用 Git 第3版	実用 Git 第3版.epub	false	japanese	1966	0.0234
+実用 Go言語 第2版 ―システム開発の現場で知っておきたいアドバイス	実用 Go言語 第2版 ―システム開発の現場で知っておきたいアドバイス.epub	false	japanese	5292	0.0270
+実践 AIエージェント開発 ―マルチエージェントシステムの設計と実装	実践 AIエージェント開発 ―マルチエージェントシステムの設計と実装.epub	false	japanese	2970	0.0370
+実践 AWSデータサイエンス ―エンドツーエンドのMLOpsパイプライン実装	実践 AWSデータサイエンス ―エンドツーエンドのMLOpsパイプライン実装.epub	false	japanese	12839	0.0286
+実践 LLMアプリケーション開発 ―プロトタイプを脱却し、実用的な実装に迫るための包括的な手引き	実践 LLMアプリケーション開発 ―プロトタイプを脱却し、実用的な実装に迫るための包括的な手引き.epub	false	japanese	6483	0.0370
+実践 Webペネトレーションテスト ―攻撃者の視点で学ぶWebアプリケーションセキュリティ	実践 Webペネトレーションテスト ―攻撃者の視点で学ぶWebアプリケーションセキュリティ.epub	false	japanese	6866	0.0191
+実践 自然言語処理 ―実世界NLPアプリケーション開発のベストプラクティス	実践 自然言語処理 ―実世界NLPアプリケーション開発のベストプラクティス.epub	false	japanese	10167	0.0928
+実践クラウドセキュリティ 第2版	実践クラウドセキュリティ 第2版.epub	false	japanese	3068	0.0512
+実践的なプロセス自動化	実践的なプロセス自動化.epub	false	japanese	1392	0.0553
+強力なPython	強力なPython.epub	false	japanese	1015	0.0562
+技術リーダーシップのための14のヒント	技術リーダーシップのための14のヒント.epub	false	japanese	423	0.0851
+流暢なReact	流暢なReact.epub	false	japanese	5268	0.0108
+生成AIで強化するSEO戦略 ―品質・効率・コストを改善するAIファーストアプローチ	生成AIで強化するSEO戦略 ―品質・効率・コストを改善するAIファーストアプローチ.epub	false	japanese	5260	0.0369
+生成AIの可視化	生成AIの可視化.epub	false	japanese	7523	0.0385
+生成AIデザインパターン ―AIエージェント構築、アプリケーション開発のベストプラクティス	生成AIデザインパターン ―AIエージェント構築、アプリケーション開発のベストプラクティス.epub	false	japanese	20228	0.2145
+生成AIデザインパターン	生成AIデザインパターン.epub	false	japanese	6315	0.0416
+生成AI時代の価値のつくりかた ―実践者のマインド、スキル、データ、ユースケース	生成AI時代の価値のつくりかた ―実践者のマインド、スキル、データ、ユースケース.epub	false	japanese	5846	0.0503
+経理における人工知能	経理における人工知能.epub	false	japanese	3613	0.0595
+脅威モデリング	脅威モデリング.epub	false	japanese	3754	0.0615
+行動を変えるデザイン ―心理学と行動経済学をプロダクトデザインに活用する	行動を変えるデザイン ―心理学と行動経済学をプロダクトデザインに活用する.epub	false	japanese	1517	0.0962
+解読 データアーキテクチャ ―モダンデータウェアハウス、データファブリック、データレイクハウス、データメッシュの選び方	解読 データアーキテクチャ ―モダンデータウェアハウス、データファブリック、データレイクハウス、データメッシュの選び方.epub	false	japanese	1544	0.0460
+詳解 Terraform 第3版 ―Infrastructure as Codeを実現する	詳解 Terraform 第3版 ―Infrastructure as Codeを実現する.epub	false	japanese	8369	0.0318
+詳解 システム・パフォーマンス 第2版	詳解 システム・パフォーマンス 第2版.epub	false	japanese	26313	0.0350
+詳解 データレイクハウスアーキテクチャ ―Delta Lakeを使ったデータAI活用とガバナンス	詳解 データレイクハウスアーキテクチャ ―Delta Lakeを使ったデータAI活用とガバナンス.epub	false	japanese	6738	0.0138
+詳解 組み込みシステム 第2版 ―高性能、高品質なソフトウェアを実現するデザインパターン	詳解 組み込みシステム 第2版 ―高性能、高品質なソフトウェアを実現するデザインパターン.epub	false	japanese	3709	0.0367
+詳説 データベース ―ストレージエンジンと分散データシステムの仕組み	詳説 データベース ―ストレージエンジンと分散データシステムの仕組み.epub	false	japanese	11071	0.1194
+責任あるソフトウェアエンジニアリング ―現実社会におけるGoogleのケーススタディとともに	責任あるソフトウェアエンジニアリング ―現実社会におけるGoogleのケーススタディとともに.epub	false	japanese	3496	0.0458
+退屈なことはPythonにやらせよう 第3版 ―ノンプログラマーにもできる自動化処理プログラミング	退屈なことはPythonにやらせよう 第3版 ―ノンプログラマーにもできる自動化処理プログラミング.epub	false	japanese	1530	0.0275
+高性能 Python、第 3 版	高性能 Python、第 3 版.epub	false	japanese	8339	0.0354
