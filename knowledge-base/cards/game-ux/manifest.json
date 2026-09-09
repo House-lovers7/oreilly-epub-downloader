@@ -1,0 +1,32 @@
+{
+  "domain": "game-ux",
+  "queries": [
+    "usability heuristics games",
+    "game feel",
+    "onboarding tutorial",
+    "interface HUD",
+    "feedback response time",
+    "cognitive load",
+    "affordance",
+    "error recovery",
+    "accessibility touch",
+    "peak end rule",
+    "aesthetic usability",
+    "flow"
+  ],
+  "doc_filter": [
+    "doc-15ca90cddcebba3d",
+    "doc-c3abade7cab526c5",
+    "UXデザインの法則-第2版-最高のプロダクトとサ-ビスを支える心理学-8dd86cde7412",
+    "doc-7e551ce66ed6ecc5",
+    "doc-0f231066130b6a26",
+    "doc-f7c3e5b0ce8e5c2a",
+    "doc-d1c5bf792ad4838a"
+  ],
+  "chunk_count": 160,
+  "book_count": 6,
+  "generated_at": "2026-09-09T12:03:21.783527+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base/cards/game-ux/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

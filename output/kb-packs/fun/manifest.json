@@ -1,0 +1,37 @@
+{
+  "domain": "fun",
+  "queries": [
+    "fun learning patterns",
+    "boredom noise",
+    "curiosity",
+    "surprise",
+    "flow challenge skill",
+    "anticipation reward",
+    "emotion",
+    "juice juicy feedback",
+    "endogenous value",
+    "mastery",
+    "pacing tension release",
+    "discovery secret",
+    "senses sound haptic",
+    "delight",
+    "engagement loops"
+  ],
+  "doc_filter": [
+    "doc-d1c5bf792ad4838a",
+    "doc-080472648feda85c",
+    "doc-2ec00407cdd0f78b",
+    "doc-f7c3e5b0ce8e5c2a",
+    "doc-b2a42772da7bafed",
+    "doc-a06e3ba57ef5f6f2",
+    "doc-789e7e64932b10c6",
+    "doc-41d644317e6474c7",
+    "doc-c3abade7cab526c5"
+  ],
+  "chunk_count": 160,
+  "book_count": 9,
+  "generated_at": "2026-09-09T12:03:28.669766+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/output/kb-packs/fun/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}
