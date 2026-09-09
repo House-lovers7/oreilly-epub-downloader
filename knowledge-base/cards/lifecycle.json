@@ -1,5 +1,611 @@
 {
   "version": 1,
   "default_status": "candidate",
-  "overrides": {}
+  "overrides": {
+    "gd-p-001": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.002989+00:00"
+    },
+    "gd-p-002": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.003787+00:00"
+    },
+    "gd-p-003": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.004109+00:00"
+    },
+    "gd-p-004": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.004387+00:00"
+    },
+    "gd-p-005": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.004751+00:00"
+    },
+    "gd-p-006": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.005088+00:00"
+    },
+    "gd-p-007": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.005374+00:00"
+    },
+    "gd-p-008": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.005644+00:00"
+    },
+    "gd-p-009": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.005937+00:00"
+    },
+    "gd-p-010": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.006235+00:00"
+    },
+    "gd-p-011": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.006502+00:00"
+    },
+    "gd-p-012": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.006829+00:00"
+    },
+    "gd-p-013": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.007252+00:00"
+    },
+    "gd-p-014": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.007679+00:00"
+    },
+    "gd-p-015": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.008047+00:00"
+    },
+    "gd-p-016": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.008427+00:00"
+    },
+    "gd-p-017": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.008743+00:00"
+    },
+    "gd-p-018": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.009038+00:00"
+    },
+    "gd-p-019": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.009343+00:00"
+    },
+    "gd-p-020": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.009637+00:00"
+    },
+    "gd-p-021": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.010202+00:00"
+    },
+    "gd-p-022": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.010524+00:00"
+    },
+    "gd-p-023": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.010868+00:00"
+    },
+    "gd-p-024": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.011184+00:00"
+    },
+    "gd-p-025": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.011526+00:00"
+    },
+    "gd-p-026": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.011981+00:00"
+    },
+    "gd-p-027": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.012367+00:00"
+    },
+    "gd-p-028": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.012816+00:00"
+    },
+    "gd-p-029": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.013275+00:00"
+    },
+    "gd-p-030": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.013723+00:00"
+    },
+    "gd-p-031": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.014129+00:00"
+    },
+    "gd-p-032": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.014643+00:00"
+    },
+    "gd-p-033": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.015093+00:00"
+    },
+    "gd-a-001": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.015613+00:00"
+    },
+    "gd-a-002": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.016011+00:00"
+    },
+    "gd-a-003": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.016420+00:00"
+    },
+    "gd-a-004": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.016853+00:00"
+    },
+    "gd-a-005": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.017592+00:00"
+    },
+    "gd-a-006": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.018268+00:00"
+    },
+    "gd-a-007": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.018734+00:00"
+    },
+    "gd-a-008": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.019161+00:00"
+    },
+    "gd-a-009": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.019725+00:00"
+    },
+    "gd-a-010": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.020181+00:00"
+    },
+    "gd-a-011": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.020663+00:00"
+    },
+    "gd-a-012": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.021442+00:00"
+    },
+    "gd-a-013": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.022071+00:00"
+    },
+    "gd-a-014": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.022534+00:00"
+    },
+    "gd-a-015": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.023059+00:00"
+    },
+    "gd-a-016": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.023573+00:00"
+    },
+    "gd-a-017": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.024118+00:00"
+    },
+    "gd-t-001": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.024620+00:00"
+    },
+    "gd-t-002": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.025103+00:00"
+    },
+    "gd-t-003": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.025593+00:00"
+    },
+    "gd-t-004": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.026080+00:00"
+    },
+    "gd-t-005": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.026601+00:00"
+    },
+    "gd-t-006": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.027247+00:00"
+    },
+    "gd-t-007": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.027724+00:00"
+    },
+    "gd-t-008": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.028383+00:00"
+    },
+    "gd-t-009": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.028993+00:00"
+    },
+    "gd-t-010": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.029689+00:00"
+    },
+    "gd-t-011": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.030257+00:00"
+    },
+    "gd-t-012": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.030798+00:00"
+    },
+    "gd-t-013": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.031340+00:00"
+    },
+    "gd-t-014": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.031882+00:00"
+    },
+    "gd-t-015": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.032674+00:00"
+    },
+    "gd-t-016": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.033497+00:00"
+    },
+    "gux-p-001": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.034101+00:00"
+    },
+    "gux-p-002": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.034727+00:00"
+    },
+    "gux-p-003": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.035368+00:00"
+    },
+    "gux-p-004": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.035983+00:00"
+    },
+    "gux-p-005": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.036619+00:00"
+    },
+    "gux-p-006": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.037253+00:00"
+    },
+    "gux-p-007": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.037904+00:00"
+    },
+    "gux-p-008": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.038703+00:00"
+    },
+    "gux-p-009": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.039435+00:00"
+    },
+    "gux-p-010": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.040730+00:00"
+    },
+    "gux-p-011": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.041494+00:00"
+    },
+    "gux-p-012": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.042230+00:00"
+    },
+    "gux-p-013": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.042915+00:00"
+    },
+    "gux-p-014": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.043825+00:00"
+    },
+    "gux-p-015": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.044474+00:00"
+    },
+    "gux-p-016": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.045183+00:00"
+    },
+    "gux-p-017": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.045875+00:00"
+    },
+    "gux-p-018": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.046895+00:00"
+    },
+    "gux-p-019": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.047665+00:00"
+    },
+    "gux-p-020": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.048537+00:00"
+    },
+    "gux-p-021": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.049400+00:00"
+    },
+    "gux-p-022": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.050303+00:00"
+    },
+    "gux-p-023": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.051052+00:00"
+    },
+    "gux-p-024": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.051919+00:00"
+    },
+    "gux-p-025": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.052885+00:00"
+    },
+    "gux-p-026": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.053615+00:00"
+    },
+    "gux-p-027": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.054709+00:00"
+    },
+    "gux-p-028": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.055415+00:00"
+    },
+    "gux-p-029": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.056137+00:00"
+    },
+    "gux-p-030": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.057019+00:00"
+    },
+    "gux-p-031": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.057743+00:00"
+    },
+    "gux-p-032": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.058676+00:00"
+    },
+    "gux-p-033": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.059458+00:00"
+    },
+    "gux-p-034": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.060315+00:00"
+    },
+    "gux-a-001": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.061252+00:00"
+    },
+    "gux-a-002": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.062262+00:00"
+    },
+    "gux-a-003": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.063141+00:00"
+    },
+    "gux-a-004": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.063933+00:00"
+    },
+    "gux-a-005": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.064678+00:00"
+    },
+    "gux-a-006": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.065830+00:00"
+    },
+    "gux-a-007": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.066681+00:00"
+    },
+    "gux-t-001": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.067332+00:00"
+    },
+    "gux-t-002": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.068163+00:00"
+    },
+    "gux-t-003": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.068967+00:00"
+    },
+    "gux-t-004": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.069645+00:00"
+    },
+    "gux-t-005": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.070369+00:00"
+    },
+    "gux-t-006": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.071068+00:00"
+    },
+    "gux-t-007": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.071807+00:00"
+    },
+    "gux-t-008": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.072681+00:00"
+    },
+    "gux-t-009": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.073590+00:00"
+    },
+    "gux-t-010": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.076958+00:00"
+    },
+    "gux-t-011": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.077920+00:00"
+    },
+    "gux-t-012": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.078700+00:00"
+    },
+    "gux-t-013": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.079476+00:00"
+    },
+    "gux-t-014": {
+      "status": "active",
+      "basis": "2026-09-09 asa-lumina KB enrichment: source_chunks provenance verified against knowledge-base/index/library.sqlite (missing 0); schema ok via techlib doctor",
+      "recorded_at": "2026-09-09T14:18:31.080205+00:00"
+    }
+  }
 }
