@@ -1,5 +1,173 @@
 [
   {
+    "doc_id": "doc-4d36741df7f385d9",
+    "title": "100 Go Mistakes and How to Avoid Them",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/100 Go Mistakes and How to Avoid Them.epub",
+    "source_type": "epub",
+    "section_count": 20,
+    "chunk_count": 153,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-6398014486dbb5bd",
+    "title": "3D Game Development with Blender 5 and Unity 6",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/3D Game Development with Blender 5 and Unity 6.epub",
+    "source_type": "epub",
+    "section_count": 20,
+    "chunk_count": 79,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-789e7e64932b10c6",
+    "title": "A Game Design Vocabulary: Exploring the Foundational Principles Behind Good Game Design",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/A Game Design Vocabulary Exploring the Foundational Principles Behind Good Game Design.epub",
+    "source_type": "epub",
+    "section_count": 25,
+    "chunk_count": 112,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-a06e3ba57ef5f6f2",
+    "title": "Advanced Game Design",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Advanced Game Design.epub",
+    "source_type": "epub",
+    "section_count": 28,
+    "chunk_count": 263,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-25632d63cd4af838",
+    "title": "Agent Memory",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Agent Memory.epub",
+    "source_type": "epub",
+    "section_count": 6,
+    "chunk_count": 25,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-2508667c01a8df16",
+    "title": "AI Agents with MCP",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AI Agents with MCP.epub",
+    "source_type": "epub",
+    "section_count": 17,
+    "chunk_count": 145,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-8200246f016cc7d7",
+    "title": "AI Agents: The Definitive Guide",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AI Agents The Definitive Guide.epub",
+    "source_type": "epub",
+    "section_count": 16,
+    "chunk_count": 137,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-23ba88174f1c3562",
+    "title": "AI Engineering",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AI Engineering.epub",
+    "source_type": "epub",
+    "section_count": 19,
+    "chunk_count": 231,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-914d7870efeba695",
+    "title": "AIに適したデータ設計図 (Japanese Edition)",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AIに適したデータ設計図 (Japanese Edition).epub",
+    "source_type": "epub",
+    "section_count": 14,
+    "chunk_count": 65,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-63e0a7670d48318c",
+    "title": "AIインタフェースの設計 (Japanese Edition)",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AIインタフェースの設計 (Japanese Edition).epub",
+    "source_type": "epub",
+    "section_count": 14,
+    "chunk_count": 52,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-e00f432f26353603",
+    "title": "AIインターフェースデザイン ―AI時代の対話・可視化・制御の原則",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AIインターフェースデザイン ―AI時代の対話・可視化・制御の原則.epub",
+    "source_type": "epub",
+    "section_count": 16,
+    "chunk_count": 55,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-cadf36aacd898f81",
+    "title": "AIエンジニアリング ―基盤モデルを用いたAIアプリケーション開発の基礎と実践",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AIエンジニアリング ―基盤モデルを用いたAIアプリケーション開発の基礎と実践.epub",
+    "source_type": "epub",
+    "section_count": 21,
+    "chunk_count": 31,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "AIエ-ジェントを用いたアプリケ-ション構築-7b1d38e29723",
     "title": "AIエージェントを用いたアプリケーション構築",
     "authors": [
@@ -18,6 +186,34 @@
     },
     "section_count": 505,
     "chunk_count": 551
+  },
+  {
+    "doc_id": "doc-81fca2a8e66a1cb4",
+    "title": "AIシステムのセキュリティ確保 (Japanese Edition)",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AIシステムのセキュリティ確保 (Japanese Edition).epub",
+    "source_type": "epub",
+    "section_count": 8,
+    "chunk_count": 13,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-51215beee8114619",
+    "title": "AIシステム性能エンジニアリング (Japanese Edition)",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/AIシステム性能エンジニアリング (Japanese Edition).epub",
+    "source_type": "epub",
+    "section_count": 20,
+    "chunk_count": 20,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "AIネイティブのソフトウェアデリバリ-77bd5abc1294",
@@ -60,6 +256,20 @@
     "chunk_count": 321
   },
   {
+    "doc_id": "doc-9e14764a414ae4fd",
+    "title": "An Illustrated Guide to AI Agents",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/An Illustrated Guide to AI Agents.epub",
+    "source_type": "epub",
+    "section_count": 16,
+    "chunk_count": 132,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "API-スタイルについて学ぶ-2c4dc32a27c7",
     "title": "API スタイルについて学ぶ",
     "authors": [
@@ -78,6 +288,34 @@
     },
     "section_count": 829,
     "chunk_count": 862
+  },
+  {
+    "doc_id": "doc-14de7b13ae413c03",
+    "title": "APIハンズオンラーニング ―手を動かして学ぶAPIの設計と実装",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/APIハンズオンラーニング ―手を動かして学ぶAPIの設計と実装.epub",
+    "source_type": "epub",
+    "section_count": 20,
+    "chunk_count": 102,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-bc9fb15853e30a85",
+    "title": "Architecture as Code",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Architecture as Code.epub",
+    "source_type": "epub",
+    "section_count": 12,
+    "chunk_count": 12,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "AWS-Lambdaのプログラミング-08b45c40e7bc",
@@ -180,6 +418,20 @@
     "chunk_count": 606
   },
   {
+    "doc_id": "doc-f58a3ad9b0368a20",
+    "title": "Building AI Agent Platforms",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Building AI Agent Platforms.epub",
+    "source_type": "epub",
+    "section_count": 12,
+    "chunk_count": 94,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "Building-Multi-Tenant-SaaS-Architectures-a6d15a6ae48c",
     "title": "Building Multi-Tenant SaaS Architectures",
     "authors": [
@@ -198,6 +450,20 @@
     },
     "section_count": 572,
     "chunk_count": 745
+  },
+  {
+    "doc_id": "doc-5031fa4376f0536a",
+    "title": "Clean Code: A Handbook of Agile Software Craftsmanship, 2nd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Clean Code A Handbook of Agile Software Craftsmanship, 2nd Edition.epub",
+    "source_type": "epub",
+    "section_count": 57,
+    "chunk_count": 265,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "Cloud-FinOps-2nd-Edition-a22893a3ead9",
@@ -220,24 +486,18 @@
     "chunk_count": 407
   },
   {
-    "doc_id": "Cloud-Native-Go-2nd-Edition-ec7c6d7fa63e",
-    "title": "Cloud Native Go, 2nd Edition",
+    "doc_id": "doc-8957be103034c2e9",
+    "title": "Cloud Native Data Security with OAuth",
     "authors": [
       "Unknown"
     ],
-    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Cloud Native Go, 2nd Edition.epub",
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Cloud Native Data Security with OAuth.epub",
     "source_type": "epub",
+    "section_count": 27,
+    "chunk_count": 174,
     "metadata": {
-      "identifier": [
-        "oreilly-9781098156411",
-        "9781098156428"
-      ],
-      "language": [
-        "en"
-      ]
-    },
-    "section_count": 68,
-    "chunk_count": 68
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "Cloud-Native-Go-0720eb68b506",
@@ -260,6 +520,26 @@
     "chunk_count": 707
   },
   {
+    "doc_id": "Cloud-Native-Go-2nd-Edition-ec7c6d7fa63e",
+    "title": "Cloud Native Go, 2nd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Cloud Native Go, 2nd Edition.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9781098156411",
+        "9781098156428"
+      ],
+      "language": [
+        "en"
+      ]
+    },
+    "section_count": 68,
+    "chunk_count": 68
+  },
+  {
     "doc_id": "Communicating-with-Data-e676ab8e13b1",
     "title": "Communicating with Data",
     "authors": [
@@ -278,6 +558,20 @@
     },
     "section_count": 568,
     "chunk_count": 643
+  },
+  {
+    "doc_id": "doc-0eef831e20289bcb",
+    "title": "Communicative English for Engineers and Professionals",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Communicative English for Engineers and Professionals.epub",
+    "source_type": "epub",
+    "section_count": 17,
+    "chunk_count": 166,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "Computer-Networks-Fifth-Edition-e33c19788b2a",
@@ -320,6 +614,34 @@
     "chunk_count": 863
   },
   {
+    "doc_id": "doc-a2889a27bcdd89dd",
+    "title": "Cursor AI for Web Design",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Cursor AI for Web Design.epub",
+    "source_type": "epub",
+    "section_count": 19,
+    "chunk_count": 68,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-aaf8d882ac9861f7",
+    "title": "Cybersecurity Architect's Handbook - Second Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Cybersecurity Architect's Handbook - Second Edition.epub",
+    "source_type": "epub",
+    "section_count": 20,
+    "chunk_count": 20,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "Data-Mesh-8892d3add0a9",
     "title": "Data Mesh",
     "authors": [
@@ -340,6 +662,34 @@
     "chunk_count": 327
   },
   {
+    "doc_id": "doc-def6fde5751e123b",
+    "title": "Designing AI Interfaces",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Designing AI Interfaces.epub",
+    "source_type": "epub",
+    "section_count": 14,
+    "chunk_count": 103,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-512f2daa33198f02",
+    "title": "Designing and Prototyping Interfaces with Figma - Third Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Designing and Prototyping Interfaces with Figma - Third Edition.epub",
+    "source_type": "epub",
+    "section_count": 22,
+    "chunk_count": 126,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "Designing-Data-Intensive-Applications-2nd-Edition-e7aa8687ff67",
     "title": "Designing Data-Intensive Applications, 2nd Edition",
     "authors": [
@@ -358,6 +708,20 @@
     },
     "section_count": 739,
     "chunk_count": 1050
+  },
+  {
+    "doc_id": "doc-2ec00407cdd0f78b",
+    "title": "Designing Games",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Designing Games.epub",
+    "source_type": "epub",
+    "section_count": 30,
+    "chunk_count": 187,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "Efficient-Go-0ad584e93d7e",
@@ -400,6 +764,34 @@
     "chunk_count": 839
   },
   {
+    "doc_id": "doc-32340067823af76b",
+    "title": "Fine-Tuning AI",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Fine-Tuning AI.epub",
+    "source_type": "epub",
+    "section_count": 12,
+    "chunk_count": 12,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-a8b3f4424a28280f",
+    "title": "From Models to Money",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/From Models to Money.epub",
+    "source_type": "epub",
+    "section_count": 5,
+    "chunk_count": 5,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "Fundamentals-of-Data-Visualization-42b5d531959e",
     "title": "Fundamentals of Data Visualization",
     "authors": [
@@ -440,6 +832,48 @@
     "chunk_count": 1041
   },
   {
+    "doc_id": "doc-d1c5bf792ad4838a",
+    "title": "Game Design Workshop, 5th Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Game Design Workshop, 5th Edition.epub",
+    "source_type": "epub",
+    "section_count": 32,
+    "chunk_count": 342,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-080472648feda85c",
+    "title": "Game Mechanics: Advanced Game Design",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Game Mechanics Advanced Game Design.epub",
+    "source_type": "epub",
+    "section_count": 29,
+    "chunk_count": 193,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-15ca90cddcebba3d",
+    "title": "Game Usability",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Game Usability.epub",
+    "source_type": "epub",
+    "section_count": 32,
+    "chunk_count": 194,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "Gitハンズオンラ-ニング-手を動かして学ぶバ-ジョン管理システムの基本-5642d220ca44",
     "title": "Gitハンズオンラーニング ―手を動かして学ぶバージョン管理システムの基本",
     "authors": [
@@ -458,6 +892,34 @@
     },
     "section_count": 248,
     "chunk_count": 279
+  },
+  {
+    "doc_id": "doc-b63097a3d6980ba4",
+    "title": "Go by Example",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Go by Example.epub",
+    "source_type": "epub",
+    "section_count": 28,
+    "chunk_count": 174,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-f7ebe63fd8e90dff",
+    "title": "Google Professional Cloud Architect Study Guide",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Google Professional Cloud Architect Study Guide.epub",
+    "source_type": "epub",
+    "section_count": 25,
+    "chunk_count": 353,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "Googleのソフトウェアエンジニアリング-持続可能なプログラミングを支える技術-文化-プロセス-349f5759ea2a",
@@ -520,6 +982,34 @@
     "chunk_count": 487
   },
   {
+    "doc_id": "doc-8c4d56174531028e",
+    "title": "Hands-On RAG for Production",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Hands-On RAG for Production.epub",
+    "source_type": "epub",
+    "section_count": 20,
+    "chunk_count": 165,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-a3c29d5c0d740811",
+    "title": "Head First Go",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Head First Go.epub",
+    "source_type": "epub",
+    "section_count": 28,
+    "chunk_count": 140,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "How-Linux-Works-3rd-Edition-8cf6e36b5469",
     "title": "How Linux Works, 3rd Edition",
     "authors": [
@@ -578,6 +1068,34 @@
     },
     "section_count": 545,
     "chunk_count": 583
+  },
+  {
+    "doc_id": "doc-7e551ce66ed6ecc5",
+    "title": "Interaction Design, 6th Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Interaction Design, 6th Edition.epub",
+    "source_type": "epub",
+    "section_count": 28,
+    "chunk_count": 380,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-41d644317e6474c7",
+    "title": "Introduction to Game Design, Prototyping, and Development",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Introduction to Game Design, Prototyping, and Development.epub",
+    "source_type": "epub",
+    "section_count": 86,
+    "chunk_count": 647,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "JavaScriptデザインパタ-ンを学ぶ-第2版-5a31ddf4b2fd",
@@ -660,6 +1178,48 @@
     "chunk_count": 758
   },
   {
+    "doc_id": "doc-425cbf7b9e63e8ad",
+    "title": "Learning AI-Native Software Engineering",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Learning AI-Native Software Engineering.epub",
+    "source_type": "epub",
+    "section_count": 9,
+    "chunk_count": 9,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-8b6d7650fe3cfbd3",
+    "title": "Learning C# by Developing Games with Unity 6 - Eighth Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Learning C# by Developing Games with Unity 6 - Eighth Edition.epub",
+    "source_type": "epub",
+    "section_count": 23,
+    "chunk_count": 139,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-8aa974b2578528a4",
+    "title": "Learning Design Patterns with Unity",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Learning Design Patterns with Unity.epub",
+    "source_type": "epub",
+    "section_count": 26,
+    "chunk_count": 191,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "Learning-Domain-Driven-Design-477f5f903067",
     "title": "Learning Domain-Driven Design",
     "authors": [
@@ -680,6 +1240,20 @@
     "chunk_count": 386
   },
   {
+    "doc_id": "doc-1edcf9e3a5463a07",
+    "title": "Learning Go, 3rd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Learning Go, 3rd Edition.epub",
+    "source_type": "epub",
+    "section_count": 8,
+    "chunk_count": 8,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "Learning-Modern-Linux-2d19cb92f416",
     "title": "Learning Modern Linux",
     "authors": [
@@ -698,6 +1272,48 @@
     },
     "section_count": 377,
     "chunk_count": 422
+  },
+  {
+    "doc_id": "doc-3012628cbde83f0b",
+    "title": "Learning Python, 6th Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Learning Python, 6th Edition.epub",
+    "source_type": "epub",
+    "section_count": 60,
+    "chunk_count": 695,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-7809fc3ac3ad349a",
+    "title": "Learning Web Design, 5th Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Learning Web Design, 5th Edition.epub",
+    "source_type": "epub",
+    "section_count": 35,
+    "chunk_count": 337,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-c3abade7cab526c5",
+    "title": "Level Up! The Guide to Great Video Game Design, 3rd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Level Up! The Guide to Great Video Game Design, 3rd Edition.epub",
+    "source_type": "epub",
+    "section_count": 40,
+    "chunk_count": 241,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "Linux-Bible-11th-Edition-c9ddd8ed3c6f",
@@ -760,6 +1376,34 @@
     "chunk_count": 523
   },
   {
+    "doc_id": "doc-0f231066130b6a26",
+    "title": "Mastering UI Development with Unity - Second Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Mastering UI Development with Unity - Second Edition.epub",
+    "source_type": "epub",
+    "section_count": 31,
+    "chunk_count": 177,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-68ed7fc1503090cd",
+    "title": "Math for Web Design",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Math for Web Design.epub",
+    "source_type": "epub",
+    "section_count": 25,
+    "chunk_count": 152,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "MLOps実装ガイド-本番運用を見据えた開発戦略-32052a68de77",
     "title": "MLOps実装ガイド ―本番運用を見据えた開発戦略",
     "authors": [
@@ -798,6 +1442,104 @@
     },
     "section_count": 307,
     "chunk_count": 384
+  },
+  {
+    "doc_id": "doc-4da6be3428f0f1ee",
+    "title": "Modern Web Design in 30 Days",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Modern Web Design in 30 Days.epub",
+    "source_type": "epub",
+    "section_count": 37,
+    "chunk_count": 69,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-068a419855a2992e",
+    "title": "Multimodal, Real-Time AI Agent Systems",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Multimodal, Real-Time AI Agent Systems.epub",
+    "source_type": "epub",
+    "section_count": 19,
+    "chunk_count": 19,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-f9a6566bd0674957",
+    "title": "Outstanding business english",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Outstanding business english.epub",
+    "source_type": "epub",
+    "section_count": 20,
+    "chunk_count": 55,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-835a7b7638a706da",
+    "title": "Platform Engineering at Google",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Platform Engineering at Google.epub",
+    "source_type": "epub",
+    "section_count": 8,
+    "chunk_count": 8,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-2768c74b41d4fa34",
+    "title": "PostgreSQL: Up and Running, 4th Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/PostgreSQL Up and Running, 4th Edition.epub",
+    "source_type": "epub",
+    "section_count": 8,
+    "chunk_count": 8,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-a1b6d70b98305839",
+    "title": "Practical Malware Analysis",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Practical Malware Analysis.epub",
+    "source_type": "epub",
+    "section_count": 20,
+    "chunk_count": 20,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-550655b74a0d41bf",
+    "title": "Practical Systems Programming in Go",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Practical Systems Programming in Go.epub",
+    "source_type": "epub",
+    "section_count": 25,
+    "chunk_count": 237,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "Prompt-Engineering-for-LLMs-e7e396c2dc59",
@@ -898,6 +1640,48 @@
     },
     "section_count": 936,
     "chunk_count": 950
+  },
+  {
+    "doc_id": "doc-42d11a039d59faa6",
+    "title": "Scaling AI Adoption in Engineering",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Scaling AI Adoption in Engineering.epub",
+    "source_type": "epub",
+    "section_count": 10,
+    "chunk_count": 24,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-7c107b39dba65874",
+    "title": "Security in Computing, 6th Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Security in Computing, 6th Edition.epub",
+    "source_type": "epub",
+    "section_count": 20,
+    "chunk_count": 20,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-9645dda5695bbe29",
+    "title": "Skills for AI Agents",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Skills for AI Agents.epub",
+    "source_type": "epub",
+    "section_count": 6,
+    "chunk_count": 6,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "Snowflake-Data-Engineering-ceb2fac0ab2d",
@@ -1040,6 +1824,104 @@
     "chunk_count": 60
   },
   {
+    "doc_id": "doc-12988ab33ab8d10e",
+    "title": "The Anti-Perfectionist Guide to Data Quality",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/The Anti-Perfectionist Guide to Data Quality.epub",
+    "source_type": "epub",
+    "section_count": 7,
+    "chunk_count": 7,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-f7c3e5b0ce8e5c2a",
+    "title": "The Art of Game Design, 3rd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/The Art of Game Design, 3rd Edition.epub",
+    "source_type": "epub",
+    "section_count": 49,
+    "chunk_count": 286,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-83c2ad401a0131f3",
+    "title": "The Cloud Computing Journey",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/The Cloud Computing Journey.epub",
+    "source_type": "epub",
+    "section_count": 22,
+    "chunk_count": 215,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-fde66f5d24785783",
+    "title": "The Developer's Guide to AI",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/The Developer's Guide to AI.epub",
+    "source_type": "epub",
+    "section_count": 33,
+    "chunk_count": 128,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-b151032e78e49489",
+    "title": "The Linux Command Line, 3rd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/The Linux Command Line, 3rd Edition.epub",
+    "source_type": "epub",
+    "section_count": 52,
+    "chunk_count": 204,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-4b4c402c850c40f4",
+    "title": "The Principles of Beautiful Web Design, 4th Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/The Principles of Beautiful Web Design, 4th Edition.epub",
+    "source_type": "epub",
+    "section_count": 7,
+    "chunk_count": 61,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-b2a42772da7bafed",
+    "title": "Theory of Fun for Game Design, 2nd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Theory of Fun for Game Design, 2nd Edition.epub",
+    "source_type": "epub",
+    "section_count": 27,
+    "chunk_count": 76,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "Think-Python-第3版-コンピュ-タ科学者の思考で問題を解決する-ee8d9184a0fe",
     "title": "Think Python 第3版 ―コンピュータ科学者の思考で問題を解決する",
     "authors": [
@@ -1058,6 +1940,34 @@
     },
     "section_count": 307,
     "chunk_count": 309
+  },
+  {
+    "doc_id": "doc-2e3562364da874da",
+    "title": "Unity 6 Game Development with C# Scripting",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Unity 6 Game Development with C# Scripting.epub",
+    "source_type": "epub",
+    "section_count": 35,
+    "chunk_count": 231,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-b47808dd1b0059b4",
+    "title": "Universal Data Modeling",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Universal Data Modeling.epub",
+    "source_type": "epub",
+    "section_count": 16,
+    "chunk_count": 16,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "UX-for-Business-デジタル変革時代のビジネスデザイン手法-a2be456c627e",
@@ -1120,24 +2030,18 @@
     "chunk_count": 966
   },
   {
-    "doc_id": "Webブラウザエンジニアリング-Chrome開発者たちから学ぶ-作って理解するブラウザとWebの仕組み-7787f73cc321",
+    "doc_id": "doc-608992ee33afc911",
     "title": "Webブラウザエンジニアリング ―Chrome開発者たちから学ぶ、作って理解するブラウザとWebの仕組み",
     "authors": [
       "Unknown"
     ],
     "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Webブラウザエンジニアリング ―Chrome開発者たちから学ぶ、作って理解するブラウザとWebの仕組み.epub",
     "source_type": "epub",
+    "section_count": 36,
+    "chunk_count": 160,
     "metadata": {
-      "identifier": [
-        "oreilly-9784814401574",
-        "9784814401574"
-      ],
-      "language": [
-        "ja"
-      ]
-    },
-    "section_count": 580,
-    "chunk_count": 599
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "Windowsセキュリティインタ-ナル-PowerShellで理解するWindowsの認証-認可-監査の仕組み-e5f5f788c9cf",
@@ -1158,6 +2062,20 @@
     },
     "section_count": 267,
     "chunk_count": 356
+  },
+  {
+    "doc_id": "doc-14f2ce54ff9b118c",
+    "title": "はじめての設計をやり抜くための本 第2版 概念モデリングからアプリケーション、データベース、アーキテクチャ設計、アジャイル開発まで",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/はじめての設計をやり抜くための本 第2版 概念モデリングからアプリケーション、データベース、アーキテクチャ設計、アジャイル開発まで.epub",
+    "source_type": "epub",
+    "section_count": 93,
+    "chunk_count": 101,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "イベント駆動型マイクロサ-ビスの構築-2nd-Edition-29af47e1fd64",
@@ -1318,6 +2236,20 @@
     },
     "section_count": 689,
     "chunk_count": 762
+  },
+  {
+    "doc_id": "doc-81540f66f0b56e2c",
+    "title": "クラウドセキュリティを学ぶ (Japanese Edition)",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/クラウドセキュリティを学ぶ (Japanese Edition).epub",
+    "source_type": "epub",
+    "section_count": 19,
+    "chunk_count": 87,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "クラウドデ-タレイク-無限の可能性があるデ-タを無駄なく活かすア-キテクチャ設計ガイド-382e60bd6fbe",
@@ -1540,6 +2472,20 @@
     "chunk_count": 486
   },
   {
+    "doc_id": "doc-0ca98deff15d5122",
+    "title": "ストリーミング・データベース",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ストリーミング・データベース.epub",
+    "source_type": "epub",
+    "section_count": 19,
+    "chunk_count": 62,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "セキュリティカオスエンジニアリング-49fdd53a86b0",
     "title": "セキュリティカオスエンジニアリング",
     "authors": [
@@ -1620,26 +2566,6 @@
     "chunk_count": 363
   },
   {
-    "doc_id": "テ-シ-タルアイテ-ンティティのすへ-て-安全かつユ-サ-中心のアイテ-ンティティシステムを実現するための知識-b6da0ead3417",
-    "title": "デジタルアイデンティティのすべて ―安全かつユーザー中心のアイデンティティシステムを実現するための知識",
-    "authors": [
-      "Unknown"
-    ],
-    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/デジタルアイデンティティのすべて ―安全かつユーザー中心のアイデンティティシステムを実現するための知識.epub",
-    "source_type": "epub",
-    "metadata": {
-      "identifier": [
-        "oreilly-9784814400980",
-        "9784814400980"
-      ],
-      "language": [
-        "ja"
-      ]
-    },
-    "section_count": 248,
-    "chunk_count": 281
-  },
-  {
     "doc_id": "テスト駆動開発を学ぶ-2ca1cafca60c",
     "title": "テスト駆動開発を学ぶ",
     "authors": [
@@ -1698,6 +2624,26 @@
     },
     "section_count": 42,
     "chunk_count": 46
+  },
+  {
+    "doc_id": "テ-シ-タルアイテ-ンティティのすへ-て-安全かつユ-サ-中心のアイテ-ンティティシステムを実現するための知識-b6da0ead3417",
+    "title": "デジタルアイデンティティのすべて ―安全かつユーザー中心のアイデンティティシステムを実現するための知識",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/デジタルアイデンティティのすべて ―安全かつユーザー中心のアイデンティティシステムを実現するための知識.epub",
+    "source_type": "epub",
+    "metadata": {
+      "identifier": [
+        "oreilly-9784814400980",
+        "9784814400980"
+      ],
+      "language": [
+        "ja"
+      ]
+    },
+    "section_count": 248,
+    "chunk_count": 281
   },
   {
     "doc_id": "デ-タのセマンティック-モデリング-ff3d8cd0be38",
@@ -1840,6 +2786,34 @@
     "chunk_count": 230
   },
   {
+    "doc_id": "doc-e0b908ca3f9b93fc",
+    "title": "データ集約型アプリケーションの設計 (Japanese Edition), 2nd Edition",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/データ集約型アプリケーションの設計 (Japanese Edition), 2nd Edition.epub",
+    "source_type": "epub",
+    "section_count": 25,
+    "chunk_count": 186,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-d3dd6d73eb274619",
+    "title": "トランスフォーマー：定義ガイド (Japanese Edition)",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/トランスフォーマー：定義ガイド (Japanese Edition).epub",
+    "source_type": "epub",
+    "section_count": 19,
+    "chunk_count": 89,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "ドメイン駆動型トランスフォ-マ-変換-Japanese-Edition-1e945aaac7d2",
     "title": "ドメイン駆動型トランスフォーマー変換 (Japanese Edition)",
     "authors": [
@@ -1920,6 +2894,20 @@
     "chunk_count": 474
   },
   {
+    "doc_id": "doc-eafd8b8123b0e74e",
+    "title": "ベクトルデータベース (Japanese Edition)",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/ベクトルデータベース (Japanese Edition).epub",
+    "source_type": "epub",
+    "section_count": 16,
+    "chunk_count": 69,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "マスタリングAPIア-キテクチャ-モノリシックからマイクロサ-ビスへとア-キテクチャを進化させるための実践的手法-981ce2a8903e",
     "title": "マスタリングAPIアーキテクチャ ―モノリシックからマイクロサービスへとアーキテクチャを進化させるための実践的手法",
     "authors": [
@@ -1958,6 +2946,20 @@
     },
     "section_count": 326,
     "chunk_count": 364
+  },
+  {
+    "doc_id": "doc-dc1de06198019328",
+    "title": "メタデータ管理入門 ―メタグリッドで実現するAI時代の知識統合技術",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/メタデータ管理入門 ―メタグリッドで実現するAI時代の知識統合技術.epub",
+    "source_type": "epub",
+    "section_count": 28,
+    "chunk_count": 58,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "メダリオンア-キテクチャの構築-36fd99027452",
@@ -2080,6 +3082,20 @@
     "chunk_count": 276
   },
   {
+    "doc_id": "doc-3166b0fe8a97f224",
+    "title": "初めてのGo言語 第2版 ―他言語プログラマーのためのイディオマティックGo実践ガイド",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/初めてのGo言語 第2版 ―他言語プログラマーのためのイディオマティックGo実践ガイド.epub",
+    "source_type": "epub",
+    "section_count": 28,
+    "chunk_count": 137,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "初めてのGraphQL-Webサ-ビスを作って学ぶ新世代API-e1d67ad4a7c9",
     "title": "初めてのGraphQL ―Webサービスを作って学ぶ新世代API",
     "authors": [
@@ -2160,6 +3176,34 @@
     "chunk_count": 473
   },
   {
+    "doc_id": "doc-d1e6cef06382ae2c",
+    "title": "実用 Go言語 第2版 ―システム開発の現場で知っておきたいアドバイス",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/実用 Go言語 第2版 ―システム開発の現場で知っておきたいアドバイス.epub",
+    "source_type": "epub",
+    "section_count": 136,
+    "chunk_count": 179,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-ea04833070d466d0",
+    "title": "実践 AIエージェント開発 ―マルチエージェントシステムの設計と実装",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/実践 AIエージェント開発 ―マルチエージェントシステムの設計と実装.epub",
+    "source_type": "epub",
+    "section_count": 23,
+    "chunk_count": 92,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "実践-AWSデ-タサイエンス-エンドツ-エンドのMLOpsパイプライン実装-dd30bf82afc4",
     "title": "実践 AWSデータサイエンス ―エンドツーエンドのMLOpsパイプライン実装",
     "authors": [
@@ -2238,6 +3282,20 @@
     },
     "section_count": 393,
     "chunk_count": 412
+  },
+  {
+    "doc_id": "doc-7ce6ebe2189f51fc",
+    "title": "実践クラウドセキュリティ 第2版",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/実践クラウドセキュリティ 第2版.epub",
+    "source_type": "epub",
+    "section_count": 15,
+    "chunk_count": 57,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "実践的なプロセス自動化-0cec3d28dc12",
@@ -2378,6 +3436,20 @@
     },
     "section_count": 855,
     "chunk_count": 880
+  },
+  {
+    "doc_id": "doc-be30ac527530b426",
+    "title": "生成AIデザインパターン ―AIエージェント構築、アプリケーション開発のベストプラクティス",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/生成AIデザインパターン ―AIエージェント構築、アプリケーション開発のベストプラクティス.epub",
+    "source_type": "epub",
+    "section_count": 17,
+    "chunk_count": 122,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "生成AI時代の価値のつくりかた-実践者のマインド-スキル-デ-タ-ユ-スケ-ス-ab225b1768b6",
@@ -2558,6 +3630,20 @@
     },
     "section_count": 403,
     "chunk_count": 415
+  },
+  {
+    "doc_id": "doc-8feeafa75acfc9f2",
+    "title": "詳説 データベース ―ストレージエンジンと分散データシステムの仕組み",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/詳説 データベース ―ストレージエンジンと分散データシステムの仕組み.epub",
+    "source_type": "epub",
+    "section_count": 29,
+    "chunk_count": 99,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "責任あるソフトウェアエンジニアリング-現実社会におけるGoogleのケ-ススタディとともに-1566d3d6756f",
