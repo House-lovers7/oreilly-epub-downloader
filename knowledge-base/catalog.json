@@ -140,7 +140,7 @@
     }
   },
   {
-    "doc_id": "doc-e00f432f26353603",
+    "doc_id": "doc-51c306f1d814ef8e",
     "title": "AIインターフェースデザイン ―AI時代の対話・可視化・制御の原則",
     "authors": [
       "Unknown"
@@ -254,6 +254,20 @@
     },
     "section_count": 316,
     "chunk_count": 321
+  },
+  {
+    "doc_id": "doc-44a3adfbf408c1c8",
+    "title": "An Architectural Approach to Level Design",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/An Architectural Approach to Level Design.epub",
+    "source_type": "epub",
+    "section_count": 21,
+    "chunk_count": 176,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "doc-9e14764a414ae4fd",
@@ -832,6 +846,48 @@
     "chunk_count": 1041
   },
   {
+    "doc_id": "doc-914a6b7e7244119d",
+    "title": "Fundamentals of Software Engineering",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Fundamentals of Software Engineering.epub",
+    "source_type": "epub",
+    "section_count": 24,
+    "chunk_count": 175,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-93987f4533ddcf1d",
+    "title": "Game Audio Development with Unity 5.X",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Game Audio Development with Unity 5.X.epub",
+    "source_type": "epub",
+    "section_count": 145,
+    "chunk_count": 186,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-8a9087206eec9025",
+    "title": "Game Audio Implementation",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Game Audio Implementation.epub",
+    "source_type": "epub",
+    "section_count": 26,
+    "chunk_count": 136,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "doc-d1c5bf792ad4838a",
     "title": "Game Design Workshop, 5th Edition",
     "authors": [
@@ -1093,6 +1149,20 @@
     "source_type": "epub",
     "section_count": 86,
     "chunk_count": 647,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-b0d4f4371825d317",
+    "title": "Introduction to Game Systems Design",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Introduction to Game Systems Design.epub",
+    "source_type": "epub",
+    "section_count": 34,
+    "chunk_count": 163,
     "metadata": {
       "epub_version": "[]"
     }
@@ -1880,6 +1950,34 @@
     }
   },
   {
+    "doc_id": "doc-97d3c8ea77e7cae1",
+    "title": "The Essential Guide to Game Audio",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/The Essential Guide to Game Audio.epub",
+    "source_type": "epub",
+    "section_count": 25,
+    "chunk_count": 104,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
+    "doc_id": "doc-dd91c5e2e233e72d",
+    "title": "The Game Audio Strategy Guide",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/The Game Audio Strategy Guide.epub",
+    "source_type": "epub",
+    "section_count": 33,
+    "chunk_count": 219,
+    "metadata": {
+      "epub_version": "[]"
+    }
+  },
+  {
     "doc_id": "doc-b151032e78e49489",
     "title": "The Linux Command Line, 3rd Edition",
     "authors": [
@@ -2008,6 +2106,20 @@
     },
     "section_count": 42,
     "chunk_count": 47
+  },
+  {
+    "doc_id": "doc-30dddd1d5c87eddc",
+    "title": "Vector Databases",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/Vector Databases.epub",
+    "source_type": "epub",
+    "section_count": 16,
+    "chunk_count": 95,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "Web-API-クックブック-c6a7cd82e8fa",
@@ -2196,6 +2308,20 @@
     },
     "section_count": 323,
     "chunk_count": 333
+  },
+  {
+    "doc_id": "doc-0416bb7701773a87",
+    "title": "エージェンティックメッシュ ―生成AIを活用した自律型エージェントエコシステム",
+    "authors": [
+      "Unknown"
+    ],
+    "source_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/downloads/エージェンティックメッシュ ―生成AIを活用した自律型エージェントエコシステム.epub",
+    "source_type": "epub",
+    "section_count": 28,
+    "chunk_count": 103,
+    "metadata": {
+      "epub_version": "[]"
+    }
   },
   {
     "doc_id": "オブザ-バビリティ-エンジニアリング-20bf2f1f431f",
@@ -2948,7 +3074,7 @@
     "chunk_count": 364
   },
   {
-    "doc_id": "doc-dc1de06198019328",
+    "doc_id": "doc-f0355e5c1816f46e",
     "title": "メタデータ管理入門 ―メタグリッドで実現するAI時代の知識統合技術",
     "authors": [
       "Unknown"

@@ -1,0 +1,38 @@
+{
+  "domain": "game-design",
+  "queries": [
+    "balance",
+    "dominant strategy",
+    "probability",
+    "expected value",
+    "progression curve",
+    "economy",
+    "feedback loop",
+    "attribute",
+    "telemetry",
+    "playtest",
+    "spreadsheet model",
+    "difficulty curve",
+    "randomness",
+    "resource",
+    "scaling",
+    "tuning",
+    "damage per second",
+    "linear exponential",
+    "player choice",
+    "system design",
+    "readability",
+    "complexity",
+    "variance",
+    "cost benefit"
+  ],
+  "doc_filter": [
+    "doc-b0d4f4371825d317"
+  ],
+  "chunk_count": 107,
+  "book_count": 1,
+  "generated_at": "2026-09-09T22:58:28.207740+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/output/kb-packs/enrich-2026-09-09/game-systems/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

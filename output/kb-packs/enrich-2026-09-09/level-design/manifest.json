@@ -1,0 +1,39 @@
+{
+  "domain": "game-design",
+  "queries": [
+    "pacing",
+    "tension release",
+    "teaching player",
+    "tutorial",
+    "training",
+    "Nintendo Power",
+    "kishotenketsu",
+    "difficulty",
+    "reward",
+    "denial",
+    "prospect refuge",
+    "landmark wayfinding",
+    "narrow wide",
+    "milestone",
+    "rhythm",
+    "safe practice",
+    "introduce mechanic",
+    "boss",
+    "escalate challenge",
+    "rest",
+    "feedback",
+    "telegraph",
+    "affordance",
+    "climax",
+    "puzzle"
+  ],
+  "doc_filter": [
+    "doc-44a3adfbf408c1c8"
+  ],
+  "chunk_count": 108,
+  "book_count": 1,
+  "generated_at": "2026-09-09T22:58:24.683296+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/app_development/oreilly-epub-downloader/output/kb-packs/enrich-2026-09-09/level-design/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}
