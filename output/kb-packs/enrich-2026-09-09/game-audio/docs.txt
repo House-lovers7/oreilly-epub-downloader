@@ -2,5 +2,5 @@
 doc-8a9087206eec9025
 # Horowitz & Looney, The Essential Guide to Game Audio
 doc-97d3c8ea77e7cae1
-# Hunt, The Game Audio Strategy Guide
+# The Game Audio Strategy Guide（著者は catalog 未登録）
 doc-dd91c5e2e233e72d
