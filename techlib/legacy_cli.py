@@ -87,6 +87,7 @@ def _cards(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
             else "not_queried"
         ),
         "cards": selected,
+        "degraded": ["no_active_cards"] if len(active) == 0 else [],
     }, 0
 
 
@@ -123,11 +124,19 @@ def _context_pack(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
         cards = engine.search_cards(
             args.query, domain=args.domain, limit=args.cards_limit
         )
+        domain_inventory = engine.list_cards(domain=args.domain)
+        active_count = sum(1 for card in domain_inventory if card["status"] == "active")
+        candidate_count = sum(
+            1 for card in domain_inventory if card["status"] == "candidate"
+        )
         pack["baseline_cards"] = {
             "domain": args.domain,
             "status_filter": "active",
             "cards": cards,
             "match_status": "matched" if cards else "insufficient_active_evidence",
+            "active_count": active_count,
+            "candidate_count": candidate_count,
+            "degraded": ["no_active_cards"] if active_count == 0 else [],
         }
     if args.project:
         project = Path(args.project).expanduser().resolve()
