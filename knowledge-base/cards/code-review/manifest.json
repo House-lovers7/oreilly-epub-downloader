@@ -25,8 +25,8 @@
     "レガシ-コ-ドからの脱却-ソフトウェアの寿命を延ばし価値を高める9つのプラクティス-dbc1fcda2896",
     "責任あるソフトウェアエンジニアリング-現実社会におけるGoogleのケ-ススタディとともに-1566d3d6756f"
   ],
-  "chunk_count": 130,
-  "book_count": 8,
+  "chunk_count": 160,
+  "book_count": 10,
   "query_recall": [
     {
       "query": "コードレビュー",
@@ -79,8 +79,15 @@
       "like_count": 6
     }
   ],
-  "generated_at": "2026-10-02T06:40:56.541643+09:00",
+  "generated_at": "2026-10-02T07:22:01.109872+09:00",
   "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
   "pack_path": "/Users/tg/projects/.worktrees/oreilly-f2-pack-20261002/knowledge-base/cards/code-review/source-pack.jsonl",
-  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations.",
+  "like_fallback_queries": [
+    "レビュー 指摘",
+    "変更 粒度",
+    "コミット メッセージ",
+    "レビュアー 承認",
+    "可読性"
+  ]
 }
