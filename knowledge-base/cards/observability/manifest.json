@@ -1,0 +1,137 @@
+{
+  "domain": "observability",
+  "queries": [
+    "構造化ログ",
+    "structured log",
+    "ログ レベル",
+    "トレース",
+    "メトリクス",
+    "ダッシュボード",
+    "アラート",
+    "ログ 分析",
+    "log analysis",
+    "異常検知",
+    "anomaly",
+    "相関",
+    "集計 クエリ",
+    "journalctl",
+    "USE method",
+    "RED method",
+    "percentile",
+    "仮説 デバッグ"
+  ],
+  "doc_filter": [
+    "オブザ-バビリティ-エンジニアリング-20bf2f1f431f",
+    "SRE-サイトリライアビリティエンジニアリング-Googleの信頼性を支えるエンジニアリングチ-ム-9dd02216a29f",
+    "サイトリライアビリティワ-クブック-SREの実践方法-41fbca3d77e8",
+    "SREの探求-様-な企業におけるサイトリライアビリティエンジニアリングの導入と実践-fe35ba5f28a4",
+    "詳解-システム-パフォ-マンス-第2版-e9437a3964e2",
+    "システム運用アンチパタ-ン-エンジニアがDevOpsで解決する組織-自動化-コミュニケ-ション-d9481735e379",
+    "デ-タ品質モニタリングの自動化-f01fcaa46955",
+    "セキュリティカオスエンジニアリング-49fdd53a86b0",
+    "SQLではじめるデ-タ分析-クエリで行う前処理-時系列解析-コホ-ト分析-テキスト分析-異常検知-73d8ec182cbe",
+    "How-Linux-Works-3rd-Edition-8cf6e36b5469",
+    "Learning-Modern-Linux-2d19cb92f416",
+    "doc-b151032e78e49489",
+    "Kubernetesで実践するクラウドネイティブDevOps-1925cab5e9f1",
+    "デ-タベ-スリライアビリティエンジニアリング-回復力のあるデ-タベ-スシステムの設計と運用-df069c6cc9eb"
+  ],
+  "chunk_count": 160,
+  "book_count": 14,
+  "query_recall": [
+    {
+      "query": "構造化ログ",
+      "fts_count": 1,
+      "like_count": 9
+    },
+    {
+      "query": "structured log",
+      "fts_count": 5,
+      "like_count": 7
+    },
+    {
+      "query": "ログ レベル",
+      "fts_count": 0,
+      "like_count": 118
+    },
+    {
+      "query": "トレース",
+      "fts_count": 9,
+      "like_count": 306
+    },
+    {
+      "query": "メトリクス",
+      "fts_count": 19,
+      "like_count": 275
+    },
+    {
+      "query": "ダッシュボード",
+      "fts_count": 11,
+      "like_count": 130
+    },
+    {
+      "query": "アラート",
+      "fts_count": 26,
+      "like_count": 299
+    },
+    {
+      "query": "ログ 分析",
+      "fts_count": 0,
+      "like_count": 149
+    },
+    {
+      "query": "log analysis",
+      "fts_count": 2,
+      "like_count": 15
+    },
+    {
+      "query": "異常検知",
+      "fts_count": 304,
+      "like_count": 308
+    },
+    {
+      "query": "anomaly",
+      "fts_count": 10,
+      "like_count": 10
+    },
+    {
+      "query": "相関",
+      "fts_count": 0,
+      "like_count": 63
+    },
+    {
+      "query": "集計 クエリ",
+      "fts_count": 0,
+      "like_count": 14
+    },
+    {
+      "query": "journalctl",
+      "fts_count": 29,
+      "like_count": 29
+    },
+    {
+      "query": "USE method",
+      "fts_count": 42,
+      "like_count": 70
+    },
+    {
+      "query": "RED method",
+      "fts_count": 4,
+      "like_count": 47
+    },
+    {
+      "query": "percentile",
+      "fts_count": 10,
+      "like_count": 13
+    },
+    {
+      "query": "仮説 デバッグ",
+      "fts_count": 0,
+      "like_count": 6
+    }
+  ],
+  "generated_at": "2026-10-02T06:40:58.282427+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/.worktrees/oreilly-f2-pack-20261002/knowledge-base/cards/observability/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

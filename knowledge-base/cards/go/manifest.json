@@ -1,0 +1,118 @@
+{
+  "domain": "go",
+  "queries": [
+    "error handling",
+    "エラー ラップ",
+    "errors.Is",
+    "context",
+    "goroutine leak",
+    "channel",
+    "Mutex",
+    "interface 小さく",
+    "埋め込み",
+    "defer",
+    "slice 容量",
+    "table driven",
+    "go vet",
+    "pprof",
+    "panic recover"
+  ],
+  "doc_filter": [
+    "doc-4d36741df7f385d9",
+    "Efficient-Go-0ad584e93d7e",
+    "効率的なGo-デ-タ指向によるGoアプリケ-ションの性能最適化-4958bdd41a71",
+    "Cloud-Native-Go-2nd-Edition-ec7c6d7fa63e",
+    "Cloud-Native-Go-0720eb68b506",
+    "クラウドネイティブGo-7fd2d4d7d1b2",
+    "doc-3166b0fe8a97f224",
+    "doc-d1e6cef06382ae2c",
+    "Learn-Go-with-Pocket-Sized-Projects-41327a372d9b",
+    "doc-550655b74a0d41bf",
+    "Modern-REST-API-Development-in-Go-f05034792b18",
+    "Mastering-Go-for-DevOps-ba29ba400857",
+    "doc-b63097a3d6980ba4"
+  ],
+  "chunk_count": 160,
+  "book_count": 12,
+  "query_recall": [
+    {
+      "query": "error handling",
+      "fts_count": 141,
+      "like_count": 159
+    },
+    {
+      "query": "エラー ラップ",
+      "fts_count": 0,
+      "like_count": 36
+    },
+    {
+      "query": "errors.Is",
+      "fts_count": 62,
+      "like_count": 52
+    },
+    {
+      "query": "context",
+      "fts_count": 391,
+      "like_count": 468
+    },
+    {
+      "query": "goroutine leak",
+      "fts_count": 19,
+      "like_count": 45
+    },
+    {
+      "query": "channel",
+      "fts_count": 161,
+      "like_count": 233
+    },
+    {
+      "query": "Mutex",
+      "fts_count": 102,
+      "like_count": 137
+    },
+    {
+      "query": "interface 小さく",
+      "fts_count": 0,
+      "like_count": 5
+    },
+    {
+      "query": "埋め込み",
+      "fts_count": 1,
+      "like_count": 26
+    },
+    {
+      "query": "defer",
+      "fts_count": 340,
+      "like_count": 344
+    },
+    {
+      "query": "slice 容量",
+      "fts_count": 2,
+      "like_count": 6
+    },
+    {
+      "query": "table driven",
+      "fts_count": 38,
+      "like_count": 45
+    },
+    {
+      "query": "go vet",
+      "fts_count": 20,
+      "like_count": 41
+    },
+    {
+      "query": "pprof",
+      "fts_count": 134,
+      "like_count": 139
+    },
+    {
+      "query": "panic recover",
+      "fts_count": 13,
+      "like_count": 21
+    }
+  ],
+  "generated_at": "2026-10-02T06:40:59.973950+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/.worktrees/oreilly-f2-pack-20261002/knowledge-base/cards/go/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

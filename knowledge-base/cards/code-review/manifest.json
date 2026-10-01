@@ -1,0 +1,86 @@
+{
+  "domain": "code-review",
+  "queries": [
+    "コードレビュー",
+    "code review",
+    "レビュー 指摘",
+    "pull request",
+    "変更 粒度",
+    "small change",
+    "readability",
+    "コミット メッセージ",
+    "レビュアー 承認",
+    "可読性"
+  ],
+  "doc_filter": [
+    "Googleのソフトウェアエンジニアリング-持続可能なプログラミングを支える技術-文化-プロセス-349f5759ea2a",
+    "doc-914a6b7e7244119d",
+    "Fundamentals-of-DevOps-and-Software-Delivery-dae231c74a49",
+    "doc-5031fa4376f0536a",
+    "実用-Git-第3版-6c3921980fcb",
+    "Gitハンズオンラ-ニング-手を動かして学ぶバ-ジョン管理システムの基本-5642d220ca44",
+    "スタッフエンジニアの道-優れた技術専門職になるためのガイド-ebb4b643fd11",
+    "AIネイティブのソフトウェアデリバリ-77bd5abc1294",
+    "AI支援プログラミング-4299b3ab39dc",
+    "レガシ-コ-ドからの脱却-ソフトウェアの寿命を延ばし価値を高める9つのプラクティス-dbc1fcda2896",
+    "責任あるソフトウェアエンジニアリング-現実社会におけるGoogleのケ-ススタディとともに-1566d3d6756f"
+  ],
+  "chunk_count": 130,
+  "book_count": 8,
+  "query_recall": [
+    {
+      "query": "コードレビュー",
+      "fts_count": 12,
+      "like_count": 88
+    },
+    {
+      "query": "code review",
+      "fts_count": 56,
+      "like_count": 90
+    },
+    {
+      "query": "レビュー 指摘",
+      "fts_count": 0,
+      "like_count": 16
+    },
+    {
+      "query": "pull request",
+      "fts_count": 21,
+      "like_count": 29
+    },
+    {
+      "query": "変更 粒度",
+      "fts_count": 0,
+      "like_count": 1
+    },
+    {
+      "query": "small change",
+      "fts_count": 70,
+      "like_count": 128
+    },
+    {
+      "query": "readability",
+      "fts_count": 25,
+      "like_count": 25
+    },
+    {
+      "query": "コミット メッセージ",
+      "fts_count": 0,
+      "like_count": 64
+    },
+    {
+      "query": "レビュアー 承認",
+      "fts_count": 0,
+      "like_count": 17
+    },
+    {
+      "query": "可読性",
+      "fts_count": 0,
+      "like_count": 6
+    }
+  ],
+  "generated_at": "2026-10-02T06:40:56.541643+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/.worktrees/oreilly-f2-pack-20261002/knowledge-base/cards/code-review/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}

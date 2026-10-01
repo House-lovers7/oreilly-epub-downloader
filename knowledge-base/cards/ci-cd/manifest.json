@@ -1,0 +1,93 @@
+{
+  "domain": "ci-cd",
+  "queries": [
+    "継続的デリバリー",
+    "continuous delivery",
+    "パイプライン",
+    "pipeline",
+    "デプロイ 自動化",
+    "ロールバック",
+    "artifact",
+    "署名 依存",
+    "supply chain",
+    "feature flag",
+    "環境 昇格"
+  ],
+  "doc_filter": [
+    "Fundamentals-of-DevOps-and-Software-Delivery-dae231c74a49",
+    "Kubernetesで実践するクラウドネイティブDevOps-1925cab5e9f1",
+    "システム運用アンチパタ-ン-エンジニアがDevOpsで解決する組織-自動化-コミュニケ-ション-d9481735e379",
+    "Infrastructure-as-Code-クラウドにおけるサ-バ管理の原則とプラクティス-0da27fd50ef5",
+    "Infrastructure-as-Code-3rd-Edition-4b6e2cf6344e",
+    "詳解-Terraform-第3版-Infrastructure-as-Codeを実現する-3cddd40c1064",
+    "Terraform-in-Depth-18bc9b165e2e",
+    "ソフトウェアサプライチェ-ンセキュリティ-cf0bfe28ccff",
+    "Mastering-Go-for-DevOps-ba29ba400857",
+    "MLOps実装ガイド-本番運用を見据えた開発戦略-32052a68de77",
+    "実践的なプロセス自動化-0cec3d28dc12",
+    "doc-835a7b7638a706da"
+  ],
+  "chunk_count": 135,
+  "book_count": 9,
+  "query_recall": [
+    {
+      "query": "継続的デリバリー",
+      "fts_count": 5,
+      "like_count": 7
+    },
+    {
+      "query": "continuous delivery",
+      "fts_count": 43,
+      "like_count": 51
+    },
+    {
+      "query": "パイプライン",
+      "fts_count": 6,
+      "like_count": 204
+    },
+    {
+      "query": "pipeline",
+      "fts_count": 81,
+      "like_count": 125
+    },
+    {
+      "query": "デプロイ 自動化",
+      "fts_count": 1,
+      "like_count": 182
+    },
+    {
+      "query": "ロールバック",
+      "fts_count": 1,
+      "like_count": 45
+    },
+    {
+      "query": "artifact",
+      "fts_count": 19,
+      "like_count": 30
+    },
+    {
+      "query": "署名 依存",
+      "fts_count": 0,
+      "like_count": 4
+    },
+    {
+      "query": "supply chain",
+      "fts_count": 28,
+      "like_count": 32
+    },
+    {
+      "query": "feature flag",
+      "fts_count": 1,
+      "like_count": 8
+    },
+    {
+      "query": "環境 昇格",
+      "fts_count": 0,
+      "like_count": 12
+    }
+  ],
+  "generated_at": "2026-10-02T06:40:57.176984+09:00",
+  "kb_dir": "/Users/tg/projects/app_development/oreilly-epub-downloader/knowledge-base",
+  "pack_path": "/Users/tg/projects/.worktrees/oreilly-f2-pack-20261002/knowledge-base/cards/ci-cd/source-pack.jsonl",
+  "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."
+}
