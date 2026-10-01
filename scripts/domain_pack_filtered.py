@@ -9,6 +9,25 @@ from pathlib import Path
 def fts(q):
     return " AND ".join('"' + t.replace('"', '') + '"' for t in re.split(r"\s+", q.strip()) if t)
 
+def like_terms(q):
+    return [t for t in re.split(r"\s+", q.strip()) if t]
+
+def esc_like(t):
+    return t.replace("\\", "\\\\").replace("%", "\\%").replace("_", "\\_")
+
+def query_recall(con, docs, queries):
+    """query ごとの FTS 件数と LIKE 件数（doc 許可リスト内、LIMIT なし）。LIKE は空白区切り各語の AND。"""
+    ph = ",".join("?" * len(docs)); out = []
+    for q in queries:
+        fts_count = con.execute(f"SELECT COUNT(*) FROM chunks_fts WHERE chunks_fts MATCH ? AND doc_id IN ({ph})",
+                                (fts(q), *docs)).fetchone()[0]
+        terms = like_terms(q)
+        cond = " AND ".join("(c.title || ' ' || c.heading || ' ' || c.text) LIKE ? ESCAPE '\\'" for _ in terms)
+        like_count = con.execute(f"SELECT COUNT(*) FROM chunks c WHERE c.doc_id IN ({ph}) AND {cond}",
+                                 (*docs, *("%" + esc_like(t) + "%" for t in terms))).fetchone()[0] if terms else 0
+        out.append({"query": q, "fts_count": fts_count, "like_count": like_count})
+    return out
+
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("domain")
     ap.add_argument("--kb-dir", required=True); ap.add_argument("--docs", required=True)
@@ -17,7 +36,7 @@ def main():
     ap.add_argument("--output-dir"); a = ap.parse_args()
     kb = Path(a.kb_dir).resolve()
     docs = [l.strip() for l in Path(a.docs).read_text(encoding="utf-8").splitlines() if l.strip() and not l.startswith("#")]
-    con = sqlite3.connect(kb / "index" / "library.sqlite"); ph = ",".join("?" * len(docs)); best = {}
+    con = sqlite3.connect((kb / "index" / "library.sqlite").as_uri() + "?mode=ro", uri=True); ph = ",".join("?" * len(docs)); best = {}
     for q in a.query:
         sql = f"""SELECT c.chunk_id, c.doc_id, c.title, c.heading, c.source_ref, c.text, bm25(chunks_fts) AS score
                   FROM chunks_fts JOIN chunks c ON c.chunk_id = chunks_fts.chunk_id
@@ -35,7 +54,8 @@ def main():
     with open(out / "source-pack.jsonl", "w", encoding="utf-8") as f:
         for r in rows: f.write(json.dumps(r, ensure_ascii=False) + "\n")
     manifest = {"domain": a.domain, "queries": a.query, "doc_filter": docs, "chunk_count": len(rows),
-                "book_count": len({r["doc_id"] for r in rows}), "generated_at": dt.datetime.now().astimezone().isoformat(),
+                "book_count": len({r["doc_id"] for r in rows}),
+                "query_recall": query_recall(con, docs, a.query), "generated_at": dt.datetime.now().astimezone().isoformat(),
                 "kb_dir": str(kb), "pack_path": str(out / "source-pack.jsonl"),
                 "policy": "Local distillation material only. Cards derived from this pack must be reconstructions (decision criteria, procedures, pitfalls), not long quotations."}
     (out / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2), encoding="utf-8")
