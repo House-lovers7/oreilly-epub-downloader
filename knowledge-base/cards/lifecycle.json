@@ -1881,6 +1881,501 @@
       "status": "active",
       "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
       "recorded_at": "2026-10-02T00:22:05.474692+00:00"
+    },
+    "api-p-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-api-design.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:22.489583+00:00"
+    },
+    "api-a-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-api-design.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:22.599799+00:00"
+    },
+    "api-t-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-api-design.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:22.711751+00:00"
+    },
+    "arch-p-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-architecture.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:22.816281+00:00"
+    },
+    "arch-p-015": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-architecture.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:22.924580+00:00"
+    },
+    "arch-a-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-architecture.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:23.035857+00:00"
+    },
+    "arch-a-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-architecture.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:23.146320+00:00"
+    },
+    "arch-a-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-architecture.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:23.247866+00:00"
+    },
+    "arch-a-012": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-architecture.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:23.349888+00:00"
+    },
+    "arch-t-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-architecture.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:23.456798+00:00"
+    },
+    "arch-t-014": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-architecture.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:23.564816+00:00"
+    },
+    "cicd-p-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-ci-cd.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:23.670422+00:00"
+    },
+    "cicd-p-015": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-ci-cd.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:23.819745+00:00"
+    },
+    "cicd-p-020": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-ci-cd.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:23.940958+00:00"
+    },
+    "cicd-p-023": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-ci-cd.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:24.072041+00:00"
+    },
+    "cicd-p-024": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-ci-cd.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:24.178740+00:00"
+    },
+    "cicd-a-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-ci-cd.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:24.282267+00:00"
+    },
+    "cicd-t-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-ci-cd.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:24.387498+00:00"
+    },
+    "cicd-t-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-ci-cd.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:24.489691+00:00"
+    },
+    "cr-p-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-code-review.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:24.595500+00:00"
+    },
+    "cr-p-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-code-review.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:24.700823+00:00"
+    },
+    "cr-p-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-code-review.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:24.810254+00:00"
+    },
+    "cr-p-017": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-code-review.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:24.916072+00:00"
+    },
+    "cr-p-018": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-code-review.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:25.024490+00:00"
+    },
+    "cr-p-031": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-code-review.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:25.128495+00:00"
+    },
+    "cr-a-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-code-review.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:25.232847+00:00"
+    },
+    "cr-t-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-code-review.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:25.337312+00:00"
+    },
+    "cr-t-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-code-review.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:25.445259+00:00"
+    },
+    "cr-t-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-code-review.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:25.551777+00:00"
+    },
+    "db-p-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-database.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:25.661482+00:00"
+    },
+    "db-p-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-database.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:25.766717+00:00"
+    },
+    "db-p-011": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-database.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:25.868972+00:00"
+    },
+    "db-t-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-database.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:25.970981+00:00"
+    },
+    "db-t-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-database.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:26.074448+00:00"
+    },
+    "dp-p-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-design-patterns.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:26.179173+00:00"
+    },
+    "dp-p-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-design-patterns.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:26.287369+00:00"
+    },
+    "go-p-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:26.393202+00:00"
+    },
+    "go-p-010": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:26.494111+00:00"
+    },
+    "go-p-019": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:26.601995+00:00"
+    },
+    "go-p-022": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:26.704741+00:00"
+    },
+    "go-p-024": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:26.807486+00:00"
+    },
+    "go-p-026": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:26.908894+00:00"
+    },
+    "go-p-027": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:27.011231+00:00"
+    },
+    "go-p-029": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:27.115076+00:00"
+    },
+    "go-p-033": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:27.220368+00:00"
+    },
+    "go-p-034": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:27.328543+00:00"
+    },
+    "go-p-038": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:27.435893+00:00"
+    },
+    "go-a-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:27.547139+00:00"
+    },
+    "go-t-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:27.659087+00:00"
+    },
+    "go-t-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-go.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:27.775630+00:00"
+    },
+    "net-p-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-networking.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:27.882750+00:00"
+    },
+    "net-p-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-networking.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:27.992022+00:00"
+    },
+    "net-p-010": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-networking.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:28.146210+00:00"
+    },
+    "net-p-018": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-networking.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:28.261578+00:00"
+    },
+    "net-a-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-networking.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:28.364405+00:00"
+    },
+    "net-t-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-networking.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:28.467286+00:00"
+    },
+    "net-t-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-networking.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:28.570481+00:00"
+    },
+    "obs-p-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-observability.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:28.674695+00:00"
+    },
+    "obs-p-012": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-observability.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:28.774323+00:00"
+    },
+    "obs-p-015": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-observability.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:28.876559+00:00"
+    },
+    "obs-p-016": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-observability.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:28.974884+00:00"
+    },
+    "obs-a-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-observability.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:29.071696+00:00"
+    },
+    "obs-t-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-observability.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:29.167334+00:00"
+    },
+    "obs-t-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-observability.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:29.262908+00:00"
+    },
+    "obs-t-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-observability.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:29.363545+00:00"
+    },
+    "obs-t-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-observability.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:29.459775+00:00"
+    },
+    "obs-t-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-observability.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:29.553493+00:00"
+    },
+    "perf-p-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-performance.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:29.649653+00:00"
+    },
+    "perf-p-015": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-performance.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:29.743756+00:00"
+    },
+    "py-p-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:29.843727+00:00"
+    },
+    "py-p-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:29.943137+00:00"
+    },
+    "py-p-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:30.038820+00:00"
+    },
+    "py-p-010": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:30.134826+00:00"
+    },
+    "py-p-011": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:30.229501+00:00"
+    },
+    "py-p-014": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:30.325183+00:00"
+    },
+    "py-p-021": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:30.424289+00:00"
+    },
+    "py-p-024": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:30.522602+00:00"
+    },
+    "py-a-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:30.617976+00:00"
+    },
+    "py-a-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:30.713383+00:00"
+    },
+    "py-t-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:30.810333+00:00"
+    },
+    "py-t-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:30.907176+00:00"
+    },
+    "py-t-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.002463+00:00"
+    },
+    "py-t-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.096497+00:00"
+    },
+    "py-t-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-python.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.190939+00:00"
+    },
+    "sec-p-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-security.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.287598+00:00"
+    },
+    "sec-p-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-security.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.387355+00:00"
+    },
+    "sec-p-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-security.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.482628+00:00"
+    },
+    "sre-p-012": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-sre.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.578151+00:00"
+    },
+    "sre-p-020": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-sre.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.674071+00:00"
+    },
+    "sre-t-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-sre.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.767167+00:00"
+    },
+    "test-p-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-testing.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.863416+00:00"
+    },
+    "test-p-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-testing.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:31.957524+00:00"
+    },
+    "test-p-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-testing.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:32.078481+00:00"
+    },
+    "test-p-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-testing.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:32.180892+00:00"
+    },
+    "test-p-010": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-testing.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:32.278224+00:00"
+    },
+    "test-p-014": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-testing.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:32.375582+00:00"
+    },
+    "test-a-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-testing.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:32.475366+00:00"
+    },
+    "test-a-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-testing.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:32.571389+00:00"
+    },
+    "test-t-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R1-testing.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
+      "recorded_at": "2026-10-02T10:26:32.666146+00:00"
     }
   }
 }
