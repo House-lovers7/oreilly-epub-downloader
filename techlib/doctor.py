@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import re
 import sqlite3
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -26,6 +27,13 @@ REQUIRED_CARD_FIELDS = {
     "source_books",
     "confidence",
 }
+# Required keys that may hold an empty list: books often state no pitfalls,
+# and inventing them breaks chunk support.
+EMPTY_LIST_CARD_FIELDS = {"pitfalls"}
+INFERENCE_MARKER = "[推論]"
+INFERENCE_FIELDS = {"when_not_to_apply"}
+CARD_TEXT_FIELDS = ("title", "problem", "recommendation", "pitfalls", "when_not_to_apply")
+INTERNAL_NOTE_RE = re.compile(r"(?<![A-Za-z])chunk(?![A-Za-z])", re.IGNORECASE)
 
 
 @dataclass(frozen=True)
@@ -184,7 +192,13 @@ def _inspect_cards(
 
             metrics["cards_total"] += 1
             missing = sorted(
-                field for field in REQUIRED_CARD_FIELDS if not _present(card.get(field))
+                field
+                for field in REQUIRED_CARD_FIELDS
+                if not (
+                    isinstance(card.get(field), list)
+                    if field in EMPTY_LIST_CARD_FIELDS
+                    else _present(card.get(field))
+                )
             )
             if missing:
                 findings.append(
@@ -197,6 +211,7 @@ def _inspect_cards(
                 )
 
             card_id = str(card.get("card_id", ""))
+            _inspect_card_text(card, card_id, location, findings)
             if card_id in seen_ids:
                 findings.append(
                     Finding(
@@ -255,6 +270,54 @@ def _inspect_cards(
                         },
                     )
                 )
+
+
+def _inspect_card_text(
+    card: dict[str, Any],
+    card_id: str,
+    location: dict[str, Any],
+    findings: list[Finding],
+) -> None:
+    """Warn on internal notes and on inference markers outside their slot.
+
+    A when_not_to_apply item may start with [推論] to mark a distiller's scope
+    note that the source chunk does not state. Anywhere else the marker, and
+    any reference to "chunk" in card prose, is an unpublished working note.
+    """
+    misplaced: list[str] = []
+    notes: list[str] = []
+    for field_name in CARD_TEXT_FIELDS:
+        value = card.get(field_name)
+        items = value if isinstance(value, list) else [value]
+        for index, item in enumerate(items):
+            if not isinstance(item, str):
+                continue
+            label = f"{field_name}[{index}]" if isinstance(value, list) else field_name
+            body = item.strip()
+            if field_name in INFERENCE_FIELDS and body.startswith(INFERENCE_MARKER):
+                body = body[len(INFERENCE_MARKER):]
+            if INFERENCE_MARKER in body:
+                misplaced.append(label)
+            if INTERNAL_NOTE_RE.search(item):
+                notes.append(label)
+    if misplaced:
+        findings.append(
+            Finding(
+                severity="warning",
+                code="card_inference_marker",
+                message="[推論] may only prefix a when_not_to_apply item.",
+                details={**location, "card_id": card_id, "fields": misplaced},
+            )
+        )
+    if notes:
+        findings.append(
+            Finding(
+                severity="warning",
+                code="card_internal_note",
+                message="Card prose refers to source chunks; move the note out or mark it [推論].",
+                details={**location, "card_id": card_id, "fields": notes},
+            )
+        )
 
 
 def _card_paths(cards_root: Path) -> list[Path]:

@@ -76,7 +76,13 @@ def create_index(kb: Path, rows: list[dict] | None = None) -> None:
     con.close()
 
 
-def add_card(kb: Path, *, status: str, domain: str = "architecture") -> None:
+def add_card(
+    kb: Path,
+    *,
+    status: str,
+    domain: str = "architecture",
+    overrides: dict | None = None,
+) -> None:
     directory = kb / "cards" / domain
     directory.mkdir(parents=True, exist_ok=True)
     card = {
@@ -94,6 +100,7 @@ def add_card(kb: Path, *, status: str, domain: str = "architecture") -> None:
         "confidence": "high",
         "status": status,
     }
+    card.update(overrides or {})
     (directory / "practices.jsonl").write_text(
-        json.dumps(card) + "\n", encoding="utf-8"
+        json.dumps(card, ensure_ascii=False) + "\n", encoding="utf-8"
     )

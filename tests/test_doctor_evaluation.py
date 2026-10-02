@@ -75,6 +75,86 @@ class DoctorTests(unittest.TestCase):
             self.assertEqual(report.metrics["missing_provenance"], 0)
 
 
+class CardFieldRuleTests(unittest.TestCase):
+    def doctor(self, overrides: dict):
+        with tempfile.TemporaryDirectory() as tmp:
+            repo = Path(tmp)
+            kb = repo / "knowledge-base"
+            create_index(
+                kb,
+                [
+                    {
+                        "chunk_id": "chunk-1",
+                        "doc_id": "book-1",
+                        "title": "Synthetic Book",
+                        "source_path": "guide.md",
+                        "text": "Retry with an idempotency key.",
+                    }
+                ],
+            )
+            add_card(kb, status="candidate", overrides=overrides)
+            return run_doctor(repo)
+
+    @staticmethod
+    def codes(report) -> set[str]:
+        return {finding.code for finding in report.findings}
+
+    def test_empty_pitfalls_is_allowed(self) -> None:
+        report = self.doctor({"pitfalls": []})
+
+        self.assertTrue(report.ok)
+        self.assertNotIn("card_schema", self.codes(report))
+
+    def test_missing_pitfalls_key_is_still_an_error(self) -> None:
+        report = self.doctor({"pitfalls": None})
+
+        self.assertFalse(report.ok)
+        schema = [f for f in report.findings if f.code == "card_schema"]
+        self.assertEqual(schema[0].details["missing_fields"], ["pitfalls"])
+
+    def test_empty_when_not_to_apply_is_still_an_error(self) -> None:
+        report = self.doctor({"when_not_to_apply": []})
+
+        self.assertFalse(report.ok)
+        self.assertIn("card_schema", self.codes(report))
+
+    def test_inference_prefixed_when_not_is_clean(self) -> None:
+        report = self.doctor(
+            {"when_not_to_apply": ["[推論] 単一プロセス内の計算", "Pure local computation"]}
+        )
+
+        self.assertTrue(report.ok)
+        self.assertEqual(report.findings, [])
+
+    def test_misplaced_inference_marker_warns(self) -> None:
+        report = self.doctor(
+            {
+                "pitfalls": ["[推論] 無制限の再試行"],
+                "when_not_to_apply": ["単一プロセス内の計算 [推論]"],
+            }
+        )
+
+        self.assertTrue(report.ok)
+        warning = [f for f in report.findings if f.code == "card_inference_marker"]
+        self.assertEqual(warning[0].severity, "warning")
+        self.assertEqual(
+            warning[0].details["fields"], ["pitfalls[0]", "when_not_to_apply[0]"]
+        )
+
+    def test_chunk_reference_in_prose_warns(self) -> None:
+        report = self.doctor(
+            {
+                "recommendation": "冪等キーを使う（chunk の例では注文 API）",
+                "pitfalls": ["chunked transfer で途中切断する"],
+            }
+        )
+
+        self.assertTrue(report.ok)
+        notes = [f for f in report.findings if f.code == "card_internal_note"]
+        self.assertEqual(notes[0].severity, "warning")
+        self.assertEqual(notes[0].details["fields"], ["recommendation"])
+
+
 class UtilityEvaluationTests(unittest.TestCase):
     def test_paired_evaluation_passes_all_agreed_thresholds(self) -> None:
         result = evaluate_pairs(CASES, observations(assisted=False), observations(assisted=True))
