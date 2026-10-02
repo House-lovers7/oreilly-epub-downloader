@@ -1236,6 +1236,651 @@
       "status": "active",
       "basis": "output/kb-promotion/2026-10-design-patterns.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
       "recorded_at": "2026-10-01T22:13:28.939626+00:00"
+    },
+    "cr-p-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:52.617455+00:00"
+    },
+    "cr-p-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:52.712578+00:00"
+    },
+    "cr-p-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:52.812592+00:00"
+    },
+    "cr-p-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:52.908862+00:00"
+    },
+    "cr-p-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.002924+00:00"
+    },
+    "cr-p-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.114782+00:00"
+    },
+    "cr-p-010": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.217465+00:00"
+    },
+    "cr-p-011": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.312238+00:00"
+    },
+    "cr-p-013": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.410272+00:00"
+    },
+    "cr-p-014": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.509137+00:00"
+    },
+    "cr-p-015": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.606635+00:00"
+    },
+    "cr-p-016": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.698698+00:00"
+    },
+    "cr-p-019": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.793537+00:00"
+    },
+    "cr-p-021": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.887179+00:00"
+    },
+    "cr-p-022": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:53.979924+00:00"
+    },
+    "cr-p-023": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:54.074710+00:00"
+    },
+    "cr-p-024": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:54.171535+00:00"
+    },
+    "cr-p-025": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:54.265928+00:00"
+    },
+    "cr-p-026": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:54.360271+00:00"
+    },
+    "cr-p-027": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:54.453680+00:00"
+    },
+    "cr-p-029": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:54.546737+00:00"
+    },
+    "cr-p-030": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:54.642480+00:00"
+    },
+    "cr-a-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:54.742774+00:00"
+    },
+    "cr-a-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:54.846092+00:00"
+    },
+    "cr-a-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:54.947482+00:00"
+    },
+    "cr-a-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:55.064001+00:00"
+    },
+    "cr-a-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:55.164488+00:00"
+    },
+    "cr-a-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:55.263391+00:00"
+    },
+    "cr-t-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:55.362928+00:00"
+    },
+    "cr-t-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:55.463491+00:00"
+    },
+    "cr-t-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:55.563990+00:00"
+    },
+    "cr-t-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-code-review.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:55.665623+00:00"
+    },
+    "cicd-p-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:55.763143+00:00"
+    },
+    "cicd-p-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:55.860076+00:00"
+    },
+    "cicd-p-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:55.958722+00:00"
+    },
+    "cicd-p-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:56.058810+00:00"
+    },
+    "cicd-p-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:56.158366+00:00"
+    },
+    "cicd-p-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:56.257129+00:00"
+    },
+    "cicd-p-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:56.355503+00:00"
+    },
+    "cicd-p-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:56.454236+00:00"
+    },
+    "cicd-p-010": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:56.553376+00:00"
+    },
+    "cicd-p-011": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:56.650954+00:00"
+    },
+    "cicd-p-013": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:56.749095+00:00"
+    },
+    "cicd-p-014": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:56.846101+00:00"
+    },
+    "cicd-p-016": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:56.943807+00:00"
+    },
+    "cicd-p-026": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:57.040276+00:00"
+    },
+    "cicd-p-027": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:57.138972+00:00"
+    },
+    "cicd-t-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-ci-cd.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:57.254188+00:00"
+    },
+    "obs-p-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:57.365454+00:00"
+    },
+    "obs-p-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:57.468835+00:00"
+    },
+    "obs-p-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:57.573706+00:00"
+    },
+    "obs-p-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:57.678900+00:00"
+    },
+    "obs-p-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:57.780924+00:00"
+    },
+    "obs-p-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:57.894423+00:00"
+    },
+    "obs-p-010": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:57.993354+00:00"
+    },
+    "obs-p-011": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:58.100869+00:00"
+    },
+    "obs-p-013": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:58.198956+00:00"
+    },
+    "obs-p-014": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:58.299581+00:00"
+    },
+    "obs-p-017": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:58.400037+00:00"
+    },
+    "obs-p-020": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:58.501875+00:00"
+    },
+    "obs-a-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:58.601909+00:00"
+    },
+    "obs-a-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:58.701014+00:00"
+    },
+    "obs-a-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:58.797265+00:00"
+    },
+    "obs-a-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:58.895378+00:00"
+    },
+    "obs-a-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:58.995909+00:00"
+    },
+    "obs-a-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:59.093560+00:00"
+    },
+    "obs-t-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:59.190545+00:00"
+    },
+    "obs-t-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-observability.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:59.288736+00:00"
+    },
+    "py-p-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:59.386327+00:00"
+    },
+    "py-p-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:59.503166+00:00"
+    },
+    "py-p-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:59.607891+00:00"
+    },
+    "py-p-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:59.730532+00:00"
+    },
+    "py-p-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:59.835131+00:00"
+    },
+    "py-p-012": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:21:59.935246+00:00"
+    },
+    "py-p-015": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:00.041290+00:00"
+    },
+    "py-p-016": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:00.145697+00:00"
+    },
+    "py-p-017": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:00.245467+00:00"
+    },
+    "py-p-018": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:00.344929+00:00"
+    },
+    "py-p-020": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:00.442012+00:00"
+    },
+    "py-p-022": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:00.540559+00:00"
+    },
+    "py-p-023": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:00.641707+00:00"
+    },
+    "py-p-025": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:00.740087+00:00"
+    },
+    "py-p-026": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:00.837889+00:00"
+    },
+    "py-a-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:00.934601+00:00"
+    },
+    "py-a-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:01.031906+00:00"
+    },
+    "py-a-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:01.131016+00:00"
+    },
+    "py-a-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:01.231159+00:00"
+    },
+    "py-t-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:01.330974+00:00"
+    },
+    "py-t-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:01.430849+00:00"
+    },
+    "py-t-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-python.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:01.533179+00:00"
+    },
+    "go-p-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:01.633308+00:00"
+    },
+    "go-p-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:01.740589+00:00"
+    },
+    "go-p-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:01.838974+00:00"
+    },
+    "go-p-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:01.937264+00:00"
+    },
+    "go-p-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:02.035945+00:00"
+    },
+    "go-p-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:02.134110+00:00"
+    },
+    "go-p-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:02.232681+00:00"
+    },
+    "go-p-012": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:02.329893+00:00"
+    },
+    "go-p-013": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:02.431385+00:00"
+    },
+    "go-p-014": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:02.565343+00:00"
+    },
+    "go-p-015": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:02.670007+00:00"
+    },
+    "go-p-016": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:02.768817+00:00"
+    },
+    "go-p-017": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:02.866418+00:00"
+    },
+    "go-p-018": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:02.964904+00:00"
+    },
+    "go-p-020": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:03.063322+00:00"
+    },
+    "go-p-021": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:03.164247+00:00"
+    },
+    "go-p-023": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:03.264135+00:00"
+    },
+    "go-p-025": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:03.363894+00:00"
+    },
+    "go-p-028": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:03.461558+00:00"
+    },
+    "go-p-030": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:03.560025+00:00"
+    },
+    "go-p-031": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:03.659912+00:00"
+    },
+    "go-p-032": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:03.759267+00:00"
+    },
+    "go-p-035": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:03.857692+00:00"
+    },
+    "go-p-036": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:03.957657+00:00"
+    },
+    "go-a-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:04.056922+00:00"
+    },
+    "go-a-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:04.155465+00:00"
+    },
+    "go-a-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:04.264483+00:00"
+    },
+    "go-a-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:04.368243+00:00"
+    },
+    "go-a-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:04.466704+00:00"
+    },
+    "go-a-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:04.567528+00:00"
+    },
+    "go-a-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:04.668378+00:00"
+    },
+    "go-a-010": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:04.768962+00:00"
+    },
+    "go-a-011": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:04.873598+00:00"
+    },
+    "go-t-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:04.972880+00:00"
+    },
+    "go-t-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:05.071714+00:00"
+    },
+    "go-t-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:05.173276+00:00"
+    },
+    "go-t-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:05.271365+00:00"
+    },
+    "go-t-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:05.374651+00:00"
+    },
+    "go-t-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-go.md 2026-10-02 fresh-context 精査 KEEP（中心主張は chunk 支持、補足項目は蒸留時の追加を含む。本人 y）",
+      "recorded_at": "2026-10-02T00:22:05.474692+00:00"
     }
   }
 }
