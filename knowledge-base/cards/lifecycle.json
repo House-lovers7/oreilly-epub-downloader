@@ -2376,6 +2376,51 @@
       "status": "active",
       "basis": "output/kb-promotion/2026-10-R1-testing.md 2026-10-02 REVISE 修正後の fresh-context 再精査 KEEP（基準 a〜e、中心主張は chunk 支持、補足項目は推論を含む。本人 y）",
       "recorded_at": "2026-10-02T10:26:32.666146+00:00"
+    },
+    "arch-a-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R2-architecture.md 2026-10-02 REVISE 2 回目の修正後の fresh-context 再精査 KEEP（基準 a〜e、pitfalls・when_not_to_apply も chunk 照合、層別は 2026-10-R2-SUMMARY.md 層 A、本人 y）",
+      "recorded_at": "2026-10-02T12:06:58.915130+00:00"
+    },
+    "arch-t-011": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R2-architecture.md 2026-10-02 REVISE 2 回目の修正後の fresh-context 再精査 KEEP（基準 a〜e、pitfalls・when_not_to_apply も chunk 照合、層別は 2026-10-R2-SUMMARY.md 層 A、本人 y）",
+      "recorded_at": "2026-10-02T12:06:59.019960+00:00"
+    },
+    "perf-a-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R2-performance.md 2026-10-02 REVISE 2 回目の修正後の fresh-context 再精査 KEEP（基準 a〜e、pitfalls・when_not_to_apply も chunk 照合、層別は 2026-10-R2-SUMMARY.md 層 A、本人 y）",
+      "recorded_at": "2026-10-02T12:06:59.123904+00:00"
+    },
+    "db-p-013": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R2-database.md 2026-10-02 REVISE 2 回目の修正後の fresh-context 再精査 KEEP（基準 a〜e、pitfalls・when_not_to_apply も chunk 照合、層別は 2026-10-R2-SUMMARY.md 層 A、本人 y）",
+      "recorded_at": "2026-10-02T12:06:59.221965+00:00"
+    },
+    "db-t-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R2-database.md 2026-10-02 REVISE 2 回目の修正後の fresh-context 再精査 KEEP（基準 a〜e、pitfalls・when_not_to_apply も chunk 照合、層別は 2026-10-R2-SUMMARY.md 層 A、本人 y）",
+      "recorded_at": "2026-10-02T12:06:59.325035+00:00"
+    },
+    "db-t-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R2-database.md 2026-10-02 REVISE 2 回目の修正後の fresh-context 再精査 KEEP（基準 a〜e、pitfalls・when_not_to_apply も chunk 照合、層別は 2026-10-R2-SUMMARY.md 層 A、本人 y）",
+      "recorded_at": "2026-10-02T12:06:59.438825+00:00"
+    },
+    "dp-t-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R2-design-patterns.md 2026-10-02 REVISE 2 回目の修正後の fresh-context 再精査 KEEP（基準 a〜e、pitfalls・when_not_to_apply も chunk 照合、層別は 2026-10-R2-SUMMARY.md 層 A、本人 y）",
+      "recorded_at": "2026-10-02T12:06:59.545448+00:00"
+    },
+    "cr-t-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R2-code-review.md 2026-10-02 REVISE 2 回目の修正後の fresh-context 再精査 KEEP（基準 a〜e、pitfalls・when_not_to_apply も chunk 照合、層別は 2026-10-R2-SUMMARY.md 層 A、本人 y）",
+      "recorded_at": "2026-10-02T12:06:59.650638+00:00"
+    },
+    "py-a-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R2-python.md 2026-10-02 REVISE 2 回目の修正後の fresh-context 再精査 KEEP（基準 a〜e、pitfalls・when_not_to_apply も chunk 照合、層別は 2026-10-R2-SUMMARY.md 層 A、本人 y）",
+      "recorded_at": "2026-10-02T12:06:59.754961+00:00"
     }
   }
 }

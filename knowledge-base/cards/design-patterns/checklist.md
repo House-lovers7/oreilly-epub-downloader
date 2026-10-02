@@ -2,7 +2,7 @@
 
 > 由来: O'Reilly技術書からの蒸留カード（knowledge-base/cards/design-patterns/）。
 > 各項目の詳細・出典は card_id で practices/antipatterns/tradeoffs.jsonl を引く。
-> 2026-10-02: active カードのみ掲載（F1-2 昇格 3 枚＋R1 昇格 2 枚）。candidate は精査パケット output/kb-promotion/2026-10-design-patterns.md を参照。
+> 2026-10-02: active カードのみ掲載（F1-2 昇格 3 枚＋R1 昇格 2 枚＋R2 昇格 1 枚）。candidate は精査パケット output/kb-promotion/2026-10-design-patterns.md を参照。
 
 ## ベストプラクティス（適用を検討したか）
 
@@ -17,5 +17,5 @@
 
 ## トレードオフ（判断を明文化したか）
 
-- （2026-10-02 時点で active カードなし。候補は output/kb-promotion/2026-10-design-patterns.md）
+- [ ] **D.I.E.（分散・不変性・エフェメラル）パターンへの疎結合投資は対象を選ぶ** (dp-t-002): ローカルなコンテキストに当てはまれば、カスタムソフトウェアを分散・不変性・エフェメラル（D.I.E.）に設計する
 
