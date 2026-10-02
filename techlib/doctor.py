@@ -10,6 +10,7 @@ from typing import Any
 
 from .cache import CacheManager
 from .lifecycle import CardLifecycle, STATUSES
+from .search import INFERENCE_MARKER
 
 
 CARD_FILES = ("practices.jsonl", "antipatterns.jsonl", "tradeoffs.jsonl")
@@ -30,7 +31,6 @@ REQUIRED_CARD_FIELDS = {
 # Required keys that may hold an empty list: books often state no pitfalls,
 # and inventing them breaks chunk support.
 EMPTY_LIST_CARD_FIELDS = {"pitfalls"}
-INFERENCE_MARKER = "[推論]"
 INFERENCE_FIELDS = {"when_not_to_apply"}
 CARD_TEXT_FIELDS = ("title", "problem", "recommendation", "pitfalls", "when_not_to_apply")
 INTERNAL_NOTE_RE = re.compile(r"(?<![A-Za-z])chunk(?![A-Za-z])", re.IGNORECASE)

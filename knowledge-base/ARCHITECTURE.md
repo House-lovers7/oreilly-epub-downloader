@@ -20,6 +20,7 @@
     pitfalls は空リスト可（chunk に落とし穴が無ければ作らない）。when_not_to_apply は 1 件以上。
     chunk に無い適用範囲は when_not 項目の先頭に [推論] を付ける（chunk 照合の対象外）。
     本文中の chunk 言及・途中の [推論] は doctor が warning（card_internal_note / card_inference_marker）
+    検索結果（list_cards / search_cards → Gateway）は [推論] 項目を when_not_to_apply_inferred にも分けて返す（印のあるカードだけ）
         │ project join（brief と突き合わせ）
         ▼
 層3: 適用層（文脈）    cards/project_map.jsonl（32プロジェクト登録済み）

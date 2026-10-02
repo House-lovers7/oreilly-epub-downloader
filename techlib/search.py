@@ -10,6 +10,8 @@ from pathlib import Path
 from typing import Any, Callable
 
 
+# Prefix of a when_not_to_apply item that the source chunk does not state.
+INFERENCE_MARKER = "[推論]"
 CARD_FILES = ("practices.jsonl", "antipatterns.jsonl", "tradeoffs.jsonl")
 WORD_RE = re.compile(r"[\w\u3040-\u30ff\u3400-\u9fff]+", re.UNICODE)
 # A particle between two non-hiragana characters joins two content words, as in
@@ -151,6 +153,9 @@ class SearchEngine:
                         continue
                     item = dict(card)
                     item["status"] = effective_status
+                    inferred = _inferred_items(card.get("when_not_to_apply"))
+                    if inferred:
+                        item["when_not_to_apply_inferred"] = inferred
                     cards.append(item)
         return cards
 
@@ -303,6 +308,17 @@ def _plain_domain(domain: str) -> str:
 
 def _query_terms(query: str) -> list[str]:
     return [term.casefold() for term in WORD_RE.findall(query) if len(term) >= 2]
+
+
+def _inferred_items(value: Any) -> list[str]:
+    """when_not_to_apply items marked [推論]: distiller notes, not book criteria."""
+    if not isinstance(value, list):
+        return []
+    return [
+        item
+        for item in value
+        if isinstance(item, str) and item.strip().startswith(INFERENCE_MARKER)
+    ]
 
 
 def _card_terms(query: str) -> list[str]:
