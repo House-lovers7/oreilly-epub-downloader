@@ -2721,6 +2721,16 @@
       "status": "active",
       "basis": "output/kb-promotion/2026-10-R3-testing.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
       "recorded_at": "2026-10-02T13:24:00.579446+00:00"
+    },
+    "go-p-037": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R4-go.md 2026-10-02 REVISE 修正回 R4（引き算だけ）の fresh-context 再精査 KEEP、抜き取り再照合で一致（chunk 0025-004）。本人 y",
+      "recorded_at": "2026-10-02T14:11:10.080629+00:00"
+    },
+    "obs-a-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R4-observability.md 2026-10-02 REVISE 修正回 R4（引き算だけ）の fresh-context 再精査 KEEP、抜き取り再照合で一致（chunk 0033-000・0047-000）。本人 y",
+      "recorded_at": "2026-10-02T14:11:10.189681+00:00"
     }
   }
 }
