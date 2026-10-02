@@ -68,5 +68,37 @@ class CardTermsJapaneseTests(unittest.TestCase):
             self.assertEqual(SearchEngine(kb).search_cards("アラートの抑制"), [])
 
 
+class CardTieBreakTests(unittest.TestCase):
+    def test_title_match_ranks_before_body_only_match_at_same_score(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            kb = Path(tmp)
+            directory = kb / "cards" / "testing"
+            directory.mkdir(parents=True)
+            base = {
+                "domain": "testing",
+                "type": "practice",
+                "pitfalls": ["p"],
+                "when_not_to_apply": ["w"],
+                "keywords": ["k"],
+                "source_chunks": ["chunk-1"],
+                "source_books": ["Synthetic Book"],
+                "confidence": "high",
+                "status": "active",
+            }
+            body_only = dict(base, card_id="test-p-001", title="仕様を共有する",
+                             problem="テストの自動化が進まない", recommendation=["契約を公開する"])
+            in_title = dict(base, card_id="test-p-002", title="テストの自動化を段階的に進める",
+                            problem="手作業の確認が多い", recommendation=["単体から自動化する"])
+            (directory / "practices.jsonl").write_text(
+                "".join(json.dumps(c, ensure_ascii=False) + "\n" for c in (body_only, in_title)),
+                encoding="utf-8",
+            )
+
+            items = SearchEngine(kb).search_cards("テストの自動化")
+
+            self.assertEqual([c["card_id"] for c in items], ["test-p-002", "test-p-001"])
+            self.assertEqual([c["match_score"] for c in items], [1.0, 1.0])
+
+
 if __name__ == "__main__":
     unittest.main()

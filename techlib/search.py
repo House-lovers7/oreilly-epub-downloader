@@ -182,16 +182,18 @@ class SearchEngine:
         terms = _card_terms(query)
         if not terms:
             return []
-        scored: list[tuple[float, str, dict[str, Any]]] = []
+        scored: list[tuple[float, int, str, dict[str, Any]]] = []
         for card in self.list_cards(domain=domain, status="active"):
             score = _card_score(card, terms)
             if score <= 0:
                 continue
             item = dict(card)
             item["match_score"] = round(score, 4)
-            scored.append((score, str(card.get("card_id", "")), item))
-        scored.sort(key=lambda entry: (-entry[0], entry[1]))
-        return [item for _, _, item in scored[:limit]]
+            scored.append(
+                (score, _headline_hits(card, terms), str(card.get("card_id", "")), item)
+            )
+        scored.sort(key=lambda entry: (-entry[0], -entry[1], entry[2]))
+        return [item for _, _, _, item in scored[:limit]]
 
     def _load_lifecycle(self) -> dict[str, Any]:
         path = self.kb_dir / "cards" / "lifecycle.json"
@@ -326,6 +328,15 @@ def _card_score(card: dict[str, Any], terms: list[str]) -> float:
     searchable = json.dumps(fields, ensure_ascii=False).casefold()
     matches = sum(1 for term in terms if term in searchable)
     return matches / len(terms) if terms else 0.0
+
+
+def _headline_hits(card: dict[str, Any], terms: list[str]) -> int:
+    """Tie-breaker: terms that appear in the title or keywords, not only the body."""
+    headline = json.dumps(
+        {"title": card.get("title"), "keywords": card.get("keywords")},
+        ensure_ascii=False,
+    ).casefold()
+    return sum(1 for term in terms if term in headline)
 
 
 def _safe_fts_query(query: str, *, operator: str = "AND") -> str:
