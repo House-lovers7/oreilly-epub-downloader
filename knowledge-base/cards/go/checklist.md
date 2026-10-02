@@ -2,7 +2,7 @@
 
 > 由来: O'Reilly技術書からの蒸留カード（knowledge-base/cards/go/）。
 > 各項目の詳細・出典は card_id で practices/antipatterns/tradeoffs.jsonl を引く。
-> 2026-10-02: active カードのみ掲載（F2 昇格 39 枚＋R1 昇格 14 枚）。candidate は精査パケット output/kb-promotion/2026-10-go.md を参照。
+> 2026-10-02: active カードのみ掲載（F2 昇格 39 枚＋R1 昇格 14 枚＋R3 昇格 3 枚）。candidate は精査パケット output/kb-promotion/2026-10-go.md を参照。
 
 ## ベストプラクティス（適用を検討したか）
 
@@ -50,10 +50,12 @@
 - [ ] **sync.Mutex などの sync 型を含む構造体を値レシーバや値渡しでコピーする** (go-a-004): sync.Mutex・RWMutex・WaitGroup・Once・Cond・Map・Pool を含む構造体のメソッドは、ポインタレシーバにする
 - [ ] **Mutex を取得した状態で、同じ Mutex を取る String() などを呼ぶ文字列フォーマットを行う** (go-a-005): 入力検証は先に行い、問題が無い場合にだけ Lock を取るなど、ロックの範囲を狭める
 - [ ] **ループの中で default 付き select を回して channel を非ブロックで確認し続ける** (go-a-006): select + default は「ブロックせず 1 回だけ確認する」用途(例: channel が close 済みかの判定)に限る
+- [ ] **pprof のプロファイル情報を、本番や外部公開のポートにそのまま晒す** (go-a-007): pprof 用のサーバーは別ポート(例: 6060)で、リッスンアドレスを localhost にして `go func(){ http.ListenAndServe("localhost:6060", nil) }()` として起動する
 - [ ] **受信者のいない unbuffered channel へ送信するゴルーチンを起動し、大きなデータを抱えたまま永久にブロックさせる** (go-a-008): ゴルーチンが送信する channel には、必ず対応する受信者がいることを確認する
 - [ ] **errors.As の第 2 引数にエラー型の変数を指すポインタでもインタフェースへのポインタでもない値を渡す** (go-a-009): 特定のインスタンスや値(センチネル)を探すときは errors.Is、特定の型を探すときは errors.As を使う
 - [ ] **panic を recover して処理を継続する(ゼロ除算などをエラー返却でなく recover に頼る)** (go-a-010): ゼロ除算のような失敗しうる条件は、事前にチェックして error を返すのが「イディオム的」な処理
 - [ ] **for ループの中で defer f.Close() を使い、全ループが終わるまでリソースを解放しない** (go-a-011): ループ内でリソースを取得するなら、使い終わった時点で明示的に Close() を呼ぶ(defer に任せない)
+- [ ] **Go の慣習から外れた書き方(ブランク return、this/self、getter/setter、init 多用、dot import など)** (go-a-012): 名前付き戻り値を使った場合の「ブランク return」は避け、値を明示して return する
 
 ## トレードオフ（明示的に判断したか）
 
@@ -64,4 +66,5 @@
 - [ ] **ゴルーチンと channel への分割は無償ではなく、直接呼び出しより遅くなる場合はベンチマークで判断する** (go-t-005): 並行化の前提は「channel 通信のオーバーヘッドが処理を直接実行するコストより小さい」こと
 - [ ] **sync.Mutex を既定にし、sync.RWMutex は性能問題が出てから計測して導入する** (go-t-006): 通常は sync.Mutex を使い、RWMutex は性能問題に直面したときにだけ検討する
 - [ ] **共有状態の同期は、離散値の受け渡しには channel、大きなステートフル構造体には mutex と使い分ける** (go-t-007): データの所有権の受け渡し、作業単位の分配、非同期の結果通信など、多くの離散値を扱う場面は channel を使う
+- [ ] **共有 map のロックを shard ごとに分けるとロックの粒度は細かくなるが、実装が複雑になり値の型が緩くなる場合がある** (go-t-008): shard ごとに sync.RWMutex と map を持たせ、キーから shard を決めて、その shard だけをロックする
 - [ ] **slice や map の容量を make で事前確保すると再割り当てを減らせるが、計測してから適用する** (go-t-009): 正確な長さが分かるなら `make([]int, n)`、最大量の見込みがつくなら `make([]int, 0, n)` のように容量だけ指定する

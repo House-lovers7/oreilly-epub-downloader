@@ -2421,6 +2421,306 @@
       "status": "active",
       "basis": "output/kb-promotion/2026-10-R2-python.md 2026-10-02 REVISE 2 回目の修正後の fresh-context 再精査 KEEP（基準 a〜e、pitfalls・when_not_to_apply も chunk 照合、層別は 2026-10-R2-SUMMARY.md 層 A、本人 y）",
       "recorded_at": "2026-10-02T12:06:59.754961+00:00"
+    },
+    "api-p-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-api-design.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:54.836937+00:00"
+    },
+    "api-p-012": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-api-design.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:54.934544+00:00"
+    },
+    "arch-p-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-architecture.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:55.031336+00:00"
+    },
+    "arch-p-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-architecture.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:55.146234+00:00"
+    },
+    "arch-p-011": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-architecture.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:55.242603+00:00"
+    },
+    "arch-p-016": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-architecture.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:55.338641+00:00"
+    },
+    "arch-a-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-architecture.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:55.433108+00:00"
+    },
+    "arch-a-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-architecture.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:55.528050+00:00"
+    },
+    "arch-a-011": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-architecture.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:55.626158+00:00"
+    },
+    "arch-t-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-architecture.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:55.720869+00:00"
+    },
+    "arch-t-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-architecture.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:55.817329+00:00"
+    },
+    "cicd-p-021": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-ci-cd.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:55.919294+00:00"
+    },
+    "cicd-p-025": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-ci-cd.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.021439+00:00"
+    },
+    "cicd-a-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-ci-cd.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.116098+00:00"
+    },
+    "cr-p-012": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-code-review.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.218139+00:00"
+    },
+    "cr-p-028": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-code-review.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.313408+00:00"
+    },
+    "db-p-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-database.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.408499+00:00"
+    },
+    "db-a-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-database.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.505903+00:00"
+    },
+    "db-a-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-database.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.605220+00:00"
+    },
+    "db-a-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-database.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.703873+00:00"
+    },
+    "db-t-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-database.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.800731+00:00"
+    },
+    "dp-p-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-design-patterns.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.895176+00:00"
+    },
+    "dp-p-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-design-patterns.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:56.990209+00:00"
+    },
+    "dp-p-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-design-patterns.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:57.084913+00:00"
+    },
+    "dp-t-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-design-patterns.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:57.180439+00:00"
+    },
+    "go-a-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-go.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:57.274804+00:00"
+    },
+    "go-a-012": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-go.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:57.369548+00:00"
+    },
+    "go-t-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-go.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:57.465281+00:00"
+    },
+    "net-p-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-networking.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:57.561654+00:00"
+    },
+    "net-p-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-networking.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:57.657184+00:00"
+    },
+    "net-p-019": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-networking.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:57.755079+00:00"
+    },
+    "net-a-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-networking.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:57.851107+00:00"
+    },
+    "net-t-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-networking.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:57.945929+00:00"
+    },
+    "net-t-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-networking.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:58.041731+00:00"
+    },
+    "net-t-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-networking.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:58.144818+00:00"
+    },
+    "obs-p-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-observability.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:58.243389+00:00"
+    },
+    "obs-p-018": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-observability.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:58.341272+00:00"
+    },
+    "obs-p-019": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-observability.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:58.438279+00:00"
+    },
+    "perf-p-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-performance.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:58.539704+00:00"
+    },
+    "perf-p-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-performance.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:58.642715+00:00"
+    },
+    "perf-p-011": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-performance.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:58.739172+00:00"
+    },
+    "perf-t-007": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-performance.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:58.834190+00:00"
+    },
+    "py-p-006": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-python.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:58.932718+00:00"
+    },
+    "py-p-019": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-python.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.029449+00:00"
+    },
+    "py-p-027": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-python.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.124760+00:00"
+    },
+    "py-t-001": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-python.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.219901+00:00"
+    },
+    "sec-p-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-security.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.315038+00:00"
+    },
+    "sec-p-010": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-security.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.410806+00:00"
+    },
+    "sec-p-016": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-security.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.505118+00:00"
+    },
+    "sec-p-019": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-security.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.600718+00:00"
+    },
+    "sec-a-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-security.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.699684+00:00"
+    },
+    "sec-a-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-security.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.798674+00:00"
+    },
+    "sre-p-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-sre.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.894345+00:00"
+    },
+    "sre-p-004": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-sre.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:23:59.989271+00:00"
+    },
+    "sre-p-019": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-sre.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:24:00.095575+00:00"
+    },
+    "sre-a-003": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-sre.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:24:00.191825+00:00"
+    },
+    "sre-t-002": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-sre.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:24:00.289891+00:00"
+    },
+    "test-p-009": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-testing.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:24:00.386833+00:00"
+    },
+    "test-a-005": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-testing.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:24:00.482370+00:00"
+    },
+    "test-t-008": {
+      "status": "active",
+      "basis": "output/kb-promotion/2026-10-R3-testing.md 2026-10-02 REVISE 修正回 R3 の fresh-context 再精査 KEEP（基準 a〜f、chunk 外の when_not は [推論] 印で区別。本人 y）",
+      "recorded_at": "2026-10-02T13:24:00.579446+00:00"
     }
   }
 }
