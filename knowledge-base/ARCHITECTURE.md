@@ -1,13 +1,14 @@
 # 書籍ナレッジ3層システム アーキテクチャ設計図
 
-> 目的: O'Reilly 131冊を「一流エンジニアの脳・知恵・経験を借りられる」判断材料へ変換し、AI開発工程へ自動供給する。
+> 目的: O'Reilly 218冊（2026-10-02 実測、74,277 チャンク）を「一流エンジニアの脳・知恵・経験を借りられる」判断材料へ変換し、AI開発工程へ自動供給する。
 > 本書は **他モデル（Sonnet / Codex 等）が単独で実装を継続するための設計図**。運用原則の原本は ACOS `knowledge/engineering/technical-library-usage-principles.md`（本書は実装視点の補完であり、判断原則を再定義しない）。
 > 最終更新: 2026-07-13（R3一巡目 design-patterns 蒸留まで反映）
+> 2026-09〜10 のエンジニアリング基準線ブラッシュアップ（F0 無言劣化の封止、F1・F2 のカード精査と昇格、F3 のレビュー・実装工程への結線）の設計と実施記録は ACOS `docs/design/technical-library-engineering-baseline-brushup-2026-09.md`。本書の §3 工程結線・§4 不変条件より新しい内容はそちらが正。
 
 ## 1. 全体像（3層モデル）
 
 ```text
-層2: 根拠層（全文）    131冊 / 62,947チャンク
+層2: 根拠層（全文）    218冊 / 74,277チャンク
   index/library.sqlite (FTS5 bm25, 336MB) + index/embeddings.npy (bge-m3 384次元, 123MB)
   検索 = Reciprocal Rank Fusion(K=60)。Ollama(127.0.0.1:11434)疎通不可時は keyword-only へ自動フォールバック
         │ 遅延蒸留（domain-pack で素材収集 → subagent 蒸留 → provenance 機械検証）
