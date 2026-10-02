@@ -12,6 +12,13 @@ from typing import Any, Callable
 
 CARD_FILES = ("practices.jsonl", "antipatterns.jsonl", "tradeoffs.jsonl")
 WORD_RE = re.compile(r"[\w\u3040-\u30ff\u3400-\u9fff]+", re.UNICODE)
+# A particle between two non-hiragana characters joins two content words, as in
+# "アラートの抑制".  Hiragana neighbours are excluded so okurigana and hiragana
+# words ("書き換え", "ひとつ") stay intact.
+JA_PARTICLE_RE = re.compile(
+    r"(?<=[^\u3040-\u309f])(?:から|まで|より|の|を|は|が|に|で|と|へ|や|も)"
+    r"(?=[^\u3040-\u309f])"
+)
 
 
 @dataclass(frozen=True)
@@ -172,7 +179,7 @@ class SearchEngine:
     def _search_cards(
         self, query: str, *, domain: str | None, limit: int
     ) -> list[dict[str, Any]]:
-        terms = _query_terms(query)
+        terms = _card_terms(query)
         if not terms:
             return []
         scored: list[tuple[float, str, dict[str, Any]]] = []
@@ -294,6 +301,17 @@ def _plain_domain(domain: str) -> str:
 
 def _query_terms(query: str) -> list[str]:
     return [term.casefold() for term in WORD_RE.findall(query) if len(term) >= 2]
+
+
+def _card_terms(query: str) -> list[str]:
+    """Terms for card matching: Japanese compounds are split at particles."""
+    terms = [
+        part.casefold()
+        for word in WORD_RE.findall(query)
+        for part in JA_PARTICLE_RE.split(word)
+        if len(part) >= 2
+    ]
+    return list(dict.fromkeys(terms))
 
 
 def _card_score(card: dict[str, Any], terms: list[str]) -> float:
