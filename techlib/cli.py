@@ -11,7 +11,7 @@ from .cache import CacheManager
 from .distillation import build_domain_pack
 from .doctor import run_doctor
 from .evaluation import evaluate_pairs
-from .indexing import IncrementalIndexer
+from .indexing import CitedDocumentError, IncrementalIndexer
 from .lifecycle import CardLifecycle
 from .oreilly_adapter import (
     DEFAULT_MAX_BYTES,
@@ -175,7 +175,10 @@ def index_group() -> None:
 @click.option("--json", "as_json", is_flag=True)
 def index_add(source: Path, kb_dir: Path, rights: str, as_json: bool) -> None:
     """Add or refresh one source without rebuilding unrelated documents."""
-    result = IncrementalIndexer(kb_dir).ingest(source, rights=rights)
+    try:
+        result = IncrementalIndexer(kb_dir).ingest(source, rights=rights)
+    except CitedDocumentError as error:
+        raise click.ClickException(str(error)) from error
     payload = {**dataclasses.asdict(result), "manifest_path": str(result.manifest_path)}
     click.echo(json.dumps(payload, ensure_ascii=False, indent=2) if as_json else payload)
 

@@ -6,6 +6,7 @@ import os
 import re
 import sqlite3
 import tempfile
+import unicodedata
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
@@ -26,6 +27,10 @@ class IngestResult:
     chunk_count: int
     changed: bool
     manifest_path: Path
+
+
+class CitedDocumentError(RuntimeError):
+    """Re-ingesting a source would delete chunks that cards still cite."""
 
 
 class IncrementalIndexer:
@@ -73,12 +78,20 @@ class IncrementalIndexer:
         connection = sqlite3.connect(db_path)
         try:
             connection.execute("BEGIN IMMEDIATE")
+            # macOS may hand the same file back as NFC or NFD, so compare normalized paths.
+            source_key = _path_key(source)
             old_ids = [
                 row[0]
-                for row in connection.execute(
-                    "SELECT doc_id FROM docs WHERE source_path = ?", (str(source),)
-                )
+                for row in connection.execute("SELECT doc_id, source_path FROM docs")
+                if _path_key(row[1]) == source_key
             ]
+            replaced = sorted(old_id for old_id in old_ids if old_id != doc_id)
+            cited = self._cited_chunk_count(replaced)
+            if cited:
+                raise CitedDocumentError(
+                    f"{source}: cards cite {cited} chunk ids of {', '.join(replaced)}; "
+                    "remap the cards' source_chunks before re-ingesting this source"
+                )
             for old_id in old_ids:
                 connection.execute("DELETE FROM chunks_fts WHERE doc_id = ?", (old_id,))
                 connection.execute("DELETE FROM chunks WHERE doc_id = ?", (old_id,))
@@ -158,8 +171,31 @@ class IncrementalIndexer:
     def _manifest_path(self, source: Path) -> Path:
         import hashlib
 
-        path_id = hashlib.sha256(str(source).encode("utf-8")).hexdigest()[:16]
+        path_id = hashlib.sha256(_path_key(source).encode("utf-8")).hexdigest()[:16]
         return self.kb_dir / "manifests" / f"{path_id}.json"
+
+    def _cited_chunk_count(self, doc_ids: list[str]) -> int:
+        """Count chunk-id citations of doc_ids anywhere under cards/ (cards, source packs, manifests)."""
+        cards_root = self.kb_dir / "cards"
+        if not doc_ids or not cards_root.is_dir():
+            return 0
+        pattern = re.compile(
+            "(?:" + "|".join(re.escape(doc_id) for doc_id in doc_ids) + r")-sec-\d{4,}-\d{3,}"
+        )
+        cited: set[str] = set()
+        for path in sorted(cards_root.rglob("*.json*")):
+            if not path.is_file():
+                continue
+            # Decode before matching: ensure_ascii writers store non-ASCII ids as \uXXXX escapes.
+            # An unreadable file raises, so the guard never passes on a file it could not check.
+            text = path.read_text(encoding="utf-8")
+            if path.suffix == ".jsonl":
+                payloads = [json.loads(line) for line in text.splitlines() if line.strip()]
+            else:
+                payloads = [json.loads(text)]
+            for value in _string_values(payloads):
+                cited.update(pattern.findall(value))
+        return len(cited)
 
     def _doc_exists(self, doc_id: str) -> bool:
         db = self.kb_dir / "index" / "library.sqlite"
@@ -327,7 +363,8 @@ class IncrementalIndexer:
         if not isinstance(catalog, list):
             catalog = catalog.get("docs", []) if isinstance(catalog, dict) else []
         source_path = str(source)
-        catalog = [row for row in catalog if row.get("source_path") != source_path]
+        source_key = _path_key(source)
+        catalog = [row for row in catalog if _path_key(row.get("source_path", "")) != source_key]
         catalog.append(
             {
                 "doc_id": doc_id,
@@ -370,6 +407,22 @@ def _split_text(text: str, limit: int) -> list[str]:
 
 def _normalize_text(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
+
+
+def _path_key(path: Path | str) -> str:
+    return unicodedata.normalize("NFC", str(path))
+
+
+def _string_values(payload: Any) -> Iterable[str]:
+    if isinstance(payload, str):
+        yield payload
+    elif isinstance(payload, dict):
+        for key, value in payload.items():
+            yield key
+            yield from _string_values(value)
+    elif isinstance(payload, list):
+        for value in payload:
+            yield from _string_values(value)
 
 
 def _read_json(path: Path) -> Any:

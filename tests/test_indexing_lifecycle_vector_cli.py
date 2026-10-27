@@ -4,6 +4,7 @@ import json
 import os
 import sqlite3
 import tempfile
+import unicodedata
 import unittest
 from pathlib import Path
 
@@ -11,7 +12,7 @@ from click.testing import CliRunner
 
 from src.cli import main as legacy_main
 from techlib.cli import main
-from techlib.indexing import IncrementalIndexer
+from techlib.indexing import CitedDocumentError, IncrementalIndexer
 from techlib.lifecycle import CardLifecycle
 from techlib.search import SearchEngine
 from tests.kb_fixture import add_card, create_index
@@ -64,6 +65,141 @@ class IncrementalIndexerTests(unittest.TestCase):
                 "second stable version",
             )
             con.close()
+
+    def test_changed_source_is_refused_while_cards_cite_prior_chunks(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "guide.txt"
+            source.write_text("first stable version", encoding="utf-8")
+            kb = root / "knowledge-base"
+            indexer = IncrementalIndexer(kb)
+            first = indexer.ingest(source, rights="owned-local")
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            cited_chunk = con.execute("SELECT chunk_id FROM chunks").fetchone()[0]
+            con.close()
+            add_card(kb, status="active", overrides={"source_chunks": [cited_chunk]})
+            source.write_text("second stable version", encoding="utf-8")
+
+            with self.assertRaises(CitedDocumentError):
+                indexer.ingest(source, rights="owned-local")
+
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            self.assertEqual(con.execute("SELECT doc_id FROM docs").fetchall(), [(first.doc_id,)])
+            self.assertEqual(
+                con.execute("SELECT text FROM chunks WHERE chunk_id = ?", (cited_chunk,)).fetchone()[0],
+                "first stable version",
+            )
+            con.close()
+            manifest = json.loads(first.manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual(manifest["doc_id"], first.doc_id)
+            catalog = json.loads((kb / "catalog.json").read_text(encoding="utf-8"))
+            self.assertEqual([row["doc_id"] for row in catalog], [first.doc_id])
+
+    def test_ascii_escaped_citation_of_non_ascii_legacy_id_is_detected(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "guide.txt"
+            source.write_text("first stable version", encoding="utf-8")
+            kb = root / "knowledge-base"
+            indexer = IncrementalIndexer(kb)
+            first = indexer.ingest(source, rights="owned-local")
+            legacy_id = "デジタル入門-0123456789ab"
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            con.execute("UPDATE docs SET doc_id = ? WHERE doc_id = ?", (legacy_id, first.doc_id))
+            con.commit()
+            con.close()
+            pack = kb / "cards" / "architecture" / "source-pack.jsonl"
+            pack.parent.mkdir(parents=True)
+            pack.write_text(
+                json.dumps({"chunk_id": f"{legacy_id}-sec-0001-000"}, ensure_ascii=True) + "\n",
+                encoding="utf-8",
+            )
+            self.assertNotIn(legacy_id, pack.read_text(encoding="utf-8"))
+            source.write_text("second stable version", encoding="utf-8")
+
+            with self.assertRaises(CitedDocumentError):
+                indexer.ingest(source, rights="owned-local")
+
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            self.assertEqual(con.execute("SELECT doc_id FROM docs").fetchall(), [(legacy_id,)])
+            con.close()
+
+    def test_citation_in_domain_manifest_json_is_detected(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "guide.txt"
+            source.write_text("first stable version", encoding="utf-8")
+            kb = root / "knowledge-base"
+            indexer = IncrementalIndexer(kb)
+            first = indexer.ingest(source, rights="owned-local")
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            cited_chunk = con.execute("SELECT chunk_id FROM chunks").fetchone()[0]
+            con.close()
+            manifest = kb / "cards" / "architecture" / "manifest.json"
+            manifest.parent.mkdir(parents=True)
+            manifest.write_text(
+                json.dumps({"domain": "architecture", "chunks": [{"chunk_id": cited_chunk}]}),
+                encoding="utf-8",
+            )
+            source.write_text("second stable version", encoding="utf-8")
+
+            with self.assertRaises(CitedDocumentError):
+                indexer.ingest(source, rights="owned-local")
+
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            self.assertEqual(con.execute("SELECT doc_id FROM docs").fetchall(), [(first.doc_id,)])
+            con.close()
+
+    def test_unreadable_card_file_stops_a_replacing_ingest(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "guide.txt"
+            source.write_text("first stable version", encoding="utf-8")
+            kb = root / "knowledge-base"
+            indexer = IncrementalIndexer(kb)
+            first = indexer.ingest(source, rights="owned-local")
+            broken = kb / "cards" / "architecture" / "practices.jsonl"
+            broken.parent.mkdir(parents=True)
+            broken.write_text("{not json\n", encoding="utf-8")
+            source.write_text("second stable version", encoding="utf-8")
+
+            with self.assertRaises(json.JSONDecodeError):
+                indexer.ingest(source, rights="owned-local")
+
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            self.assertEqual(con.execute("SELECT doc_id FROM docs").fetchall(), [(first.doc_id,)])
+            con.close()
+
+    def test_prior_version_stored_under_nfd_path_is_replaced_not_duplicated(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "デジタル.txt"
+            source.write_text("first stable version", encoding="utf-8")
+            kb = root / "knowledge-base"
+            indexer = IncrementalIndexer(kb)
+            indexer.ingest(source, rights="owned-local")
+            resolved = str(source.resolve())
+            nfd_path = unicodedata.normalize("NFD", resolved)
+            self.assertNotEqual(nfd_path, resolved)
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            con.execute("UPDATE docs SET source_path = ?", (nfd_path,))
+            con.commit()
+            con.close()
+            catalog_path = kb / "catalog.json"
+            catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+            for row in catalog:
+                row["source_path"] = nfd_path
+            catalog_path.write_text(json.dumps(catalog, ensure_ascii=False), encoding="utf-8")
+            self.assertEqual(indexer._manifest_path(Path(nfd_path)), indexer._manifest_path(Path(resolved)))
+            source.write_text("second stable version", encoding="utf-8")
+
+            second = indexer.ingest(source, rights="owned-local")
+
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            self.assertEqual(con.execute("SELECT doc_id FROM docs").fetchall(), [(second.doc_id,)])
+            con.close()
+            catalog = json.loads(catalog_path.read_text(encoding="utf-8"))
+            self.assertEqual([row["doc_id"] for row in catalog], [second.doc_id])
 
 
 class CardLifecycleTests(unittest.TestCase):
