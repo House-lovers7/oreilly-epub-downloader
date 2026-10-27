@@ -10,7 +10,9 @@
 ```text
 層2: 根拠層（全文）    264冊 / 80,653チャンク
   index/library.sqlite (FTS5 bm25, 656MB) + index/embeddings.npy (bge-m3 1024次元, 157MB)
-  検索 = Reciprocal Rank Fusion(K=60)。Ollama(127.0.0.1:11434)疎通不可時は keyword-only へ自動フォールバック
+  検索 = 段階式（techlib/search.py）。active カード → FTS5 bm25 → ベクトル（FTS が 0 件の時だけ）。順位の融合はしない
+  カードに当たると層2を見ないので、層2を直接引く時は source_type=epub を渡す
+  Ollama(127.0.0.1:11434) 疎通不可・numpy 無しの時、ベクトル段は例外を出さず空を返す（insufficient_evidence）
         │ 遅延蒸留（domain-pack で素材収集 → subagent 蒸留 → provenance 機械検証）
         ▼
 層1: 規範層（カード）  9ドメイン 296カード
@@ -112,6 +114,6 @@ python3 _tool_gateway/tool_gateway.py call <tool> --json '<args>'   # cwd: app_d
 cd /Users/tg/projects/app_development/oreilly-epub-downloader
 python3 scripts/validate_project_map.py                 # project_map 整合性（OK必須）
 python3 scripts/card_usage_report.py                    # 利用実績・死蔵・フォールバック需要
-python3 scripts/technical_library.py search "<query>" --kb-dir knowledge-base --limit 3 --mode hybrid   # 層2検索の疎通
+.venv/bin/python scripts/technical_library.py search "<query>" --kb-dir knowledge-base --limit 3 --mode hybrid --source-type epub   # 層2検索の疎通（system python3 は numpy が無く、FTS 0 件の query で無言の空になる。Gateway も venv を使う）
 cd /Users/tg/projects/app_development && python3 _tool_gateway/tool_gateway.py call search_practice_cards --json '{"domain":"architecture","query":"冪等 リトライ","limit":3}'   # 層1検索の疎通
 ```
