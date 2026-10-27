@@ -1,6 +1,6 @@
 # 書籍ナレッジ3層システム アーキテクチャ設計図
 
-> 目的: O'Reilly 218冊（2026-10-02 実測、74,277 チャンク）を「一流エンジニアの脳・知恵・経験を借りられる」判断材料へ変換し、AI開発工程へ自動供給する。
+> 目的: O'Reilly 264冊（2026-10-28 実測、80,653 チャンク）を「一流エンジニアの脳・知恵・経験を借りられる」判断材料へ変換し、AI開発工程へ自動供給する。
 > 本書は **他モデル（Sonnet / Codex 等）が単独で実装を継続するための設計図**。運用原則の原本は ACOS `knowledge/engineering/technical-library-usage-principles.md`（本書は実装視点の補完であり、判断原則を再定義しない）。
 > 最終更新: 2026-07-13（R3一巡目 design-patterns 蒸留まで反映）
 > 2026-09〜10 のエンジニアリング基準線ブラッシュアップ（F0 無言劣化の封止、F1・F2 のカード精査と昇格、F3 のレビュー・実装工程への結線）の設計と実施記録は ACOS `docs/design/technical-library-engineering-baseline-brushup-2026-09.md`。本書の §3 工程結線・§4 不変条件より新しい内容はそちらが正。
@@ -8,8 +8,8 @@
 ## 1. 全体像（3層モデル）
 
 ```text
-層2: 根拠層（全文）    218冊 / 74,277チャンク
-  index/library.sqlite (FTS5 bm25, 336MB) + index/embeddings.npy (bge-m3 384次元, 123MB)
+層2: 根拠層（全文）    264冊 / 80,653チャンク
+  index/library.sqlite (FTS5 bm25, 656MB) + index/embeddings.npy (bge-m3 1024次元, 157MB)
   検索 = Reciprocal Rank Fusion(K=60)。Ollama(127.0.0.1:11434)疎通不可時は keyword-only へ自動フォールバック
         │ 遅延蒸留（domain-pack で素材収集 → subagent 蒸留 → provenance 機械検証）
         ▼
@@ -73,6 +73,7 @@ python3 _tool_gateway/tool_gateway.py call <tool> --json '<args>'   # cwd: app_d
 3. **project_map の結合キー**: `project` は brief の `# PROJECT_BRIEF: <name>` 見出しと完全一致（不一致は join が静かに失敗するため validate で fail させている）
 4. **カードは一般論**: 適用判断は必ず対象プロジェクトの実態と突き合わせる。レビュー指摘は file:line 裏取り + card_id 引用のセット
 5. **原本境界**: 判断原則・Workflow・Skill の原本は ACOS。本repoは KB データとその検証・計測スクリプトの原本
+6. **再取り込みで引用先を消さない**: `IncrementalIndexer.ingest` は同じ source（NFC/NFD を同一視）の旧版 doc を置き換える前に、`cards/` 配下が引用する旧版チャンクを数え、1件でもあれば `CitedDocumentError` で止まる（DB・manifest・catalog は旧版のまま。epub は adapter が先に差し替えるため上書き済み）。版を移す時は、新旧チャンクの本文一致で対応表を作り、カードの `source_chunks` を書き換えてから入れ替える（2026-10-28 の DBRE 移行が先例）
 
 ## 5. 残実装ロードマップ（他モデル向け委譲契約）
 
