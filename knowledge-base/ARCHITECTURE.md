@@ -15,7 +15,7 @@
   Ollama(127.0.0.1:11434) 疎通不可・numpy 無しの時、ベクトル段は例外を出さず空を返す（insufficient_evidence）
         │ 遅延蒸留（domain-pack で素材収集 → subagent 蒸留 → provenance 機械検証）
         ▼
-層1: 規範層（カード）  9ドメイン 296カード
+層1: 規範層（カード）  16ドメイン 643カード（active 546 / candidate 97）
   cards/<domain>/{practices,antipatterns,tradeoffs}.jsonl + checklist.md + manifest.json
   カード必須フィールド: problem / recommendation / pitfalls / when_not_to_apply /
                         keywords / source_chunks / source_books / confidence / card_id
@@ -25,13 +25,13 @@
     検索結果（list_cards / search_cards → Gateway）は [推論] 項目を when_not_to_apply_inferred にも分けて返す（印のあるカードだけ）
         │ project join（brief と突き合わせ）
         ▼
-層3: 適用層（文脈）    cards/project_map.jsonl（32プロジェクト登録済み）
+層3: 適用層（文脈）    cards/project_map.jsonl（33プロジェクト登録済み）
   {project, brief, domain_tags, relevant_domains, relevant_books, recommended_practices, note}
   + reports/（パイロットレビュー n=5、割当根拠ログ project-map-expansion-2026-07-12.jsonl）
 ```
 
-- card_id 規約: `<prefix>-<p|a|t>-<3桁>`。prefix→domain: arch=architecture, api=api-design, db=database, dp=design-patterns, net=networking, perf=performance, sec=security, sre=sre, test=testing
-- ドメインは現在9つ。追加時は `cards/<新domain>/` を作り、card_id prefix を `scripts/card_usage_report.py` の正規表現へ追加する（`validate_project_map.py` / gateway はディレクトリ自動認識）
+- card_id 規約: `<prefix>-<p|a|t>-<3桁>`。prefix→domain: api=api-design, arch=architecture, cicd=ci-cd, cr=code-review, db=database, dp=design-patterns, gd=game-design, gux=game-ux, go=go, net=networking, obs=observability, perf=performance, py=python, sec=security, sre=sre, test=testing
+- ドメインは現在16（2026-10-29 実測）。追加時は `cards/<新domain>/` を作り、上の prefix 一覧に1行足す（`scripts/card_usage_report.py` は `<prefix>-<p|a|t>-<3桁>` を汎用正規表現で拾い、`validate_project_map.py` / gateway はディレクトリを自動認識するので、コード側の追加は要らない）
 
 ## 2. コンポーネントと所在
 
