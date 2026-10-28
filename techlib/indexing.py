@@ -85,11 +85,15 @@ class IncrementalIndexer:
                 for row in connection.execute("SELECT doc_id, source_path FROM docs")
                 if _path_key(row[1]) == source_key
             ]
-            replaced = sorted(old_id for old_id in old_ids if old_id != doc_id)
-            cited = self._cited_chunk_count(replaced)
-            if cited:
+            # Include the same doc_id: re-chunking it under another chunk_chars or chunker
+            # can drop cited chunk ids even though the source bytes did not change.
+            lost = sorted(
+                self._cited_chunk_ids(old_ids) - {chunk["chunk_id"] for chunk in chunks}
+            )
+            if lost:
                 raise CitedDocumentError(
-                    f"{source}: cards cite {cited} chunk ids of {', '.join(replaced)}; "
+                    f"{source}: cards cite {len(lost)} chunk ids of {', '.join(sorted(old_ids))} "
+                    f"that this ingest would drop (e.g. {', '.join(lost[:3])}); "
                     "remap the cards' source_chunks before re-ingesting this source"
                 )
             for old_id in old_ids:
@@ -174,11 +178,11 @@ class IncrementalIndexer:
         path_id = hashlib.sha256(_path_key(source).encode("utf-8")).hexdigest()[:16]
         return self.kb_dir / "manifests" / f"{path_id}.json"
 
-    def _cited_chunk_count(self, doc_ids: list[str]) -> int:
-        """Count chunk-id citations of doc_ids anywhere under cards/ (cards, source packs, manifests)."""
+    def _cited_chunk_ids(self, doc_ids: list[str]) -> set[str]:
+        """Collect chunk-id citations of doc_ids anywhere under cards/ (cards, source packs, manifests)."""
         cards_root = self.kb_dir / "cards"
         if not doc_ids or not cards_root.is_dir():
-            return 0
+            return set()
         pattern = re.compile(
             "(?:" + "|".join(re.escape(doc_id) for doc_id in doc_ids) + r")-sec-\d{4,}-\d{3,}"
         )
@@ -195,7 +199,7 @@ class IncrementalIndexer:
                 payloads = [json.loads(text)]
             for value in _string_values(payloads):
                 cited.update(pattern.findall(value))
-        return len(cited)
+        return cited
 
     def _doc_exists(self, doc_id: str) -> bool:
         db = self.kb_dir / "index" / "library.sqlite"

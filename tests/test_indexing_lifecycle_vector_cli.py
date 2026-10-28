@@ -150,6 +150,64 @@ class IncrementalIndexerTests(unittest.TestCase):
             self.assertEqual(con.execute("SELECT doc_id FROM docs").fetchall(), [(first.doc_id,)])
             con.close()
 
+    def test_rechunk_of_same_doc_id_is_refused_when_cited_chunk_would_vanish(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "guide.md"
+            source.write_text(
+                "# Guide\n\n" + " ".join(f"Sentence number {i} is here." for i in range(40)),
+                encoding="utf-8",
+            )
+            kb = root / "knowledge-base"
+            first = IncrementalIndexer(kb, chunk_chars=200).ingest(source, rights="owned-local")
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            chunk_ids = [row[0] for row in con.execute("SELECT chunk_id FROM chunks ORDER BY chunk_order")]
+            con.close()
+            self.assertGreater(len(chunk_ids), 1)
+            add_card(kb, status="active", overrides={"source_chunks": [chunk_ids[-1]]})
+            # Without the manifest the same bytes are re-processed under the same doc_id.
+            first.manifest_path.unlink()
+
+            with self.assertRaises(CitedDocumentError):
+                IncrementalIndexer(kb, chunk_chars=5000).ingest(source, rights="owned-local")
+
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            self.assertEqual(
+                [row[0] for row in con.execute("SELECT chunk_id FROM chunks ORDER BY chunk_order")],
+                chunk_ids,
+            )
+            con.close()
+
+    def test_rechunk_of_same_doc_id_keeping_cited_chunks_is_allowed(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "guide.md"
+            source.write_text(
+                "# Guide\n\n" + " ".join(f"Sentence number {i} is here." for i in range(40)),
+                encoding="utf-8",
+            )
+            kb = root / "knowledge-base"
+            indexer = IncrementalIndexer(kb, chunk_chars=200)
+            first = indexer.ingest(source, rights="owned-local")
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            cited_chunk = con.execute(
+                "SELECT chunk_id FROM chunks ORDER BY chunk_order DESC"
+            ).fetchone()[0]
+            con.close()
+            add_card(kb, status="active", overrides={"source_chunks": [cited_chunk]})
+            first.manifest_path.unlink()
+
+            second = indexer.ingest(source, rights="owned-local")
+
+            self.assertTrue(second.changed)
+            self.assertEqual(second.doc_id, first.doc_id)
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            self.assertEqual(
+                con.execute("SELECT count(*) FROM chunks WHERE chunk_id = ?", (cited_chunk,)).fetchone()[0],
+                1,
+            )
+            con.close()
+
     def test_unreadable_card_file_stops_a_replacing_ingest(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
