@@ -123,36 +123,53 @@ def execute_ingest(
         indexed = IncrementalIndexer(kb_dir).ingest(
             final_path, rights="personal-subscription"
         )
-        previous_path.unlink(missing_ok=True)
-        failure_path.unlink(missing_ok=True)
-        return OreillyIngestResult(
-            book_id=book_id,
-            output_path=str(final_path),
-            output_bytes=size,
-            index=indexed,
-        )
-    except Exception as error:
+    # BaseException: an interrupted ingest must not leave the unindexed epub in place either.
+    except BaseException as error:
         record: dict[str, Any] = {
             "book_id": book_id,
             "status": "quarantined",
             "error_type": type(error).__name__,
             "recorded_at": dt.datetime.now(dt.UTC).isoformat(),
         }
-        if placed and final_path is not None:
-            # Keep the downloaded bytes (the expensive part) next to the failure record.
-            os.replace(final_path, refused_path)
-            record["refused_path"] = str(refused_path)
-        if displaced and final_path is not None:
-            os.replace(previous_path, final_path)
-            record["restored_path"] = str(final_path)
+        if placed and final_path is not None and _index_describes(kb_dir, final_path, record):
+            # The index committed the new epub before failing (e.g. writing the catalog),
+            # so the new file is the one the index describes: keep it, drop the old one.
+            record["status"] = "indexed_metadata_failed"
+            record["index_updated"] = True
+            previous_path.unlink(missing_ok=True)
+        else:
+            if placed and final_path is not None:
+                # Keep the downloaded bytes (the expensive part) next to the failure record.
+                os.replace(final_path, refused_path)
+                record["refused_path"] = str(refused_path)
+            if displaced and final_path is not None:
+                os.replace(previous_path, final_path)
+                record["restored_path"] = str(final_path)
         _write_failure_manifest(failure_path, record)
         raise
+    previous_path.unlink(missing_ok=True)
+    failure_path.unlink(missing_ok=True)
+    return OreillyIngestResult(
+        book_id=book_id,
+        output_path=str(final_path),
+        output_bytes=size,
+        index=indexed,
+    )
 
 
 def result_payload(result: OreillyIngestResult) -> dict[str, Any]:
     payload = asdict(result)
     payload["index"]["manifest_path"] = str(result.index.manifest_path)
     return payload
+
+
+def _index_describes(kb_dir: Path, path: Path, record: dict[str, Any]) -> bool:
+    try:
+        return IncrementalIndexer(kb_dir).describes(path)
+    except Exception as error:
+        # Undecidable: fall back to restoring the previous epub and say why.
+        record["index_check_error"] = f"{type(error).__name__}: {error}"
+        return False
 
 
 def _safe_filename(name: str) -> str:

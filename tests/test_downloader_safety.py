@@ -4,6 +4,7 @@ import base64
 import datetime as dt
 import json
 import os
+import sqlite3
 import tempfile
 import unittest
 import zipfile
@@ -18,7 +19,7 @@ from src.client import OreillyClient
 from src.cookie_auth import Session, load_cookies
 from src.epub import create_epub
 from src.models import Book, BookMetadata, Chapter, Image
-from techlib.indexing import CitedDocumentError
+from techlib.indexing import CitedDocumentError, IncrementalIndexer
 from techlib.oreilly_adapter import execute_ingest, plan_ingest
 
 
@@ -407,7 +408,7 @@ class AdapterRefusedIngestTests(unittest.TestCase):
 
     book_id = "9780000000000"
 
-    def run_ingest(self, root: Path, *, ingest_error: Exception | None = None):
+    def run_ingest(self, root: Path, *, ingest_error: BaseException | None = None):
         cookie_file = write_cookie_file(root, "DUMMY_TOKEN")
         with patch("techlib.oreilly_adapter.OreillyClient") as client_class, patch(
             "techlib.oreilly_adapter.create_epub",
@@ -415,6 +416,7 @@ class AdapterRefusedIngestTests(unittest.TestCase):
         ), patch("techlib.oreilly_adapter.IncrementalIndexer") as indexer_class:
             client = client_class.return_value.__enter__.return_value
             client.get_book.return_value = Book(metadata=sample_metadata())
+            indexer_class.return_value.describes.return_value = False
             if ingest_error is not None:
                 indexer_class.return_value.ingest.side_effect = ingest_error
             return execute_ingest(
@@ -500,6 +502,102 @@ class AdapterRefusedIngestTests(unittest.TestCase):
 
             client_class.assert_not_called()
             self.assertEqual(previous_path.read_bytes(), b"indexed epub")
+
+    def test_interrupted_ingest_restores_the_indexed_epub(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            final_path = root / "downloads" / "Synthetic Book.epub"
+            final_path.parent.mkdir(parents=True)
+            final_path.write_bytes(b"indexed epub")
+
+            with self.assertRaises(KeyboardInterrupt):
+                self.run_ingest(root, ingest_error=KeyboardInterrupt())
+
+            staging = root / "downloads" / ".staging"
+            self.assertEqual(final_path.read_bytes(), b"indexed epub")
+            self.assertEqual(
+                (staging / f"{self.book_id}.refused.epub").read_bytes(), b"new epub"
+            )
+            self.assertFalse((staging / f"{self.book_id}.previous.epub").exists())
+            record = json.loads(
+                (staging / f"{self.book_id}.failure.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(record["error_type"], "KeyboardInterrupt")
+
+
+def extract_text_as_one_section(self, source: Path):
+    """Stand-in for EPUB extraction: the file's bytes are the book's only section."""
+    return "Synthetic Book", [], [("Body", source.read_text(encoding="utf-8"))], {}
+
+
+class AdapterWithIndexerTests(unittest.TestCase):
+    """execute_ingest against the real IncrementalIndexer (only extraction is stubbed)."""
+
+    book_id = "9780000000000"
+
+    def run_ingest(self, root: Path, text: str):
+        cookie_file = write_cookie_file(root, "DUMMY_TOKEN")
+        with patch("techlib.oreilly_adapter.OreillyClient") as client_class, patch(
+            "techlib.oreilly_adapter.create_epub",
+            side_effect=lambda book, path: Path(path).write_text(text, encoding="utf-8"),
+        ), patch.object(IncrementalIndexer, "_extract", extract_text_as_one_section):
+            client = client_class.return_value.__enter__.return_value
+            client.get_book.return_value = Book(metadata=sample_metadata())
+            return execute_ingest(
+                self.book_id,
+                cookie_file,
+                approved_book_id=self.book_id,
+                downloads_dir=root / "downloads",
+                kb_dir=root / "knowledge-base",
+            )
+
+    @staticmethod
+    def doc_ids(root: Path) -> list[str]:
+        with sqlite3.connect(root / "knowledge-base" / "index" / "library.sqlite") as connection:
+            return [row[0] for row in connection.execute("SELECT doc_id FROM docs")]
+
+    def test_guard_refusal_restores_the_cited_version(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            first = self.run_ingest(root, "first edition text")
+            with sqlite3.connect(
+                root / "knowledge-base" / "index" / "library.sqlite"
+            ) as connection:
+                chunk_id = connection.execute("SELECT chunk_id FROM chunks").fetchone()[0]
+            cards = root / "knowledge-base" / "cards"
+            cards.mkdir()
+            (cards / "card.json").write_text(
+                json.dumps({"source_chunks": [chunk_id]}), encoding="utf-8"
+            )
+
+            with self.assertRaises(CitedDocumentError):
+                self.run_ingest(root, "second edition text")
+
+            final_path = Path(first.output_path)
+            self.assertEqual(final_path.read_text(encoding="utf-8"), "first edition text")
+            self.assertEqual(self.doc_ids(root), [first.index.doc_id])
+
+    def test_failure_after_the_index_commit_keeps_the_new_epub(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            first = self.run_ingest(root, "first edition text")
+            (root / "knowledge-base" / "catalog.json").write_text("{not json", encoding="utf-8")
+
+            with self.assertRaises(ValueError):
+                self.run_ingest(root, "second edition text")
+
+            final_path = Path(first.output_path)
+            staging = root / "downloads" / ".staging"
+            self.assertEqual(final_path.read_text(encoding="utf-8"), "second edition text")
+            self.assertNotIn(first.index.doc_id, self.doc_ids(root))
+            self.assertEqual(len(self.doc_ids(root)), 1)
+            self.assertFalse((staging / f"{self.book_id}.previous.epub").exists())
+            self.assertFalse((staging / f"{self.book_id}.refused.epub").exists())
+            record = json.loads(
+                (staging / f"{self.book_id}.failure.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(record["status"], "indexed_metadata_failed")
+            self.assertTrue(record["index_updated"])
 
 
 if __name__ == "__main__":

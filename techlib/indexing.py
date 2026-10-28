@@ -11,7 +11,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable
 
-from .manifest import build_source_manifest, manifest_is_stale
+from .manifest import build_source_manifest, file_sha256, manifest_is_stale
 
 
 EXTRACTOR_VERSION = "techlib-extractor-v1"
@@ -85,8 +85,9 @@ class IncrementalIndexer:
                 for row in connection.execute("SELECT doc_id, source_path FROM docs")
                 if _path_key(row[1]) == source_key
             ]
-            # Include the same doc_id: re-chunking it under another chunk_chars or chunker
-            # can drop cited chunk ids even though the source bytes did not change.
+            # Include the same doc_id: when the manifest is missing, a rebuild under another
+            # chunk_chars or chunker re-chunks unchanged bytes and can drop cited chunk ids.
+            # (A cited id that survives with different text is not caught here.)
             lost = sorted(
                 self._cited_chunk_ids(old_ids) - {chunk["chunk_id"] for chunk in chunks}
             )
@@ -209,6 +210,19 @@ class IncrementalIndexer:
             return connection.execute(
                 "SELECT 1 FROM docs WHERE doc_id = ?", (doc_id,)
             ).fetchone() is not None
+
+    def describes(self, source: Path) -> bool:
+        """True when the index holds the current bytes of source under source's path."""
+        source = Path(source).expanduser().resolve()
+        db = self.kb_dir / "index" / "library.sqlite"
+        if not source.is_file() or not db.exists():
+            return False
+        doc_id = f"doc-{file_sha256(source)[:16]}"
+        with sqlite3.connect(f"file:{db}?mode=ro", uri=True) as connection:
+            row = connection.execute(
+                "SELECT source_path FROM docs WHERE doc_id = ?", (doc_id,)
+            ).fetchone()
+        return row is not None and _path_key(row[0]) == _path_key(source)
 
     def _extract(
         self, source: Path
