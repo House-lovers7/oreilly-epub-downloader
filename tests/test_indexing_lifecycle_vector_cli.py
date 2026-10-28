@@ -245,6 +245,27 @@ class IncrementalIndexerTests(unittest.TestCase):
             self.assertIn(first.doc_id, doc_ids)
             self.assertIn(payload["documents"][0]["doc_id"], doc_ids)
 
+    def test_legacy_build_skips_the_downloader_staging_directory(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            downloads = root / "downloads"
+            staging = downloads / ".staging"
+            staging.mkdir(parents=True)
+            (downloads / "book.txt").write_text("indexed book", encoding="utf-8")
+            (staging / "9780000000000.refused.txt").write_text("refused copy", encoding="utf-8")
+            kb = root / "knowledge-base"
+
+            stdout = io.StringIO()
+            with redirect_stdout(stdout):
+                exit_code = legacy_cli.main(
+                    ["build", "--source-dir", str(downloads), "--kb-dir", str(kb), "--rights", "owned-local"]
+                )
+
+            payload = json.loads(stdout.getvalue())
+            self.assertEqual(exit_code, 0)
+            self.assertEqual(payload["source_count"], 1)
+            self.assertEqual([doc["title"] for doc in payload["documents"]], ["book"])
+
     def test_unreadable_card_file_stops_a_replacing_ingest(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

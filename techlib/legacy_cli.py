@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any
 
 from .distillation import build_domain_pack
-from .indexing import CitedDocumentError, IncrementalIndexer, SUPPORTED_SUFFIXES
+from .indexing import CitedDocumentError, IncrementalIndexer, IngestResult, SUPPORTED_SUFFIXES
 from .search import SearchEngine
 from .vector import LazyVectorSearch
 
@@ -238,16 +238,20 @@ def _build(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
     if args.source_file:
         sources = [source]
     else:
+        # Skip dot directories: the downloader keeps refused and set-aside epubs in
+        # downloads/.staging, and they must not enter the index as separate books.
         sources = sorted(
             path
             for path in source.rglob("*")
-            if path.is_file() and path.suffix.lower() in SUPPORTED_SUFFIXES
+            if path.is_file()
+            and path.suffix.lower() in SUPPORTED_SUFFIXES
+            and not any(part.startswith(".") for part in path.relative_to(source).parts)
         )
     if args.limit:
         sources = sources[: args.limit]
     indexer = IncrementalIndexer(Path(args.kb_dir), chunk_chars=args.chunk_chars)
-    results = []
-    refused = []
+    results: list[IngestResult] = []
+    refused: list[dict[str, str]] = []
     for path in sources:
         try:
             results.append(indexer.ingest(path, rights=args.rights))
