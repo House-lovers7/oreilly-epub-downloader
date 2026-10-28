@@ -9,7 +9,7 @@ from pathlib import Path
 from typing import Any
 
 from .distillation import build_domain_pack
-from .indexing import IncrementalIndexer, SUPPORTED_SUFFIXES
+from .indexing import CitedDocumentError, IncrementalIndexer, SUPPORTED_SUFFIXES
 from .search import SearchEngine
 from .vector import LazyVectorSearch
 
@@ -246,9 +246,17 @@ def _build(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
     if args.limit:
         sources = sources[: args.limit]
     indexer = IncrementalIndexer(Path(args.kb_dir), chunk_chars=args.chunk_chars)
-    results = [indexer.ingest(path, rights=args.rights) for path in sources]
+    results = []
+    refused = []
+    for path in sources:
+        try:
+            results.append(indexer.ingest(path, rights=args.rights))
+        except CitedDocumentError as error:
+            # The refused source stays at its indexed version; the rest of the batch
+            # does not depend on it, so report it instead of aborting the run.
+            refused.append({"source": str(path), "error": str(error)})
     return {
-        "ok": True,
+        "ok": not refused,
         "source_count": len(sources),
         "changed_count": sum(result.changed for result in results),
         "documents": [
@@ -258,7 +266,8 @@ def _build(args: argparse.Namespace) -> tuple[dict[str, Any], int]:
             }
             for result in results
         ],
-    }, 0
+        "refused": refused,
+    }, 1 if refused else 0
 
 
 def _parser() -> argparse.ArgumentParser:

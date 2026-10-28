@@ -1,16 +1,19 @@
 from __future__ import annotations
 
+import io
 import json
 import os
 import sqlite3
 import tempfile
 import unicodedata
 import unittest
+from contextlib import redirect_stdout
 from pathlib import Path
 
 from click.testing import CliRunner
 
 from src.cli import main as legacy_main
+from techlib import legacy_cli
 from techlib.cli import main
 from techlib.indexing import CitedDocumentError, IncrementalIndexer
 from techlib.lifecycle import CardLifecycle
@@ -207,6 +210,40 @@ class IncrementalIndexerTests(unittest.TestCase):
                 1,
             )
             con.close()
+
+    def test_legacy_build_reports_a_refused_source_and_indexes_the_rest(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            sources = root / "sources"
+            sources.mkdir()
+            cited_source = sources / "a-cited.txt"
+            cited_source.write_text("first stable version", encoding="utf-8")
+            kb = root / "knowledge-base"
+            first = IncrementalIndexer(kb).ingest(cited_source, rights="owned-local")
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            cited_chunk = con.execute("SELECT chunk_id FROM chunks").fetchone()[0]
+            con.close()
+            add_card(kb, status="active", overrides={"source_chunks": [cited_chunk]})
+            cited_source.write_text("second stable version", encoding="utf-8")
+            (sources / "b-new.txt").write_text("independent new source", encoding="utf-8")
+
+            stdout = io.StringIO()
+            with redirect_stdout(stdout):
+                exit_code = legacy_cli.main(
+                    ["build", "--source-dir", str(sources), "--kb-dir", str(kb), "--rights", "owned-local"]
+                )
+
+            payload = json.loads(stdout.getvalue())
+            self.assertEqual(exit_code, 1)
+            self.assertFalse(payload["ok"])
+            self.assertEqual([row["source"] for row in payload["refused"]], [str(cited_source.resolve())])
+            self.assertIn(cited_chunk, payload["refused"][0]["error"])
+            self.assertEqual([doc["title"] for doc in payload["documents"]], ["b-new"])
+            con = sqlite3.connect(kb / "index" / "library.sqlite")
+            doc_ids = {row[0] for row in con.execute("SELECT doc_id FROM docs")}
+            con.close()
+            self.assertIn(first.doc_id, doc_ids)
+            self.assertIn(payload["documents"][0]["doc_id"], doc_ids)
 
     def test_unreadable_card_file_stops_a_replacing_ingest(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
