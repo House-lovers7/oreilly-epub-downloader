@@ -91,6 +91,15 @@ def execute_ingest(
     staging.mkdir(parents=True, exist_ok=True)
     staged_path = staging / f"{book_id}.epub"
     failure_path = staging / f"{book_id}.failure.json"
+    previous_path = staging / f"{book_id}.previous.epub"
+    refused_path = staging / f"{book_id}.refused.epub"
+    if previous_path.exists():
+        # A run stopped between moving the indexed epub aside and restoring it.
+        raise RuntimeError(
+            f"{previous_path} is left from an interrupted run; put it back or remove it first"
+        )
+    final_path: Path | None = None
+    displaced = placed = False
 
     try:
         with OreillyClient(session) as client:
@@ -104,10 +113,17 @@ def execute_ingest(
         final_path = output or downloads_dir / f"{_safe_filename(book_data.metadata.title)}.epub"
         final_path = final_path if final_path.suffix == ".epub" else final_path.with_suffix(".epub")
         final_path.parent.mkdir(parents=True, exist_ok=True)
+        # Keep the epub the index describes until the new one is indexed: a refused
+        # ingest (e.g. CitedDocumentError) must not leave a different file in its place.
+        if final_path.exists():
+            os.replace(final_path, previous_path)
+            displaced = True
         os.replace(staged_path, final_path)
+        placed = True
         indexed = IncrementalIndexer(kb_dir).ingest(
             final_path, rights="personal-subscription"
         )
+        previous_path.unlink(missing_ok=True)
         failure_path.unlink(missing_ok=True)
         return OreillyIngestResult(
             book_id=book_id,
@@ -116,15 +132,20 @@ def execute_ingest(
             index=indexed,
         )
     except Exception as error:
-        _write_failure_manifest(
-            failure_path,
-            {
-                "book_id": book_id,
-                "status": "quarantined",
-                "error_type": type(error).__name__,
-                "recorded_at": dt.datetime.now(dt.UTC).isoformat(),
-            },
-        )
+        record: dict[str, Any] = {
+            "book_id": book_id,
+            "status": "quarantined",
+            "error_type": type(error).__name__,
+            "recorded_at": dt.datetime.now(dt.UTC).isoformat(),
+        }
+        if placed and final_path is not None:
+            # Keep the downloaded bytes (the expensive part) next to the failure record.
+            os.replace(final_path, refused_path)
+            record["refused_path"] = str(refused_path)
+        if displaced and final_path is not None:
+            os.replace(previous_path, final_path)
+            record["restored_path"] = str(final_path)
+        _write_failure_manifest(failure_path, record)
         raise
 
 

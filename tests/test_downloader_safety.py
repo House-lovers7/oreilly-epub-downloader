@@ -18,7 +18,8 @@ from src.client import OreillyClient
 from src.cookie_auth import Session, load_cookies
 from src.epub import create_epub
 from src.models import Book, BookMetadata, Chapter, Image
-from techlib.oreilly_adapter import plan_ingest
+from techlib.indexing import CitedDocumentError
+from techlib.oreilly_adapter import execute_ingest, plan_ingest
 
 
 def jwt_with_expiry(expiry: dt.datetime) -> str:
@@ -399,6 +400,106 @@ class EpubCompletenessTests(unittest.TestCase):
                 )
                 chapter = archive.read(chapter_name).decode("utf-8")
             self.assertIn('lang="ja"', chapter)
+
+
+class AdapterRefusedIngestTests(unittest.TestCase):
+    """execute_ingest keeps the indexed epub in place when the index refuses the new one."""
+
+    book_id = "9780000000000"
+
+    def run_ingest(self, root: Path, *, ingest_error: Exception | None = None):
+        cookie_file = write_cookie_file(root, "DUMMY_TOKEN")
+        with patch("techlib.oreilly_adapter.OreillyClient") as client_class, patch(
+            "techlib.oreilly_adapter.create_epub",
+            side_effect=lambda book, path: Path(path).write_bytes(b"new epub"),
+        ), patch("techlib.oreilly_adapter.IncrementalIndexer") as indexer_class:
+            client = client_class.return_value.__enter__.return_value
+            client.get_book.return_value = Book(metadata=sample_metadata())
+            if ingest_error is not None:
+                indexer_class.return_value.ingest.side_effect = ingest_error
+            return execute_ingest(
+                self.book_id,
+                cookie_file,
+                approved_book_id=self.book_id,
+                downloads_dir=root / "downloads",
+                kb_dir=root / "knowledge-base",
+            )
+
+    def test_refused_ingest_restores_the_indexed_epub_and_keeps_the_download(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            final_path = root / "downloads" / "Synthetic Book.epub"
+            final_path.parent.mkdir(parents=True)
+            final_path.write_bytes(b"indexed epub")
+
+            with self.assertRaises(CitedDocumentError):
+                self.run_ingest(root, ingest_error=CitedDocumentError("cards cite it"))
+
+            staging = root / "downloads" / ".staging"
+            refused_path = staging / f"{self.book_id}.refused.epub"
+            self.assertEqual(final_path.read_bytes(), b"indexed epub")
+            self.assertEqual(refused_path.read_bytes(), b"new epub")
+            self.assertFalse((staging / f"{self.book_id}.previous.epub").exists())
+            record = json.loads(
+                (staging / f"{self.book_id}.failure.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(record["error_type"], "CitedDocumentError")
+            self.assertEqual(record["restored_path"], str(final_path))
+            self.assertEqual(record["refused_path"], str(refused_path))
+
+    def test_refused_ingest_of_a_new_book_leaves_no_epub_in_downloads(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+
+            with self.assertRaises(RuntimeError):
+                self.run_ingest(root, ingest_error=RuntimeError("no readable sections"))
+
+            staging = root / "downloads" / ".staging"
+            self.assertFalse((root / "downloads" / "Synthetic Book.epub").exists())
+            self.assertEqual(
+                (staging / f"{self.book_id}.refused.epub").read_bytes(), b"new epub"
+            )
+            record = json.loads(
+                (staging / f"{self.book_id}.failure.json").read_text(encoding="utf-8")
+            )
+            self.assertNotIn("restored_path", record)
+
+    def test_accepted_ingest_replaces_the_epub_and_clears_the_set_aside_copy(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            final_path = root / "downloads" / "Synthetic Book.epub"
+            final_path.parent.mkdir(parents=True)
+            final_path.write_bytes(b"indexed epub")
+
+            result = self.run_ingest(root)
+
+            staging = root / "downloads" / ".staging"
+            self.assertEqual(result.output_path, str(final_path))
+            self.assertEqual(final_path.read_bytes(), b"new epub")
+            self.assertFalse((staging / f"{self.book_id}.previous.epub").exists())
+            self.assertFalse((staging / f"{self.book_id}.failure.json").exists())
+
+    def test_leftover_set_aside_epub_stops_before_any_download(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            staging = root / "downloads" / ".staging"
+            staging.mkdir(parents=True)
+            previous_path = staging / f"{self.book_id}.previous.epub"
+            previous_path.write_bytes(b"indexed epub")
+            cookie_file = write_cookie_file(root, "DUMMY_TOKEN")
+
+            with patch("techlib.oreilly_adapter.OreillyClient") as client_class:
+                with self.assertRaisesRegex(RuntimeError, "interrupted run"):
+                    execute_ingest(
+                        self.book_id,
+                        cookie_file,
+                        approved_book_id=self.book_id,
+                        downloads_dir=root / "downloads",
+                        kb_dir=root / "knowledge-base",
+                    )
+
+            client_class.assert_not_called()
+            self.assertEqual(previous_path.read_bytes(), b"indexed epub")
 
 
 if __name__ == "__main__":
